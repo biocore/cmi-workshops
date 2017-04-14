@@ -94,7 +94,7 @@ alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 # Feature finding with MZmine 2
 
- <b><span style="color:red">Please follow this <a href=" http://mzmine.github.io/download.html">(link)</a> to install the software and dependencies</span>.</b>
+ <b><span style="color:red">Please follow this <a href="http://mzmine.github.io/download.html">(link)</a> to install the software and dependencies</span>.</b>
 
 
 ## Complete workflow view
