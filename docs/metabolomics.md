@@ -7,8 +7,6 @@ In the following documentation, we are providing step-by-step tutorials to perfo
 - The GNPS web-platform will be used to generate a qualitative analysis of your sample LC-MS/MS data. Such as the annotation of known compounds (by MS/MS spectral matching with public library), along as annotating unknown compounds by molecular networking (by spectral similarity).
 - And we will used MZmine2 to process LC-MS/MS data in order to generate a feature table. This feature table contains the list of detected compounds and their relative distribution accross samples. This feature table will be used to generate statistical analysis in Qiita.
 
-Slides of the presentation are available [here](https://docs.google.com/presentation/d/1nD3296xWcQok8HgcOamHSZioMkx1gAMgsEVxMajOlcI/edit?usp=sharing)
-
 ## GNPS tutorial
 Global Natural Products Social Molecular Networking [GNPS](http://gnps.ucsd.edu) web-platform provides public data set deposition and/or retrieval through the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository. The GNPS analysis infrastructure further enables online dereplication, automated molecular networking analysis, and crowdsourced MS/MS spectrum curation. Each data set added to the GNPS repository is automatically reanalyzed in the next monthly cycle of continuous identification.
 For more information, please check out the GNPS paper published in Nature Biotechnology by Ming et al 2016 [here](https://www.ncbi.nlm.nih.gov/pubmed/27504778) as well as the video and the ressource on [Youtube](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g), and well as on the online [documentation](https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page) 
