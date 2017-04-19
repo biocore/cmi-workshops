@@ -147,5 +147,75 @@ with deblurred data.
 
 
 Creating a metaanalysis
-----------------------
+-----------------------
+
+One of the most powerful aspects of Qiita is the ability to compare your data
+with hundreds of thousands of samples from across the planet. Right now, there
+are almost 130,000 samples publically available for you to explore:
+
+.. figure::  images/analysis-qiita-stats.png
+   :align:   center
+
+(You can get up-to-date statistics by clicking "Stats" under the "More Info"
+option on the top bar.)
+
+Creating a metaanalysis is just like creating an analysis, except you choose
+data objects from multiple studies. Let's start creating a metaanlysis by adding
+our Closed Reference OTU table to a new analysis. 
+
+Next, we'll look for some additional data to compare against. 
+
+You noticed the 'Other Studies' table below 'Your Studies' when adding data to
+the analysis. (Sometimes this takes a while to load - give it a few minutes.)
+These are publically available data for you to explore, and each should have
+processed data suitable for comparison to your own.
+
+There are a couple tools provided to help you find useful public studies. 
+
+First, there are a series of "tags" listed at the top of the window:
+
+.. figure::  images/analysis-qiita-tags.png
+   :align:   center
+
+There are two types of tags: admin-assigned (yellow), and user-assigned (blue).
+You can tag your own study with any tag you'd like, to help other users find
+your data. For some studies, Qiita administrators will apply specific reserved
+tags to help identify particularly relevant data. The "GOLD" tag, for example,
+identifies a small set of highly-curated, very well-explored studies. If you
+click on one of these tags, all studies not associated with that tag will
+disappear from the tables. 
+
+Second, there is a search field that allows you to filter studies in real time.
+Try typing in the name of a known PI, or a particular study organism -- the
+thousands of publically available studies will be filtered down to something
+that is easier to look through. 
+
+Let's try comparing our data to the "Global Gut" dataset of human microbiomes
+from the US, Africa, and South America from the study `"Human gut microbiome
+viewed across age and geography" by Yatsunenko et al <http://www.nature.com/nature/journal/v486/n7402/abs/nature11053.html>`__. We can search for this dataset
+using the DOI from the paper: `10.1038/nature11053`. 
+
+.. figure::  images/analysis-yatsunenko.png
+   :align:   center
+
+Add the closed reference OTU table from this study to your analysis. You should
+now be able to click the green analysis icon in the upper right and see both
+your own OTU table and the public study OTU table in your analysis staging
+area:
+
+.. figure::  images/analysis-yatsunenko-selected.png
+   :align:   center
+
+You can now click "Create Analysis" just as before to begin specifying analysis
+steps. This time, let's just do the beta diversity step. Select the `Beta
+Diversity` command, enter a rarefaction depth of 2100, and click "Start
+Processing".
+
+Because you've now expanded the number of samples in your analysis by more than
+an order of magnitude, this step will take a little longer to complete. But
+when it does, you will be able to use Emperor to explore the samples in your
+test dataset to samples from around the world!
+
+.. figure::  images/analysis-yatsunenko-emperor.png
+   :align:   center
 
