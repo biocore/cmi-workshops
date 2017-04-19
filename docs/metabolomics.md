@@ -1,52 +1,42 @@
 # Notes on metabolomics
 
-## Metabolomics background
-Some most relevant points from your presentations **and/or** links to
-your presentations.
+Edited for the Dorrestein Lab by Louis-Felix Nothias, Daniel Petras and Ricardo Silva on December 2016. Last edit on April 2017. 
 
-## GNPS
-[GNPS](https://gnps.ucsd.edu)
+## About the metabolomics workshop
+In the following documentation, we are providing step-by-step tutorials to perform basic analysis of liquid chromatography coupled to tandem mass spectrometry data (LC-MS/MS). These tutorials can be employed to process untargeted metabolomics data, such as those generated for seed funded project.
+- The GNPS web-platform will be used to generate a qualitative analysis of your sample LC-MS/MS data. Such as the annotation of known compounds (by MS/MS spectral matching with public library), along as annotating unknown compounds by molecular networking (by spectral similarity).
+- And we will used MZmine2 to process LC-MS/MS data in order to generate a feature table. This feature table contains the list of detected compounds and their relative distribution accross samples. This feature table will be used to generate statistical analysis in Qiita.
 
-## Demo data in Qiita
-* How do I load the data?
-* How do I process the data?
-* What command do I need to use?
-* What are some things to pay attention to?
-* What results should I expect?
+Slides of the presentation are available [here](https://docs.google.com/presentation/d/1nD3296xWcQok8HgcOamHSZioMkx1gAMgsEVxMajOlcI/edit?usp=sharing)
 
-# GNPS Workshop, Generation of Molecular Networks in 15 minutes
+## GNPS tutorial
+Global Natural Products Social Molecular Networking [GNPS](http://gnps.ucsd.edu) web-platform provides public data set deposition and/or retrieval through the Mass Spectrometry Interactive Virtual Environment (MassIVE) data repository. The GNPS analysis infrastructure further enables online dereplication, automated molecular networking analysis, and crowdsourced MS/MS spectrum curation. Each data set added to the GNPS repository is automatically reanalyzed in the next monthly cycle of continuous identification.
+For more information, please check out the GNPS paper published in Nature Biotechnology by Ming et al 2016 [here](https://www.ncbi.nlm.nih.gov/pubmed/27504778) as well as the video and the ressource on [Youtube](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g), and well as on the online [documentation](https://bix-lab.ucsd.edu/display/Public/GNPS+Documentation+Page) 
 
-Added by Louis Felix Nothias, last edited by Louis Felix Nothias on Oct 30, 2016  (view change)
-Labels:
-annotation molecular networks gnps tutorial workshop
-ili Workshop: link to the template: [feature_table_with_coordinates.csv](https://www.dropbox.com/s/hjxdce59kdr5bfo/Feature_table_with_coordinates_template.csv?dl=0)
+### Tutorial:  Generation of Molecular Networks in 15 minutes: Exploring MS/MS data with the GNPS Data Analysis workflow
 
-co
+#### Step 1- Create an account
 
-## Exploring MS/MS data with the GNPS Data Analysis workflow
+Go to GNPS main page in an other window [http://gnps.ucsd.edu](http://gnps.ucsd.edu) and create your own account first (important!)
 
-### Step 1- Create an account
+#### Step 2- Find a MS/MS dataset on MassIVE (Mass spectrometry Interactive Virtual Environment)
 
-Go to GNPS main page in an other window (http://gnps.ucsd.edu) and create your own account.
+**A)** Go to [GNPS](http://gnps.ucsd.edu) and access the MassIVE datasets repository.
 
-### Step 2- Find a MS/MS dataset on MassIVE (Mass spectrometry Interactive Virtual Environment)
+**B)** Search for the MassIVE datasets named "GNPS Workshop" (or "GNPS_AMG_SeedGrant" for a larger example). Explore its content, and copy the MassIVE ID number (MSV)
 
-**A)** Go to GNPS (http://gnps.ucsd.edu) and access the MassIVE datasets repository.
-
-**B)** Search for the MassIVE datasets named "GNPS Workshop" (or "GNPS_AMG_SeedGrant" for a larger example). Explore its content, and copy the MassIVE ID number.
-
-**Note:** If you want to upload your own data, go to [DorresteinLab youtube chanel](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g), here is the video:
+**Note:** If you want to upload your own data, follow the [DorresteinLab youtube chanel](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g), here is the video:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ez9z50FTgvg
 " target="_blank"><img src="http://img.youtube.com/vi/ez9z50FTgvg/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 
-### Step 3 - Access to the Data Analysis workflow
+#### Step 3 - Access to the Data Analysis workflow
 
-Go to back GNPS main page (http://gnps.ucsd.edu) and open the Data Analysis workflow.
+Go to back [GNPS main page](http://gnps.ucsd.edu) and open the Data Analysis workflow.
 
-### Step 4 - Configure and launch the Data Analysis workflow
+#### Step 4 - Configure and launch the Data Analysis workflow
 
 **A)** Indicate a Title.
 
@@ -70,11 +60,9 @@ Go to back GNPS main page (http://gnps.ucsd.edu) and open the Data Analysis work
 " target="_blank"><img src="http://img.youtube.com/vi/ujYR0Hugb2M/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
+#### Step 5 - Visualize the Data Analysis workflow output
 
-
-### Step 5 - Visualize the Data Analysis workflow output
-
-**A)** Return to GNPS main page (http://gnps.ucsd.edu) and go to the Jobs page.
+**A)** Return to [GNPS main page](http://gnps.ucsd.edu) and go to the Jobs page.
 
 **B)** Explore the spectral library annotations by clicking on view All Library Hits.
 
@@ -86,7 +74,7 @@ alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 **F)** Visualize a first MS/MS spectrum by left-clicking on one node. Visualize a second MS/MS spectrum by right-clicking on a second node.
 
-**More on Navigating results:**
+**More on navigating into the results:**
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Rpa5UZo69E4
 " target="_blank"><img src="http://img.youtube.com/vi/Rpa5UZo69E4/0.jpg"
@@ -96,13 +84,12 @@ alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
  <b><span style="color:red">Please follow this <a href="http://mzmine.github.io/download.html">(link)</a> to install the software and dependencies</span>.</b>
 
-
 ## Complete workflow view
 
 ![complete workflow view](figs/Workflow_mzmine.png)
 
 
-### **1.** Start mzMine
+### **1.** Start mzMine2
 ![start mzMine](figs/1_Start.png)
 
 
@@ -184,3 +171,6 @@ alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=VS_Zpyl5chQ
 " target="_blank"><img src="http://img.youtube.com/vi/VS_Zpyl5chQ/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
+
+## Metabolomics demo data in Qiita
+* Refer to the Qiita documentation about Principal Coordinates Analysis (PCoA) [here](http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-analysis.html#s-microbiome-analysis-in-qiita)
