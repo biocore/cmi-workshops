@@ -14,6 +14,7 @@ Tutorials:
 
    
    qiita-create-study
-   qiita-microbiome-16S
+   qiita-16S-processing
+   qiita-16S-analysis
    microbiome
    metabolomics

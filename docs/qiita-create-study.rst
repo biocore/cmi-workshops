@@ -161,4 +161,4 @@ Next, we'll add 16S data and do a preliminary analysis.
 
 ----
 
-Next: :doc:`qiita-16S-analysis`
+Next: :doc:`qiita-16S-processing`
