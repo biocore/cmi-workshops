@@ -12,5 +12,8 @@ Tutorials:
 .. toctree::
    :maxdepth: 2
 
+   qiita-create-study
+   qiita-16S-processing
+   qiita-16S-analysis
    microbiome
    metabolomics
