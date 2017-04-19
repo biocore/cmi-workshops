@@ -143,8 +143,9 @@ The specific ID for your table will be unique, so make a note of it, and you
 can use it to select the correct table for analysis. 
 
 Second, currently only the Beta Diversity analysis command option is working
-with the deblurred data.
+with deblurred data. 
 
 
 Creating a metaanalysis
 ----------------------
+

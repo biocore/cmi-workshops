@@ -7,7 +7,7 @@ in Qiita.
 Getting CMI Workshop example data
 ---------------------------------
 
-First, we'll download some `example data <https://www.dropbox.com/s/1vcnjqo6kkmetp6/qiita-files.zip?dl=0>`__. These files contain both 16S and shotgun metagenomics 
+First, we'll download some `example data <https://www.dropbox.com/sh/mfbqvkva8dw85fq/AABA2pFAIaLlcKLLUCmpZSUea?dl=0>`__. These files contain both 16S and shotgun metagenomics 
 data for 12 samples from the American Gut Project. 
 
 For this tutorial, the relevant files are::
