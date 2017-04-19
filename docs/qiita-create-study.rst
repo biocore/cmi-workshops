@@ -48,9 +48,10 @@ entering your email and password.
 Creating a test study
 ---------------------
 
-Studies are the main source of data for Qiita. Studies can contain only one set
+Studies are the source of data for Qiita. Studies can contain only one set
 of samples but can contain multiple sets of raw data, each of which can have a
-different preparation -- for example, 16S, shotgun metagenomics, and metabolomics.
+different preparation -- for example, 16S, shotgun metagenomics, and
+metabolomics, or even multiple preparations of the same type (e.g., a plate rerun, biological and technical replicates, etc).
 
 In this tutorial, our study contains 12 samples, each with two types of data:
 16S and shotgun metagenomics. To represent this project in Qiita, you will need
@@ -101,9 +102,11 @@ Adding sample information
 -------------------------
 
 **Sample information** is the set of metadata that pertains to your biological
-samples: there are the measured variables that are motivating you to look for
-response variables in the microbiome. (To learn more, including how to format
-your own sample info file, check out the `in-depth documentation <https://qiita.ucsd.edu/static/doc/html/tutorials/prepare-information-files.html#sample-information-file>`__
+samples: these are the measured variables that are motivating you to look for
+response variables in the microbiome. **IMPORTANT**: your metadata are your
+study; it is imperative that those data are consistent, correct, and
+sufficiently detailed. (To learn more, including how to format your own sample
+info file, check out the `in-depth documentation <https://qiita.ucsd.edu/static/doc/html/tutorials/prepare-information-files.html#sample-information-file>`__
 on the Qiita website.)
 
 The first point of entrance to a study is the study description
