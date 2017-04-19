@@ -12,6 +12,5 @@ Tutorials:
 .. toctree::
    :maxdepth: 2
 
-   intro
    microbiome
    metabolomics
