@@ -38,7 +38,7 @@ Go to GNPS main page in an other window (http://gnps.ucsd.edu) and create your o
 **Note:** If you want to upload your own data, go to [DorresteinLab youtube chanel](https://www.youtube.com/channel/UCufTdDIUPjfoN604Igv_29g), here is the video:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ez9z50FTgvg
-" target="_blank"><img src="http://img.youtube.com/vi/ez9z50FTgvg/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/ez9z50FTgvg/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 
@@ -67,7 +67,7 @@ Go to back GNPS main page (http://gnps.ucsd.edu) and open the Data Analysis work
 **J)** Launch the Data Analysis workflow using the Submit button.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ujYR0Hugb2M
-" target="_blank"><img src="http://img.youtube.com/vi/ujYR0Hugb2M/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/ujYR0Hugb2M/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 
@@ -89,7 +89,7 @@ alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 **More on Navigating results:**
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Rpa5UZo69E4
-" target="_blank"><img src="http://img.youtube.com/vi/Rpa5UZo69E4/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/Rpa5UZo69E4/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 # Feature finding with MZmine 2
@@ -99,88 +99,88 @@ alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
 
 ## Complete workflow view
 
-<img src="figs/Workflow_mzmine.png" alt="Drawing" style="width: 750px;"/>
+![complete workflow view](figs/Workflow_mzmine.png)
 
 
 ### **1.** Start mzMine
-<img src="figs/1_Start.png" alt="Drawing" style="width: 750px;"/>
+![start mzMine](figs/1_Start.png)
 
 
 ### **2.** Click on raw data import in drop down menu and select .mzxml files
-<img src="figs/2_import-raw.png" alt="Drawing" style="width: 750px;"/>
+![import data](figs/2_import-raw.png)
 
 
 ### **3.** Click on mass detection in drop down menu
-<img src="figs/3_mass-detection.png" alt="Drawing" style="width: 750px;"/>
+![mass detection](figs/3_mass-detection.png)
 
 
-### **4.** Specify intensity cutt-off and mass list
-<img src="figs/4_mass-detection_select-cutoff_preview.png" alt="Drawing" style="width: 750px;"/>
+### **4.** Specify intensity cut-off and mass list
+![specify intensity cut-off](figs/4_mass-detection_select-cutoff_preview.png)
 
 
 ### **5.** Build XICs with chromatogram builder
-<img src="figs/5_Chrom-builder.png" alt="Drawing" style="width: 750px;"/>
+![Build XICs with chromatogram builder](figs/5_Chrom-builder.png)
 
 
 ### **6.** Specify mass list, mass tolerance min. time span and min. hight
-<img src="figs/6_Chrom-builder_parameters.png" alt="Drawing" style="width: 750px;"/>
+![Specify mass list, mass tolerance min. time span and min. hight](figs/6_Chrom-builder_parameters.png)
 
 
 ### **7.** Deconvolute isobaric peaks with chromatogram deconvolution
-<img src="figs/7_deconv.png" alt="Drawing" style="width: 750px;"/>
+![Deconvolute isobaric peaks with chromatogram deconvolution](figs/7_deconv.png)
 
 
 ### **8.** Specify algorithm (base line cut-off or local minimum search and parmaters
-<img src="figs/8_deconv_parameters.png" alt="Drawing" style="width: 750px;"/>
+![Specify algorithm (base line cut-off or local minimum search and parmaters](figs/8_deconv_parameters.png)
 
 
 ### **9.** Perform deisotopization through isotope peak grouper
-<img src="figs/9_de-isotope.png" alt="Drawing" style="width: 750px;"/>
+![Perform deisotopization through isotope peak grouper](figs/9_de-isotope.png)
 
 
 ### **10.** Specify parameters for isotope peak grouping
-<img src="figs/10_de-isotope_parameters.png" alt="Drawing" style="width: 750px;"/>
+![Specify parameters for isotope peak grouping](figs/10_de-isotope_parameters.png)
 
 
 ### **11.** Align XICs from different sample to one matrix
-<img src="figs/11_aligner.png" alt="Drawing" style="width: 750px;"/>
+![Align XICs from different sample to one matrix](figs/11_aligner.png)
 
 
 ### **12.** Specify join aligner parameters
-<img src="figs/12_aligner_parameter.png" alt="Drawing" style="width: 750px;"/>
+![Specify join aligner parameters](figs/12_aligner_parameter.png)
 
 
 ### **13.** [optional] Filter aligned feature matrix with peak list row filter
-<img src="figs/13_filter.png" alt="Drawing" style="width: 750px;"/>
+![Filter aligned feature matrix with peak list row filter](figs/13_filter.png)
 
 
 ### **14.** [optional] Depending of your experimental design use n minimum peaks in a row (n should be around the number of replicates or samples you expect to be similar) and 2-3 minimum peaks per isotope pattern
-<img src="figs/14_filter_parameter.png" alt="Drawing" style="width: 750px;"/>
+![use n minimum peaks in a row](figs/14_filter_parameter.png)
 
 
 ### **15.** [optional] You gap filling the re-analyses missed peaks and fill gaps in the feature matrix
-<img src="figs/15_gap-filling.png" alt="Drawing" style="width: 750px;"/>
+![You gap filling the re-analyses missed peaks and fill gaps in the feature matrix](figs/15_gap-filling.png)
 
 
-### **16.** [optional] Depending on experimental design you can normalize yoru peak intensities to internal standrads, TICs or total peak aerea.
-<img src="figs/16_gap-filling_parameters.png" alt="Drawing" style="width: 750px;"/>
+### **16.** [optional] Depending on experimental design you can normalize your peak intensities to internal standards, TICs or total peak area.
+![normalize your peak intensities to internal standards, TICs or total peak area](figs/16_gap-filling_parameters.png)
 
 
-### **17.** [optional Specify normalization parameters
-<img src="figs/17_norm.png" alt="Drawing" style="width: 750px;"/>
+### **17.** [optional] Specify normalization parameters
+![Specify normalization parameters](figs/17_norm.png)
 
 
 ### **18.** Export your matrix as .csv file for down stream data analysis
-<img src="figs/18_norm_parameters.png" alt="Drawing" style="width: 750px;"/>
+![Export your matrix as .csv file for down stream data analysis](figs/18_norm_parameters.png)
 
 
 ### **19.** select file name and parameters you want to export
-<img src="figs/19_exp.png" alt="Drawing" style="width: 750px;"/>
+![select file name and parameters you want to export](figs/19_exp.png)
 
-<img src="figs/20_exp_parmeters.png" alt="Drawing" style="width: 750px;"/>
+![select file name and parameters you want to export](figs/20_exp_parmeters.png)
 
 **Here is also a video for [MZmine 2 documentation](http://mzmine.github.io/):**
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=VS_Zpyl5chQ
-" target="_blank"><img src="http://img.youtube.com/vi/VS_Zpyl5chQ/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/VS_Zpyl5chQ/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="480" height="360" border="10" /></a>
