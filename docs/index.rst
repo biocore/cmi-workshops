@@ -22,7 +22,7 @@ Tutorials:
 
 .. toctree::
    :caption: Metabolomic analyses
-   :maxdepth: 1
+   :maxdepth: 2
 
    metabolomics_notes
    metabolomics_mzmine2
