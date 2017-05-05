@@ -6,7 +6,7 @@
 Analysis of Closed Reference processing
 ---------------------------------------
 
-To create an analysis, select `Create new analysis` from the top menu. 
+To create an analysis, select `Create new analysis` from the top menu.
 
 This will take you to a list of studies with samples available to you for
 analysis, divided between your studies and publically available ('Other')
@@ -24,13 +24,13 @@ the objects from that study that are available to you for analysis.
 
 You could add all of these objects to the analysis by selecting the `Add to
 Analysis` button. We will just add the Closed Reference OTU table object by
-clicking `Add` in that row. 
+clicking `Add` in that row.
 
 .. figure::  images/analysis-closed-ref-add.png
    :align:   center
 
 Now, the second-right-most icon at the top bar should be green, indicating that
-there are samples selected for analysis. 
+there are samples selected for analysis.
 
 .. figure::  images/analysis-icon-green.png
    :align:   center
@@ -60,7 +60,7 @@ the steps in your analysis.
    :align:   center
 
 For this analysis, let's go ahead and select the commands Summarize
-Taxa and Beta Diversity (Alpha Rarefaction can take some time to run). 
+Taxa and Beta Diversity (Alpha Rarefaction can take some time to run).
 
 We will also need to specify an even sampling or rarefaction depth. All the
 samples in the analysis will be randomly subsampled to this number of sequences,
@@ -87,7 +87,7 @@ status:
 When the analysis is finished, click the 'Success' link to see the results.
 
 The results page will have sections indication which samples were dropped due
-to insufficient numbers of reads, as well as sections for each data type. 
+to insufficient numbers of reads, as well as sections for each data type.
 
 Here, we have taxonomy summaries and beta diversity PCoA plots available.
 
@@ -130,7 +130,7 @@ Analysis of deblur processing
 -----------------------------
 
 Creating an analysis of your deblurred data is virtually the same as the
-process for the Closed Reference data, but there are a few quirks. 
+process for the Closed Reference data, but there are a few quirks.
 
 First, because the deblur process creates two separate BIOM tables, you'll want
 to make a note of the specific object ID number for the artifact you want to
@@ -140,18 +140,18 @@ use. In my case, that's ID 26017, the deblurred table with 'only-16s' reads.
    :align:   center
 
 The specific ID for your table will be unique, so make a note of it, and you
-can use it to select the correct table for analysis. 
+can use it to select the correct table for analysis.
 
 Second, currently only the Beta Diversity analysis command option is working
-with deblurred data. 
+with deblurred data.
 
 
-Creating a metaanalysis
------------------------
+Creating a meta-analysis
+------------------------
 
 One of the most powerful aspects of Qiita is the ability to compare your data
 with hundreds of thousands of samples from across the planet. Right now, there
-are almost 130,000 samples publically available for you to explore:
+are almost 130,000 samples publicly available for you to explore:
 
 .. figure::  images/analysis-qiita-stats.png
    :align:   center
@@ -159,18 +159,18 @@ are almost 130,000 samples publically available for you to explore:
 (You can get up-to-date statistics by clicking "Stats" under the "More Info"
 option on the top bar.)
 
-Creating a metaanalysis is just like creating an analysis, except you choose
-data objects from multiple studies. Let's start creating a metaanlysis by adding
-our Closed Reference OTU table to a new analysis. 
+Creating a meta-analysis is just like creating an analysis, except you choose
+data objects from multiple studies. Let's start creating a meta-anlysis by adding
+our Closed Reference OTU table to a new analysis.
 
-Next, we'll look for some additional data to compare against. 
+Next, we'll look for some additional data to compare against.
 
 You noticed the 'Other Studies' table below 'Your Studies' when adding data to
 the analysis. (Sometimes this takes a while to load - give it a few minutes.)
-These are publically available data for you to explore, and each should have
+These are publicly available data for you to explore, and each should have
 processed data suitable for comparison to your own.
 
-There are a couple tools provided to help you find useful public studies. 
+There are a couple tools provided to help you find useful public studies.
 
 First, there are a series of "tags" listed at the top of the window:
 
@@ -183,17 +183,17 @@ your data. For some studies, Qiita administrators will apply specific reserved
 tags to help identify particularly relevant data. The "GOLD" tag, for example,
 identifies a small set of highly-curated, very well-explored studies. If you
 click on one of these tags, all studies not associated with that tag will
-disappear from the tables. 
+disappear from the tables.
 
 Second, there is a search field that allows you to filter studies in real time.
 Try typing in the name of a known PI, or a particular study organism -- the
-thousands of publically available studies will be filtered down to something
-that is easier to look through. 
+thousands of publicly available studies will be filtered down to something
+that is easier to look through.
 
 Let's try comparing our data to the "Global Gut" dataset of human microbiomes
 from the US, Africa, and South America from the study `"Human gut microbiome
 viewed across age and geography" by Yatsunenko et al <http://www.nature.com/nature/journal/v486/n7402/abs/nature11053.html>`__. We can search for this dataset
-using the DOI from the paper: `10.1038/nature11053`. 
+using the DOI from the paper: `10.1038/nature11053`.
 
 .. figure::  images/analysis-yatsunenko.png
    :align:   center
@@ -218,4 +218,3 @@ test dataset to samples from around the world!
 
 .. figure::  images/analysis-yatsunenko-emperor.png
    :align:   center
-
