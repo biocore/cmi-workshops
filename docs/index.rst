@@ -10,13 +10,19 @@ please visit `Qiita website <https://qiita.ucsd.edu/static/doc/html/index.html>`
 For general information about workshops, please `contact Tomasz Kosciolek directly
 <mailto:tkosciolek@ucsd.edu>`__.
 
-Tutorials:
+Qiita tutorials:
+----------------
+
+.. toctree::
+   :caption: Creating a study in Qiita
+   :maxdepth: 1
+
+   qiita-create-study
 
 .. toctree::
    :caption: Microbiome analyses
    :maxdepth: 1
 
-   qiita-create-study
    qiita-16S-processing
    qiita-16S-analysis
 
