@@ -11,7 +11,7 @@ For general information about workshops, please `contact Tomasz Kosciolek direct
 <mailto:tkosciolek@ucsd.edu>`__.
 
 Qiita tutorials:
-----------------
+================
 
 .. toctree::
    :caption: Creating a study in Qiita
