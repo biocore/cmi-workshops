@@ -1,5 +1,3 @@
-Creating a study in Qiita
-=========================
 
 This tutorial will walk you through creation of your account and a test study
 in Qiita.
@@ -7,8 +5,8 @@ in Qiita.
 Getting CMI Workshop example data
 ---------------------------------
 
-First, we'll download some `example data <https://www.dropbox.com/sh/mfbqvkva8dw85fq/AABA2pFAIaLlcKLLUCmpZSUea?dl=0>`__. These files contain both 16S and shotgun metagenomics 
-data for 12 samples from the American Gut Project. 
+First, we'll download some `example data <https://www.dropbox.com/sh/mfbqvkva8dw85fq/AABA2pFAIaLlcKLLUCmpZSUea?dl=0>`__. These files contain both 16S and shotgun metagenomics
+data for 12 samples from the American Gut Project.
 
 For this tutorial, the relevant files are::
 
@@ -20,8 +18,11 @@ For this tutorial, the relevant files are::
 Next, we'll sign up for Qiita and create a study for these data.
 
 
+Setting up Qiita
+----------------
+
 Signing up for a Qiita account
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Open your browser (it must be Chrome or Firefox) and go to `Qiita <https://qiita.ucsd.edu>`__ (https://qiita.ucsd.edu).
 
@@ -38,11 +39,39 @@ account. Optional fields are indicated explicitly, while all other
 fields are required. Once the form is submitted, an email will be sent
 to you containing instructions on how to verify your email address.
 
+Logging into your account and resetting a forgotten password
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Once you have created your account, you can log into the system by
 entering your email and password.
 
 .. figure::  images/image03.png
-   :align:   center
+  :align:   center
+
+If you forget your password, you will need to reset it.  Click on
+“Forgot Password”.
+
+.. figure::  images/image13.png
+  :align:   center
+
+This will take you to a page on which to enter your email address; once
+you click the “Reset Password” button, the system will send you further
+instructions on how to reset your lost password.
+
+.. figure::  images/image05.png
+  :align:   center
+
+Updating your settings and changing your password
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you need to reset your password or change any general information in
+your account, click on your email at the top right corner of the menu
+bar to access the page on which you can perform these tasks.
+
+.. figure::  images/image19.png
+  :align:   center
+.. figure::  images/image10.png
+  :align:   center
 
 
 Creating a test study
@@ -145,7 +174,7 @@ with a red banner a the top of the screen.
    :align:   center
 
 If the file processes successfully, you should be able to click on the "Sample
-Information" tab and see a list of the imported metadata fields. 
+Information" tab and see a list of the imported metadata fields.
 
 .. figure::  images/sample-information-success.png
    :align:   center
@@ -153,7 +182,7 @@ Information" tab and see a list of the imported metadata fields.
 
 You can also click on "Sample Summary" to check out the different metadata
 values. Select a metadata column to visualize in the dropdown menu and click
-"Add column." 
+"Add column."
 
 .. figure::  images/sample-summary.png
    :align:   center
