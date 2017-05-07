@@ -15,13 +15,13 @@ Qiita tutorials:
 
 .. toctree::
    :caption: Creating a study in Qiita
-   :maxdepth: 1
+   :maxdepth: 2
 
    qiita-create-study
 
 .. toctree::
    :caption: Microbiome analyses
-   :maxdepth: 1
+   :maxdepth: 2
 
    qiita-16S-processing
    qiita-16S-analysis
