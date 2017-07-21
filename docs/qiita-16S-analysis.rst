@@ -1,8 +1,6 @@
 16S Microbiome Analysis in Qiita
 ================================
 
-
-
 Analysis of Closed Reference processing
 ---------------------------------------
 
@@ -53,8 +51,147 @@ description, then click "Create analysis".
 .. figure::  images/analysis-name-analysis.png
    :align:   center
 
-This brings you to the analysis commands selection page, where you can specify
-the steps in your analysis.
+
+Now that you’ve created your analysis, you’ll have a Processing network displayed:
+
+.. figure::  images/files-network-FASTQ.png
+   :align:   center
+
+This processing network may take several minutes to load. Once the workflow loads your should see a new biom artifact. Select this artifact and click "Process"
+
+Your closed reference .biom file is represented by the single object in this network, currently called dflt_name. Click on the object.
+
+Now, you’ll have a series of choices for interacting with this object. You can click “Edit” to rename the object, “Process” to perform analyses, or “Delete” to delete it. In addition, you’ll see a list of the actual files associated with this object.
+
+.. figure::  images/files-network-FASTQ-expanded.png
+   :align:   center
+
+Scroll to the bottom, and you'll also see an option to generate a summary of
+the object. 
+
+.. figure::  images/generate-summary.png
+   :align:   center
+
+If you click this button, it will be replaced with a notification that the
+summary generation has been added to the processing queue.
+
+To check on the status of the processing job, you can click the rightmost icon
+at the top of the screen:
+
+.. figure::  images/processing-icon.png
+   :align:   center
+
+This will open a dialogue that gives you information about currently running
+jobs, as well as jobs that failed with some sort of error.
+
+.. figure::  images/processing-summary.png
+   :align:   center
+
+The summary generation shouldn't take too long. When it completes, you can
+click back on the biom object and scroll to the bottom of the page
+to see a short peek at the data in each of the biom files in the object. These
+summaries can be useful for troubleshooting.
+
+.. figure::  images/FASTQ-summary.png
+   :align:   center
+
+Now, we'll process the biom table into something more interesting.
+
+
+Analyzing Closed Ref 16S data
+-----------------------------
+
+Scroll back up and click on the `biom` object, and select "Process".
+This will bring you to another network visualization interface. Here, you can
+add processing steps to your objects.
+
+Click again on the `biom` object. Below the files network, you will
+see an option to *Choose command*. Based on the type of object, this dropdown
+menu will give a you a list of available processing steps. 
+
+.. figure::  images/processing-choose-command.png
+   :align:   center
+
+There are three stages to a typical 16S analysis:
+1) pre-processing
+2) visualization
+3) statistics
+
+main paths for analyzing your biom tables, pre-processing and anmany potential routes available for analyzing biom tables:
+
+For `biom` objects, the only available command is `Split
+libraries FASTQ`. The converts the raw FASTQ data into the file format used by
+Qiita for further analysis (you can read more extensively about this file type
+`here <https://qiita.ucsd.edu/static/doc/html/tutorials/getting-started.html#preprocessing-data>`__).
+
+Select the `Split libraries FASTQ` step. Now, you will be able to select the
+specific combination of parameters to use for this step in the *Choose
+parameter set* dropdown menu. 
+
+.. figure::  images/processing-choose-parameters.png
+   :align:   center
+
+For our files, choose `per sample FASTQ defaults, phred_offset 33`. The
+specific parameter values used will be displayed below. (The other commonly
+used choice for data generated at the CMI is `golay_12, reverse complement
+mapping file barcodes, reverse complement barcodes`, which is what you will
+select if you have one set of non-demultiplexed FASTQ files (forward, reverse,
+and barcode) containing all of your samples.)
+
+Click "Add Command". 
+
+You'll see the files network update. In addition to the original grey object,
+you should now see the processing command (represented in blue) and the object
+produced from that command (also represented in grey).
+
+.. figure::  images/processing-added-demux-command.png
+   :align:   center
+
+You can click on the command to see the parameters used, or on an object to
+perform additional steps.
+
+Note that the command hasn't actually been run yet! (We'll still need to click
+"Run" at the top.) This allows us to add multiple processing steps to our study
+and then run them all together.
+
+We're going to process our sequences files using two different workflows. In
+the first, we'll use a conventional reference-based OTU picking strategy to
+cluster our 16S sequences into OTUs. This approach matches each sequence to a
+reference database, ignoring sequences that don't match the reference. In the
+second, we will use `deblur <http://msystems.asm.org/content/2/2/e00191-16>`__,
+which uses an algorithm to remove sequence error, allowing us to work with
+unique sequences instead of clustering into OTUs. Both of these approaches work
+great with Qiita, because we can compare the observations between studies
+without having to do any sort of re-clustering!
+
+
+The closed reference workflow
+-----------------------------
+
+To do closed reference OTU picking, click on the `demultiplexed` object and
+select the `Pick closed-reference OTUs` command. We will use the `default - 
+serial` parameter set for our data, which are relatively small. For a larger
+data set, we might want to use the parallel implementation.
+
+By default, Qiita uses the GreenGenes 16S reference database. You can also
+choose to use Silva, or the Unite fungal ITS database. 
+
+Click "Add Command", and you will see the network update:
+
+.. figure::  images/processing-added-closed-ref-command.png
+   :align:   center
+
+Here you can see the blue "Pick closed-reference OTUs" command added, and that
+the product of the command is a BIOM-formatted OTU table.
+
+That's it!
+
+
+
+
+
+
+
 
 .. figure::  images/analysis-select-commands.png
    :align:   center
