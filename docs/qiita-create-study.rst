@@ -5,14 +5,16 @@ in Qiita.
 Getting CMI Workshop example data
 ---------------------------------
 
-First, we'll download some `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__. These files contains 16S
-data for 12 samples from the American Gut Project.
+#TODO CHANGE LINK
+First, we'll download some `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__. This archive contains 16S
+and metabolomics data for 30 skin samples.
 
 For this tutorial, the relevant files are::
 
-    qiita-files/16S/*.fastq.gz        # The actual 16S sequences, one per sample
-    qiita-files/sample_information.txt   # The sample information file
-    qiita-files/prep_template_16S.txt # The prep information file
+#TODO CHANGE FOLDER STRUCTURE
+    qiita-files/16S/*.fastq.gz         # The actual 16S sequences, one per sample
+    qiita-files/sample_information.txt # The sample information file
+    qiita-files/prep_template_16S.txt  # The prep information file
 
 
 Next, we'll sign up for Qiita and create a study for these data.
@@ -80,12 +82,13 @@ Creating a test study
 Studies are the source of data for Qiita. Studies can contain only one set
 of samples but can contain multiple sets of raw data, each of which can have a
 different preparation -- for example, 16S, shotgun metagenomics, and
-metabolomics, or even multiple preparations of the same type (e.g., a plate rerun, biological and technical replicates, etc).
+metabolomics, or even multiple preparations of the same type
+(e.g., a plate rerun, biological and technical replicates, etc).
 
-In this tutorial, our study contains 12 samples, each with two types of data:
-16S and shotgun metagenomics. To represent this project in Qiita, you will need
+In this tutorial, our study contains 30 samples, each with two types of data:
+16S and metabolomic. To represent this project in Qiita, you will need
 to create a single study with a single sample information file that contains all
-12 samples. Then, you will link separate preparation files for each data type.
+30 samples. Then, you will link separate preparation files for each data type.
 
 Creating an example study
 -------------------------
@@ -113,9 +116,10 @@ packages will request different specific information about your samples.
 For more details, see the `publication <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3367316>`__.
 
 There is also an option to specify time series type ("Event-Based Data") if you
-have time series data. In our case, the samples come from a cross-sectional
-study design, so you should select "No time series." For more information on
-time series types, you can check out the
+have such data. In our case, the samples come from a time series
+study design, so you should select "multiple intervention, real".
+For more information on time series types, you can check out the
+#TODO THIS LINK NO LONGER EXISTS!
 `in-depth tutorial <https://qiita.ucsd.edu/static/doc/html/tutorials/getting-started.html#creating-a-study>`__
 on the Qiita website.
 
@@ -167,7 +171,7 @@ from the dropdown menu next to "Upload information" and click "Create".
    :align:   center
 
 If something is wrong with the sample information file, Qiita will let you know
-with a red banner a the top of the screen.
+with a red banner at the top of the screen.
 
 .. figure::  images/sample-information-failure.png
    :align:   center
@@ -186,9 +190,8 @@ values. Select a metadata column to visualize in the dropdown menu and click
 .. figure::  images/sample-summary.png
    :align:   center
 
-In this cohort, only three people were sensible enough to own a cat.
 
-Next, we'll add 16S data and do a preliminary analysis.
+Next, we'll add 16S raw data and process it.
 
 ----
 

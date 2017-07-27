@@ -20,10 +20,15 @@ Qiita tutorials:
    qiita-create-study
 
 .. toctree::
-   :caption: Microbiome analyses
+   :caption: Microbiome data processing
    :maxdepth: 2
 
    qiita-16S-processing
+
+.. toctree::
+   :caption: Microbiome analyses
+   :maxdepth: 2
+
    qiita-16S-analysis
 
 .. toctree::

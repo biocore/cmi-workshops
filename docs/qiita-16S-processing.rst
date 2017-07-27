@@ -57,7 +57,8 @@ Now, you can associate the sequence data from your study with this preparation.
 In the prep info dialogue, there is a dropdown menu below the words *No files
 attached to this preparation*, labeled "Select type". Click "Choose a type" to
 see a list of available file types. In our case, we've uploaded FASTQ-formatted
-files per each sample in our study, so we will choose `per_sample_FASTQ`.
+#TODO CHECK IF FASTQ NONE IS CORRECT
+file for all samples in our study, so we will choose `FASTQ - None`.
 
 .. figure::  images/select-type-per-sample-FASTQ.png
    :align:   center
@@ -67,6 +68,7 @@ corresponding samples in your preparation info. (Our prep info file has a
 column named `run_prefix`, which associated the `sample_name` with the file
 name prefix for that particular sample.)
 
+#TODO UPDATE INFO HERE
 You should see this as a list of filenames showing up in the green *raw forward
 seqs* column below the import dropdown. You'll want to give the set of these
 per-sample-FASTQ files a name (**Add a name for the file**), and then click
@@ -135,7 +137,7 @@ Now, we'll process the raw data into something more interesting.
 Processing 16S data
 -------------------
 
-Scroll back up and click on the `per_sample_FASTQ` object, and select "Process".
+Scroll back up and click on the `FASTQ` object, and select "Process".
 This will bring you to another network visualization interface. Here, you can
 add processing steps to your objects.
 
@@ -146,9 +148,10 @@ menu will give a you a list of available processing steps.
 .. figure::  images/processing-choose-command.png
    :align:   center
 
-For 16S `per_sample_FASTQ` objects, the only available command is `Split
+For 16S `FASTQ` objects, the only available command is `Split
 libraries FASTQ`. The converts the raw FASTQ data into the file format used by
 Qiita for further analysis (you can read more extensively about this file type
+#TODO THIS LINK DOES NOT EXIST ANYMORE
 `here <https://qiita.ucsd.edu/static/doc/html/tutorials/getting-started.html#preprocessing-data>`__).
 
 Select the `Split libraries FASTQ` step. Now, you will be able to select the
@@ -158,12 +161,9 @@ parameter set* dropdown menu.
 .. figure::  images/processing-choose-parameters.png
    :align:   center
 
-For our files, choose `per sample FASTQ defaults, phred_offset 33`. The
-specific parameter values used will be displayed below. (The other commonly
-used choice for data generated at the CMI is `golay_12, reverse complement
-mapping file barcodes, reverse complement barcodes`, which is what you will
-select if you have one set of non-demultiplexed FASTQ files (forward, reverse,
-and barcode) containing all of your samples.)
+For our files, choose `golay_12, reverse complement
+mapping file barcodes, reverse complement barcodes`.
+The specific parameter values used will be displayed below.
 
 Click "Add Command".
 
@@ -198,7 +198,7 @@ The closed reference workflow
 To do closed reference OTU picking, click on the `demultiplexed` object and
 select the `Pick closed-reference OTUs` command. We will use the `default -
 serial` parameter set for our data, which are relatively small. For a larger
-data set, we might want to use the parallel implementation.
+data set, we might want to use the `default - parallel` implementation.
 
 By default, Qiita uses the GreenGenes 16S reference database. You can also
 choose to use Silva, or the Unite fungal ITS database.
@@ -267,7 +267,7 @@ updates from the commands running on that object at the bottom of the page:
    :align:   center
 
 Once objects have been generated, you can generate summaries for them just
-as you did for the original `per_sample_FASTQ` object.
+as you did for the original `FASTQ` object.
 
 The summary for the `demultiplexed` object gives you information about the
 length of sequences in the object:
