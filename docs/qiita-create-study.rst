@@ -5,7 +5,7 @@ in Qiita.
 Getting CMI Workshop example data
 ---------------------------------
 
-First, we'll download some `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__. These files contain both 16S and shotgun metagenomics
+First, we'll download some `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__. These files contains 16S
 data for 12 samples from the American Gut Project.
 
 For this tutorial, the relevant files are::
@@ -110,8 +110,7 @@ list, you can choose to add a new one.
 
 Select the environmental package appropriate to your study. Different
 packages will request different specific information about your samples.
-This information is optional; for more details, see the metadata
-section.
+For more details, see the `publication <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3367316>`__.
 
 There is also an option to specify time series type ("Event-Based Data") if you
 have time series data. In our case, the samples come from a cross-sectional

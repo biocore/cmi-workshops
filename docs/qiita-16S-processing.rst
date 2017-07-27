@@ -16,11 +16,11 @@ gene sequencing and shotgun metagenomics -- you can have multiple prep info
 files in a single study, associating your samples with each of these data types.
 You can learn more about prep info files at the `Qiita documentation <https://qiita.ucsd.edu/static/doc/html/tutorials/prepare-information-files.html#prep-information-file>`__.
 
-Go back to the "Upload Files" interface. In the `example data <https://www.dropbox.com/sh/mfbqvkva8dw85fq/AABA2pFAIaLlcKLLUCmpZSUea?dl=0>`__, find and upload the
+Go back to the "Upload Files" interface. In the `example data <https://www.dropbox.com/sh/mfbqvkva8dw85fq/AABA2pFAIaLlcKLLUCmpZSUea?dl=0>`__, find and upload the FASTQ
 files in the `16S` folder and the file called `prep_information_16S.txt`.
 
-Now you can click the "Add New Preparation" button. This will bring up the
-following dialogue: 
+Go to study description. Now you can click the "Add New Preparation" button. This will bring up the
+following dialogue:
 
 .. figure::  images/add-prep-info.png
    :align:   center
@@ -50,7 +50,7 @@ that have been associated with this study:
 
 If you have multiple 16S preparations (for example, if you sequenced using
 several different primer sets), these would each show up as a separate entry
-here. 
+here.
 
 Now, you can associate the sequence data from your study with this preparation.
 
@@ -65,12 +65,12 @@ files per each sample in our study, so we will choose `per_sample_FASTQ`.
 *Magically*, this will prompt Qiita to associate your uploaded files with the
 corresponding samples in your preparation info. (Our prep info file has a
 column named `run_prefix`, which associated the `sample_name` with the file
-name prefix for that particular sample.) 
+name prefix for that particular sample.)
 
 You should see this as a list of filenames showing up in the green *raw forward
 seqs* column below the import dropdown. You'll want to give the set of these
 per-sample-FASTQ files a name (**Add a name for the file**), and then click
-"Add files" below. 
+"Add files" below.
 
 .. figure::  images/fastq-verify-top.png
    :align:   center
@@ -78,13 +78,13 @@ per-sample-FASTQ files a name (**Add a name for the file**), and then click
 .. figure::  images/fastq-verify-bottom.png
    :align:   center
 
-That's it! Your data are ready for processing. 
+That's it! Your data are ready for processing.
 
 
 Exploring the raw data
 ----------------------
 
-Click back through on your 16S preparation. Now that you've associated sequence
+Click on the 16S menu on the left. Now that you've associated sequence
 files with this prep, you'll have a `Files network` displayed:
 
 .. figure::  images/files-network-FASTQ.png
@@ -101,7 +101,7 @@ to delete it. In addition, you'll see a list of the actual files associated with
    :align:   center
 
 Scroll to the bottom, and you'll also see an option to generate a summary of
-the object. 
+the object.
 
 .. figure::  images/generate-summary.png
    :align:   center
@@ -141,7 +141,7 @@ add processing steps to your objects.
 
 Click again on the `per_sample_FASTQ` object. Below the files network, you will
 see an option to *Choose command*. Based on the type of object, this dropdown
-menu will give a you a list of available processing steps. 
+menu will give a you a list of available processing steps.
 
 .. figure::  images/processing-choose-command.png
    :align:   center
@@ -153,7 +153,7 @@ Qiita for further analysis (you can read more extensively about this file type
 
 Select the `Split libraries FASTQ` step. Now, you will be able to select the
 specific combination of parameters to use for this step in the *Choose
-parameter set* dropdown menu. 
+parameter set* dropdown menu.
 
 .. figure::  images/processing-choose-parameters.png
    :align:   center
@@ -165,7 +165,7 @@ mapping file barcodes, reverse complement barcodes`, which is what you will
 select if you have one set of non-demultiplexed FASTQ files (forward, reverse,
 and barcode) containing all of your samples.)
 
-Click "Add Command". 
+Click "Add Command".
 
 You'll see the files network update. In addition to the original grey object,
 you should now see the processing command (represented in blue) and the object
@@ -196,12 +196,12 @@ The closed reference workflow
 -----------------------------
 
 To do closed reference OTU picking, click on the `demultiplexed` object and
-select the `Pick closed-reference OTUs` command. We will use the `default - 
+select the `Pick closed-reference OTUs` command. We will use the `default -
 serial` parameter set for our data, which are relatively small. For a larger
 data set, we might want to use the parallel implementation.
 
 By default, Qiita uses the GreenGenes 16S reference database. You can also
-choose to use Silva, or the Unite fungal ITS database. 
+choose to use Silva, or the Unite fungal ITS database.
 
 Click "Add Command", and you will see the network update:
 
@@ -258,7 +258,7 @@ Click "Run" at the top of the screen, and Qiita will start executing all of
 these jobs. You'll see a "Workflow submitted" banner at the top of your window.
 
 As noted above, you can follow the process of your commands in the dialogue at
-the top right of the window. 
+the top right of the window.
 
 You can also click on the objects in the prep info file network, and see status
 updates from the commands running on that object at the bottom of the page:
