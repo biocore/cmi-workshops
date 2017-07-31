@@ -36,7 +36,9 @@ Marker gene sequencing, also known as amplicon sequencing, is a technique that i
 	> see also: Amplicon, 16s rRNA gene, Shotgun Sequencing, qPCR, HMP
 
 [”Marker genes that are less conserved in their sequences are useful for predicting genome-wide similarity levels between closely related prokaryotic strains”](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-016-0162-5)
+
 [“How to sequence the human genome - Mark J. Kiel”](https://www.youtube.com/watch?v=MvuYATh7Y74)
+
 [“Next-generation Sequencing of 16S Ribosomal RNA Gene Amplicons”](https://www.jove.com/video/51709/next-generation-sequencing-of-16s-ribosomal-rna-gene-amplicons)
 
 ## | Firmicutes | 
@@ -108,6 +110,7 @@ The Human Microbiome Project (HMP) is “an interdisciplinary effort funded by t
 > see also: OTU, Alpha Diversity, Beta Diversity, Metadata
 
 (1)[”NIH Human Microbiome Project”](http://www.hmpdacc.org/overview/about.php)
+
 [“Structure, Function and diversity of the healthy human microbiome”](https://www.nature.com/nature/journal/v486/n7402/full/nature11234.html)
 
 # Intermediate Concepts
@@ -145,7 +148,9 @@ Mass spectrometry is a technique that ionizes atoms or molecules in a sample and
 
 Shotgun sequencing is a DNA sequencing technique in which all the DNA molecules in a sample are sequenced. In this way, scientists can study not only the microbial communities, but also the functional genes that are present in a sample. Shotgun sequencing differs from whole genome sequencing (sometimes referred to as whole genome shotgun sequencing) because the latter analyzes the entire genome of only one isolated bacterial species in the sample. However, they use similar mechanisms in that both WGS and Shotgun sequencing uses enzymes to cut the DNA molecule into fragments that are more easily and efficiently amplified and analyzed. 
 > see also: DNA sequencing, Marker gene sequencing, Illumina sequencing, qPCR
+
 [“Basics of High Throughput DNA Sequencing”]( https://www.youtube.com/watch?v=JD3UJYkxdQs)
+
 [“Demo Tour of the Knight Lab”](https://www.coursera.org/learn/microbiome/lecture/uIYyi/demo-tour-of-the-knight-lab)
 
 ## | qPCR | 
@@ -169,6 +174,7 @@ Unifrac is a phylogenetic distance metric that compares multiple sample communit
 > see also: Beta Diversity, Alpha Diversity, Statistical Testings, Biom format, QIIME
 
 [“UniFrac: a New Phylogenetic Method for Comparing Microbial Communities”](http://aem.asm.org/content/71/12/8228.full)
+
 [“UniFrac – An online tool for comparing microbial community diversity in a phylogenetic context”](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1564154/)
 
 ## | Biom format | 
@@ -176,6 +182,7 @@ Biom format is a table that records the counts of OTUs for each bacteria in each
 > see also: OTU, sOTU, Unifrac, QIIME, Principal Coordinates Analysis
 
 [GitHub Biocore|Biom Format](https://github.com/biocore/biom-format)
+
 [Biom format official website](http://biom-format.org)
 
 ## | QIIME | 
@@ -185,8 +192,11 @@ gene sequencing, Demultiplexing, Biom format, Unifrac, Alpha
 Diversity, Beta Diversity, DNA sequencing
 
 [QIIME 1.0 version website](http://qiime.org)
+
 [QIIME 2 version website] (https://docs.qiime2.org/2017.5/concepts/)
+
 [Official Repository for the QIIME 2 database] (https://github.com/qiime2/qiime2)
+
 [“Advancing our understanding of the human microbiome using QIIME”] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4517945/)
 
 # Advanced Concepts
@@ -201,6 +211,7 @@ OTU picking is a high level strategy for defining OTU clusters, or groups of bac
 > see also: OTU, sOTU, DNA sequencing
 
 [“Subsampled open-reference clustering creates consistent, comprehensive OTU definitions and scales to billions of sequences”](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4145071/)
+
 (1)[“Microbiome Discovery 5: Picking OTUs”](https://www.youtube.com/watch?v=Ok5h24KZbAE)
 
 ## | sOTU |
