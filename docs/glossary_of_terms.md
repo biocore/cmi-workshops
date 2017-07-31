@@ -193,11 +193,11 @@ Diversity, Beta Diversity, DNA sequencing
 
 [QIIME 1.0 version website](http://qiime.org)
 
-[QIIME 2 version website] (https://docs.qiime2.org/2017.5/concepts/)
+[QIIME 2 version website](https://docs.qiime2.org/2017.5/concepts/)
 
-[Official Repository for the QIIME 2 database] (https://github.com/qiime2/qiime2)
+[Official Repository for the QIIME 2 database](https://github.com/qiime2/qiime2)
 
-[“Advancing our understanding of the human microbiome using QIIME”] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4517945/)
+[“Advancing our understanding of the human microbiome using QIIME”](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4517945/)
 
 # Advanced Concepts
 ## | Hypervariable region | 
