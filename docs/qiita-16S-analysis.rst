@@ -9,7 +9,7 @@ Analysis of Closed Reference processing
 To create an analysis, select "Create new analysis" from the top menu.
 
 This will take you to a list of studies with samples available to you for
-analysis, divided between your studies and publically available ('Other')
+analysis, divided between your studies and publically available ("Other")
 studies.
 
 .. figure::  images/analysis_studies_page.png
@@ -112,10 +112,11 @@ The taxa barplot will appear below the processing network.The taxa plots offers 
 .. figure::  images/taxa_barplot.png
    :align:   center
 
-The Taxonomic Level pulldown allows you to view the taxa within your samples at different specificities. There are 7 level options: 1- Kingdom, 2- Phylum, 3- Class, 4- Order, 5- Genus, 6- Species, 7- Subspecies. 
+The "Taxonomic Level" pulldown allows you to view the taxa within your samples at different specificities. There are 7 level options: 1- Kingdom, 2- Phylum, 3- Class, 4- Order, 5- Genus, 6- Species, 7- Subspecies. 
 
-The Color Palette pulldown allows you to change the coloring of your taxa barplot. You can select through “Discrete” palettes in which each taxa is a different color or “Continuous” palettes in which each taxa is a different shade of one color.
-The Sort Sample By pulldowns allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order. 
+The "Color Palette" pulldown allows you to change the coloring of your taxa barplot. You can select through “Discrete” palettes in which each taxa is a different color or “Continuous” palettes in which each taxa is a different shade of one color.
+
+The "Sort Sample By" pulldowns allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order. 
 
 Alpha Diversity Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -244,7 +245,7 @@ Analysis of Deblur Process
 
 Creating an analysis of your deblurred data is virtually the same as the process for the Closed Reference data, but there are a few quirks.
 
-First, because the deblur process creates two separate BIOM tables, you’ll want to make a note of the specific object ID number for the artifact you want to use. In my case, that’s ID 26017, the deblurred table with ‘only-16s’ reads.
+First, because the deblur process creates two separate BIOM tables, you’ll want to make a note of the specific object ID number for the artifact you want to use. In my case, that’s ID 26017, the deblurred table with "only-16S" reads.
 
 .. figure::  images/deblur.png
    :align:   center
