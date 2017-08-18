@@ -6,7 +6,7 @@
 Analysis of Closed Reference processing
 ---------------------------------------
 
-To create an analysis, select `Create new analysis` from the top menu.
+To create an analysis, select "Create new analysis" from the top menu.
 
 This will take you to a list of studies with samples available to you for
 analysis, divided between your studies and publically available ('Other')
@@ -43,7 +43,7 @@ You could optionally exclude particular samples from this set by clicking on
 not affect the underlying files an any way.)
 
 This should be good for now. Click the "Create Analysis" button, enter a name and
-description, then click "Create analysis".
+description, then click "Create Analysis".
 
 .. figure::  images/create_analysis_button.png
    :align:   center
@@ -70,12 +70,12 @@ To start, the data must be rarefied. This means that all the samples in the anal
 
 An appropriate cutoff would exclude clear outliers, but retain most of the samples. Here we have already removed blanks from our data and eliminated the outliers prior to analysis so we will just use the minimum number of features observed in our samples (11030) as the cutoff.
 
-To rarefy the data, select Rarefy from the dropdown menu. The parameters will appear below the workflow diagram:
+To rarefy the data, select "Rarefy" from the dropdown menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/rarify_parameter_without_number.png
    :align:   center
 
-Several parameter have only one option and were thus automatically selected for you. In the ‘p-sampling-depth’ field we will specify the number of features to rarefy our samples to. Enter 11030 in this box, and click ‘Add Command’. Once the command is added the workflow should appear as follows:
+Several parameter have only one option and were thus automatically selected for you. In the "p-sampling-depth" field we will specify the number of features to rarefy our samples to. Enter 11030 in this box, and click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/rarify_parameter_with_sampling_depth.png
    :align:   center
@@ -92,12 +92,12 @@ Generating Taxa Bar Plots
 
 When creating a closed reference biom table, each sequence is matched to the Green Genes database with 97% accuracy, and assigned a taxonomy (See this section for a refresher on '16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample. When using ‘Deblurred’ data, there is no taxa assignment since features are kept as individual error-corrected sequences, so you can skip to the next section “Alpha Diversity Analysis."
 
-To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click Process. The same processing view we saw previously now appears, so click on ‘taxa_barplot’ from the dropdown menu to arrive at the following view:
+To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click Process. The same processing view we saw previously now appears, so click on "taxa_barplot" from the dropdown menu to arrive at the following view:
 
 .. figure::  images/taxa_barplot_parameter.png
    :align:   center
 
-All of the parameters for this command are fixed so simply click ‘Add Comand’ to continue. Once the command is added the workflow will appear:
+All of the parameters for this command are fixed so simply click "Add Comand" to continue. Once the command is added the workflow will appear:
 
 .. figure::  images/taxa_barplot_run.png
    :align:   center
@@ -107,7 +107,7 @@ Click the run button to start the process. The view will return to the original 
 .. figure::  images/taxa_barplot_workflow.png
    :align:   center
 
-The taxa barplot will appear below the processing network.The taxa plots offers visualization of the makeup of each sample. Each color will represent a different taxa and each column a different sample. It will have 4 pulldown menus: Taxonomic Level, Color Palette, and 2 Sort Samples By options
+The taxa barplot will appear below the processing network.The taxa plots offers visualization of the makeup of each sample. Each color will represent a different taxa and each column a different sample. It will have 4 pulldown menus: "Taxonomic Level," "Color Palette," and 2 "Sort Samples By" options.
 
 .. figure::  images/taxa_barplot.png
    :align:   center
@@ -224,7 +224,7 @@ Clicking on the pcoa (Principal Coordinate Analysis) results will open an intera
 .. figure::  images/pcoa.png
    :align:   center
 
-Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the Emperor tutorial and follow along with your test data.
+Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the 'Emperor tutorial <https://biocore.github.io/emperor/tutorial_index.html#section1>'__ and follow along with your test data.
 
 Altering Workflow Analysis Names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -265,7 +265,7 @@ Creating a meta-analysis is just like creating an analysis, except you choose da
 
 Next, we’ll look for some additional data to compare against.
 
-You noticed the ‘Other Studies’ table below ‘Your Studies’ when adding data to the analysis. (Sometimes this takes a while to load - give it a few minutes.) These are publicly available data for you to explore, and each should have processed data suitable for comparison to your own.
+You noticed the "Other Studies" table below "Your Studies" when adding data to the analysis. (Sometimes this takes a while to load - give it a few minutes.) These are publicly available data for you to explore, and each should have processed data suitable for comparison to your own.
 
 There are a couple tools provided to help you find useful public studies.
 
