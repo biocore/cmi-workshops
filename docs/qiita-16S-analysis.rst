@@ -290,7 +290,7 @@ Add the closed reference OTU table from this study to your analysis. You should 
 
 You can now click “Create Analysis” just as before to begin specifying analysis steps. This time, let’s just do the beta diversity step. Select the Beta Diversity command, enter a rarefaction depth of 11030, and click “Start Processing”.
 
-.. figure::  images/sample_comparison.png
+.. figure::  images/sample_comparisons.png
    :align:   center
 
 Because you’ve now expanded the number of samples in your analysis by more than an order of magnitude, this step will take a little longer to complete. But when it does, you will be able to use Emperor to explore the samples in your test dataset to samples from around the world!
