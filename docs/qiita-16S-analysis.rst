@@ -90,7 +90,7 @@ This results page will have sections indication which samples were dropped due t
 Generating Taxa Bar Plots
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When creating a closed reference biom table, each sequence is matched to the Green Genes database with 97% accuracy, and assigned a taxonomy (See this section for a refresher on 16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample. When using ‘Deblurred’ data, there is no taxa assignment since features are kept as individual error-corrected sequences, so you can skip to the next section “Alpha Diversity Analysis”.
+When creating a closed reference biom table, each sequence is matched to the Green Genes database with 97% accuracy, and assigned a taxonomy (See this section for a refresher on '16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample. When using ‘Deblurred’ data, there is no taxa assignment since features are kept as individual error-corrected sequences, so you can skip to the next section “Alpha Diversity Analysis."
 
 To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click Process. The same processing view we saw previously now appears, so click on ‘taxa_barplot’ from the dropdown menu to arrive at the following view:
 
@@ -281,7 +281,7 @@ Second, there is a search field that allows you to filter studies in real time. 
 .. figure::  images/filter_results_for_meta_analysis.png
    :align:   center
 
-Let’s try comparing our data to the “Global Gut” dataset of human microbiomes from the US, Africa, and South America from the study “Human gut microbiome viewed across age and geography” by Yatsunenko et al <http://www.nature.com/nature/journal/v486/n7402/abs/nature11053.html>`__. We can search for this dataset using the DOI from the paper: 10.1038/nature11053.
+Let’s try comparing our data to the “Global Gut” dataset of human microbiomes from the US, Africa, and South America from the study '“Human gut microbiome viewed across age and geography” by Yatsunenko et al <http://www.nature.com/nature/journal/v486/n7402/abs/nature11053.html>`__. We can search for this dataset using the DOI from the paper: 10.1038/nature11053.
 
 .. figure::  images/data_comparison.png
    :align:   center
