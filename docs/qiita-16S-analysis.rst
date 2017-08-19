@@ -107,16 +107,16 @@ Click the run button to start the process. The view will return to the original 
 .. figure::  images/taxa_barplot_workflow.png
    :align:   center
 
-The taxa barplot will appear below the processing network.The taxa plots offers visualization of the makeup of each sample. Each color will represent a different taxa and each column a different sample. It will have 4 pulldown menus: "Taxonomic Level," "Color Palette," and 2 "Sort Samples By" options.
+The taxa barplot will appear below the processing network.The taxa plots offers visualization of the makeup of each sample. Each color will represent a different taxa and each column a different sample. It will have 4 pull-down menus: "Taxonomic Level," "Color Palette," and 2 "Sort Samples By" options.
 
 .. figure::  images/taxa_barplot.png
    :align:   center
 
-The "Taxonomic Level" pulldown allows you to view the taxa within your samples at different specificities. There are 7 level options: 1- Kingdom, 2- Phylum, 3- Class, 4- Order, 5- Genus, 6- Species, 7- Subspecies. 
+The "Taxonomic Level" pull-down allows you to view the taxa within your samples at different specificities. There are 7 level options: 1- Kingdom, 2- Phylum, 3- Class, 4- Order, 5- Genus, 6- Species, 7- Subspecies. 
 
-The "Color Palette" pulldown allows you to change the coloring of your taxa barplot. You can select through “Discrete” palettes in which each taxa is a different color or “Continuous” palettes in which each taxa is a different shade of one color.
+The "Color Palette" pull-down allows you to change the coloring of your taxa barplot. You can select through “Discrete” palettes in which each taxa is a different color or “Continuous” palettes in which each taxa is a different shade of one color.
 
-The "Sort Sample By" pulldowns allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order. 
+The "Sort Sample By" pull-downs allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order. 
 
 Alpha Diversity Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -162,7 +162,7 @@ If you run Alpha Rarefaction, you will have an interactive diversity boxplot tha
 .. figure::  images/alpha_diversity_boxplot.png
    :align:   center
 
-To change the category, choose the category pulldown menu and choose the metadata category you would like to analyze:
+To change the category, choose the category pull-down menu and choose the metadata category you would like to analyze:
 
 .. figure::  images/alpha_diversity_categories.png
    :align:   center
