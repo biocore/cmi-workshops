@@ -231,7 +231,57 @@ Once the command is added the workflow will look like:
 .. figure::  images/filtered_unweighted_workflow.png
    :align:   center
 
-Clicking on the pcoa (Principal Coordinate Analysis) results will open an interactive visualization of the similarity among your samples. Generally speaking, the more similar the samples, the closer the are likely to be in the PCoA ordination. The Emperor visualization program offers a very useful way to explore how patterns of similarity in your data associate with different metadata categories. Here, I’ve colored the points in our test data by cat ownership.
+Clicking on the pcoa (Principal Coordinate Analysis) results will open an interactive visualization of the similarity among your samples. Generally speaking, the more similar the samples, the closer the are likely to be in the PCoA ordination. The Emperor visualization program offers a very useful way to explore how patterns of similarity in your data associate with different metadata categories.
+
+Once the Emperor visualization program loads, the PCoA result will look like: 
+
+.. figure::  images/full_pcoa.png
+   :align:   center
+
+You will see tabs including "Color", "Visibility", "Shape", "Axes", and "Scale"
+
+Under "Color" you will notice two pull-down menus:
+
+.. figure::  images/color_tab.png
+   :align:   center
+ 
+Under "Select a Color Category" you can select how the samples will be grouped. Under "Classic QIIME Colors", you can select how each group will be colored.
+
+Under the "Visibility" tab you will notice 1 pull-down menu:
+
+.. figure::  images/color_tab.png
+   :align:   center
+ 
+Under "Select a Visibility Category" you can select which group will be displayed on the PCoA plot.
+
+Under the "Shape" tab you will notice 1 pull-down menu:
+
+.. figure::  images/shape_tab.png
+   :align:   center
+
+Under "Select a Shape Category" you can alter the shape of each group on the PCoA plot to the following:
+
+.. figure::  images/shape_options.png
+   :align:   center
+
+Under the "Axis" tab you will notice 5 pull-down menus:
+
+.. figure::  images/axis_tab.png
+   :align:   center
+
+The first 3 pull-down menus located under "Visible" allow you to change the axis that are being displayed.
+The "Axis and Labels Color" pull-down menu allow you to change the color of your axis and label of the PCoA.
+The "Background Color" pull-down menu allows you to change the color of the background of the PCoA.
+The % Variantion Expanded graph displays how different the most dissimilar samples are by percentage for each axis that can be used. 
+
+Under the "Scale" tab you will notice 2 pull-down menus:
+
+.. figure::  images/scale_tab.png
+   :align:   center
+
+Under "Select a Scale Category" you can choose the grouping of your samples. Under "Global Scaling" you can change the point size for each group on the PCoA plot. 
+
+Here, I’ve colored the points in our test data by cat ownership.
 
 .. figure::  images/pcoa.png
    :align:   center
@@ -240,14 +290,14 @@ Let’s take a few minutes now to explore the various features of Emperor. Open 
 
 Another way to study the beta diversity is by measuring the beta diversity group significance. Beta diversity group significance measures whether groups of samples are significantly different from one another using a permutation-based statistical test.
 
-To create an unweighted beta analysis principal coordinate plot, set the command as the following: 
+To create the unweighted beta analysis, set the command as the following: 
 
 .. figure::  images/beta_group_significance_beta.png
    :align:   center
 
 To create the beta group significance analysis, set the command as the following:
 
-.. figure::  images/significance_matrixa.png
+.. figure::  images/significance_matrix.png
    :align:   center
 
 Once the command is added the workflow will look like:
@@ -260,7 +310,7 @@ The results will be displayed as beta diversity box plots:
 .. figure::  images/beta_significance_boxplot.png
    :align:   center
 
-The permanova analysis results will also be displayed: 
+The PERMANOVA (Permutational multivariate analysis of variance) results will also be displayed:
 
 .. figure::  images/permanova_results.png
    :align:   center
