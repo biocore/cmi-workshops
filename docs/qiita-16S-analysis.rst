@@ -162,7 +162,7 @@ If you run Alpha Rarefaction, you will have an interactive diversity boxplot tha
 .. figure::  images/alpha_diversity_boxplot.png
    :align:   center
 
-To change the category, choose the category pull-down menu and choose the metadata category you would like to analyze:
+To change the category, choose the "Category" pull-down menu and choose the metadata category you would like to analyze:
 
 .. figure::  images/alpha_diversity_categories.png
    :align:   center
