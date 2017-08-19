@@ -111,7 +111,7 @@ Click the run button to start the process of rarefaction. The view will return t
 
 This results page will have sections indication which samples were dropped due to insufficient numbers of reads, as well as sections for each data type. Once the data is rarefied, we can begin analyzing the data.
 
-Generating Taxa Bar Plots
+Taxa Bar Plots
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When creating a closed reference biom table, each sequence is matched to the Green Genes database with 97% accuracy, and assigned a taxonomy (See this section for a refresher on '16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample. When using ‘Deblurred’ data, there is no taxa assignment since features are kept as individual error-corrected sequences, so you can skip to the next section “Alpha Diversity Analysis."
@@ -201,7 +201,21 @@ Once the command is added, the workflow will look like:
    :align:   center
 
 
-If you run Alpha Rarefaction, you will have a link to interactive plots that can be used to show how different measures of alpha diversity correlate with different metadata categories. 
+If you run Alpha Rarefaction, you will have an interactive diversity boxplot that can be used to show how different measures of alpha diversity correlate with different metadata categories:
+
+
+.. figure::  images/alpha_diversity_boxplot.png
+   :align:   center
+
+To change the category, choose the category pulldown menu and choose the metadata category you would like to analyze:
+
+.. figure::  images/alpha_diversity_categories.png
+   :align:   center
+
+You will also be given the outcomes to Kruskal-Wallis tests:
+
+.. figure::  images/Kruskal_Wallis.png
+   :align:   center
 
 Beta Diversity Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~
