@@ -307,6 +307,8 @@ Clicking on the pcoa (Principal Coordinate Analysis) results will open an intera
 
 Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the 'Emperor tutorial <https://biocore.github.io/emperor/tutorial_index.html#section1>'__ and follow along with your test data.
 
+Another way to study the beta diversity is by measuring the beta diversity group significance. Beta diversity group significance measures whether groups of samples are significantly different from one another using a permutation-based statistical test.
+
 Altering Workflow Analysis Names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
