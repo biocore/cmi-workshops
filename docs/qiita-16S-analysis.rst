@@ -235,7 +235,7 @@ Clicking on the pcoa (Principal Coordinate Analysis) results will open an intera
 
 Once the Emperor visualization program loads, the PCoA result will look like: 
 
-.. figure::  images/full_pcoa.png
+.. figure::  images/full_pcoa_png
    :align:   center
 
 You will see tabs including "Color", "Visibility", "Shape", "Axes", and "Scale"
