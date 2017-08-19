@@ -235,7 +235,7 @@ Clicking on the pcoa (Principal Coordinate Analysis) results will open an intera
 
 Once the Emperor visualization program loads, the PCoA result will look like: 
 
-.. figure::  images/full_pcoa_png
+.. figure::  images/full_pcoa.png
    :align:   center
 
 You will see tabs including "Color", "Visibility", "Shape", "Axes", and "Scale"
@@ -249,7 +249,7 @@ Under "Select a Color Category" you can select how the samples will be grouped. 
 
 Under the "Visibility" tab you will notice 1 pull-down menu:
 
-.. figure::  images/color_tab.png
+.. figure::  images/visibility_tab.png
    :align:   center
  
 Under "Select a Visibility Category" you can select which group will be displayed on the PCoA plot.
