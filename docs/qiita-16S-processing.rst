@@ -57,7 +57,6 @@ Now, you can associate the sequence data from your study with this preparation.
 In the prep info dialogue, there is a dropdown menu below the words *No files
 attached to this preparation*, labeled "Select type". Click "Choose a type" to
 see a list of available file types. In our case, we've uploaded FASTQ-formatted
-#TODO CHECK IF FASTQ NONE IS CORRECT
 file for all samples in our study, so we will choose `FASTQ - None`.
 
 .. figure::  images/select-type-per-sample-FASTQ.png
@@ -69,9 +68,10 @@ column named `run_prefix`, which associated the `sample_name` with the file
 name prefix for that particular sample.)
 
 #TODO UPDATE INFO HERE
-You should see this as a list of filenames showing up in the green *raw forward
-seqs* column below the import dropdown. You'll want to give the set of these
-per-sample-FASTQ files a name (**Add a name for the file**), and then click
+You should see this as filenames showing up in the green: *raw barcodes* (file with *I1* in its name),
+*raw forward seqs* (*R1* in name) and *raw reverse seqs* (*R2* in name) columns 
+below the import dropdown. You'll want to give the set of these
+FASTQ files a name (**Add a name for the file**), and then click
 "Add files" below.
 
 .. figure::  images/fastq-verify-top.png
@@ -118,13 +118,14 @@ at the top of the screen:
    :align:   center
 
 This will open a dialogue that gives you information about currently running
-jobs, as well as jobs that failed with some sort of error.
+jobs, as well as jobs that failed with some sort of error. *Please note*, this dialogue keeps the entire
+history of errors that Qiita encountered for your jobs, so take notice of dates and times in the `Hartbeat` column.
 
 .. figure::  images/processing-summary.png
    :align:   center
 
 The summary generation shouldn't take too long. When it completes, you can
-click back on the per_sample_FASTQ object and scroll to the bottom of the page
+click back on the FASTQ object and scroll to the bottom of the page
 to see a short peek at the data in each of the FASTQ files in the object. These
 summaries can be useful for troubleshooting.
 
@@ -141,7 +142,7 @@ Scroll back up and click on the `FASTQ` object, and select "Process".
 This will bring you to another network visualization interface. Here, you can
 add processing steps to your objects.
 
-Click again on the `per_sample_FASTQ` object. Below the files network, you will
+Click again on the `FASTQ` object. Below the files network, you will
 see an option to *Choose command*. Based on the type of object, this dropdown
 menu will give a you a list of available processing steps.
 
@@ -164,6 +165,7 @@ parameter set* dropdown menu.
 For our files, choose `golay_12, reverse complement
 mapping file barcodes, reverse complement barcodes`.
 The specific parameter values used will be displayed below.
+**For most raw data coming out of the Knigh Lab you will use the same setting.**
 
 Click "Add Command".
 
