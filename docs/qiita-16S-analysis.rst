@@ -53,7 +53,7 @@ This brings you to the processing network page, where, once pulling down the “
 .. figure::  images/processing_network_photo.png
    :align:   center
 
-Before we process the data, let's have a look at hte summary of the contents of the biome file. To create this summary, select the BIOM artifact and press the generate summary button. 
+Before we process the data, let's have a look at the summary of the contents of the biome file. To create this summary, select the BIOM artifact and press the generate summary button. 
 
 .. figure::  images/generate_summary.png
    :align:   center
