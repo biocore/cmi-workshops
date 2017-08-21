@@ -48,9 +48,14 @@ description, then click "Create Analysis".
 .. figure::  images/create_analysis_button.png
    :align:   center
 
-This brings you to the processing network page, where, once pulling down the “Processing Network” tab, you can analyze data that has been run.
+This brings you to the processing network page, where, once pulling down the “Processing Network” tab, you can analyze data that has been run. This may take 2 to 5 minutes to load. 
 
 .. figure::  images/processing_network_photo.png
+   :align:   center
+
+Before we process the data, let's have a look at hte summary of the contents of the biome file. To create this summary, select hte biome artifact and press the generate summary button. 
+
+.. figure::  images/generate_summary.png
    :align:   center
 
 To process the data, let’s go ahead and select “Process” which will take us to the commands selection page. Once there, select “dflt_name - BIOM” so that the commands pull down tab can be accessed which will initially display five actions. 
