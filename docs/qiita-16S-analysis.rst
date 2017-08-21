@@ -138,7 +138,7 @@ Several parameter have automatically selected for you. In the "p-metric" field w
 .. figure::  images/observed_OTU_workflow.png
    :align:   center
 
-Click the run button to start the process of alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
+Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
 
 Another type of alpha diversity analysis is the Shannon diversity index. This analyzes the amount of taxa per the total amount of taxa. It takes into account both diversity as well as abundance.  
 
@@ -152,7 +152,7 @@ Several parameter have automatically selected for you. In the "p-metric" field e
 .. figure::  images/shannon_diversity_workflow.png
    :align:   center
 
-Click the run button to start the process of alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
+Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
 
 The final alpha diversity analysis is Faith’s phylogenetic diversity index. This index also measured abundance and diversity but displays it in tree form rather than in a plot.
 
@@ -166,9 +166,9 @@ Several parameter have automatically selected for you. In the "p-metric" field e
 .. figure::  images/faith_pd_workflow.png
    :align:   center
 
-Click the run button to start the process of alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
+Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
 
-If you run Alpha Rarefaction, you will have an interactive diversity boxplot that can be used to show how different measures of alpha diversity correlate with different metadata categories:
+If you run Alpha Rarefaction, you will have an interactive diversity boxplot that shows how different measures of alpha diversity correlate with different metadata categories:
 
 .. figure::  images/alpha_diversity_boxplot.png
    :align:   center
@@ -188,59 +188,73 @@ Beta Diversity Analysis
 
 Finally, one can measure beta diversity. Beta diversity measures the diversity between samples rather than within. This is used to compare samples to one another. One way to analyze this is through Bray-Curtis dissimilarity. This quantifies how dissimilar samples are to one another. 
 
-To begin the beta analysis, set the command as the following: 
+To create a Bray-Curtis diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/bray_curtis_beta_diversity.png
    :align:   center
 
-Then to create a Bray-Curtis dissimilarity principal coordinate plot, set the command as the following:
+Several parameter have automatically selected for you. In the "p-metric" field we will specify the beta diversity analysis to run. Enter braycurtis in this box, and click "Add Command".
+
+To create a Bray-Curtis dissimilarity principal coordinate plot, select select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/bray_curtis_pcoa.png
    :align:   center
 
-Once the command is added the workflow will look like: 
+All of the parameter have automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/bray_curtis_workflow.png
    :align:   center
 
+Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
+
 Another tool for measuring beta diversity is unweighted analysis. Unweighted beta analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample. 
 
-To begin the beta analysis, set the command as the following: 
+To create a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/unweighted_beta_diversity.png
    :align:   center
+   
+Several parameter have automatically selected for you. In the "p-metric" field enter unweighted Unifrac and in the "i-tree" field enter/databases/gg/13_8/trees/97_otus.tree, and click "Add Command". 
 
-To create an unweighted beta analysis principal coordinate plot, set the command as the following:
+To create an unweighted beta analysis principal coordinate plot, select select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/unweighted_pcoa.png
    :align:   center
 
-Once the command is added the workflow will look like:
+All of the parameter have automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/unweighted_workflow.png
    :align:   center
 
+Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
+
 A final way to analyze the beta diversity is through filtered unweighted analysis. This allows you to filter out samples. 
 
-To create an unweighted beta analysis principal coordinate plot, set the command as the following: 
+To filter the data, select select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/filtered_unweighted_filtering.png
    :align:   center
 
-To create the beta analysis, set the command as the following:
+Several parameter have automatically selected for you. In the "p-where" field enter "Volunteer 3", and click "Add Command". 
+
+To create a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/filtered_unweighted_beta.png
    :align:   center
 
-To create the filtered unweighted beta analysis principal coordinate plot, set the command as the following:
+Several parameter have automatically selected for you. In the "p-metric" field enter unweighted Unifrac and in the "i-tree" field enter/databases/gg/13_8/trees/97_otus.tree, and click "Add Command". 
+
+To create an unweighted beta analysis principal coordinate plot, select select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/filtered_unweighted_pcoa.png
    :align:   center
 
-Once the command is added the workflow will look like:
+All of the parameter have automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/filtered_unweighted_workflow.png
    :align:   center
+
+Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
 
 Clicking on the pcoa (Principal Coordinate Analysis) results will open an interactive visualization of the similarity among your samples. Generally speaking, the more similar the samples, the closer the are likely to be in the PCoA ordination. The Emperor visualization program offers a very useful way to explore how patterns of similarity in your data associate with different metadata categories.
 
