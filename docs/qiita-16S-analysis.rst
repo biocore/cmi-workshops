@@ -128,7 +128,7 @@ Alpha Diversity Analysis
 
 Next, one can also analyze alpha diversity. Alpha diversity is the diversity within a sample. This is used to analyze data within rather than across samples. One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the amount and types of OTUs (or operational taxonomic units) that are found in a sample.
 
-To create an observed OTU analysis, select select "alpha_diversity"from the drop-down menu. The parameters will appear below the workflow diagram: 
+To create an observed OTU analysis, select select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/observed_OTU_parameter.png
    :align:   center
@@ -142,7 +142,7 @@ Click the run button to start the process of the alpha diversity analysis. The v
 
 Another type of alpha diversity analysis is the Shannon diversity index. This analyzes the amount of taxa per the total amount of taxa. It takes into account both diversity as well as abundance.  
 
-To create an Shannon diversity index, select select "alpha_diversity"from the drop-down menu. The parameters will appear below the workflow diagram: 
+To create an Shannon diversity index, select select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/shannon_diversity_parameter.png
    :align:   center
@@ -156,7 +156,7 @@ Click the run button to start the process of the alpha diversity analysis. The v
 
 The final alpha diversity analysis is Faith’s phylogenetic diversity index. This index also measured abundance and diversity but displays it in tree form rather than in a plot.
 
-To create a Faith's phylogenetic diversity index, select select "alpha_diversity"from the drop-down menu. The parameters will appear below the workflow diagram: 
+To create a Faith's phylogenetic diversity index, select select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/faith_pd_parameter.png
    :align:   center
