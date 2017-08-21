@@ -3,8 +3,8 @@
 
 
 
-Analysis of Closed Reference processing
----------------------------------------
+Analysis of Closed Reference Process
+------------------------------------
 
 To create an analysis, select "Create new analysis" from the top menu.
 
