@@ -22,12 +22,12 @@ the objects from that study that are available to you for analysis.
 .. figure::  images/study_expanded.png
    :align:   center
 
-You could add all of these objects to the analysis by selecting the “Add” button. We will just add the Closed Reference OTU table object by clicking “Add” in that row.
+You can add each of these objects to the analysis by selecting the “Add” button. We will just add the Closed Reference OTU table object by clicking “Add” in that row.
 
 .. figure::  images/your_study.png
    :align:   center
 
-Now, the second-right-most icon at the top bar should be green, indicating that there are samples selected for analysis.
+Now, the second-right-most icon at the top bar should turn green, indicating that there are samples selected for analysis.
 
 .. figure::  images/clipboard.png
    :align:   center
@@ -58,17 +58,24 @@ Before we process the data, let's have a look at the summary of the contents of 
 .. figure::  images/generate_summary.png
    :align:   center
 
-To process the data, let’s go ahead and select “Process” which will take us to the commands selection page. Once there, select “dflt_name - BIOM” so that the commands pull down tab can be accessed which will initially display five actions. 
+Refresh the page until the summary is displayed below. This can take up to 1 minute. You will now see a summary of this file displaying a histogram of the number of features per sample:
+
+.. figure::  images/histogram.png
+   :align:   center
+
+As you can see, this file contains 30 samples with between approximately 11,000 and 200,000 features, in our case, picked-OTUs (or observational taxanomic unit).
+
+Now we can begin analyzing these samples. Let’s go ahead and select “Process” which will take us to the commands selection page. Once there, select “dflt_name - BIOM” so that the commands pull down tab can be accessed which will initially display five actions. 
 
 .. figure::  images/command_options.png
    :align:   center
 
-We will go through the use of each command which will enable you to generate summaries, plot your data, calculate statistics to help you get the most out of your data. 
+We will now go through the use of each command which will enable you to generate summaries, plot your data, calculate statistics to help you get the most out of your data. 
 
 Rarefying Data
 ~~~~~~~~~~~~~~
 
-To start, the data must be rarefied. This means that all the samples in the analysis will be randomly subsampled to this number of features, in this case OTUs (or observational taxanomic unit), reducing potential alpha and beta diversity biases. Samples with fewer than this number of features will be excluded, which can also be useful for excluding things like blanks. To choose a good cutoff for your data, view the histogram that was made when we generated the summary of the data.
+To start, the data must be rarefied. This means that all the samples in the analysis will be randomly subsampled to this number of features, in this case OTUs, reducing potential alpha and beta diversity biases. Samples with fewer than this number of features will be excluded, which can also be useful for excluding things like blanks. To choose a good cutoff for your data, view the histogram that was made when we generated the summary of the data.
 
 .. figure::  images/histogram.png
    :align:   center
@@ -80,7 +87,7 @@ To rarefy the data, select "Rarefy" from the dropdown menu. The parameters will 
 .. figure::  images/rarify_parameter_without_number.png
    :align:   center
 
-Several parameter have only one option and were thus automatically selected for you. In the "p-sampling-depth" field we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command". 
+Several parameters will have only one option and were thus automatically selected for you. In the "p-sampling-depth" field we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command". 
 
 .. figure::  images/rarify_parameter_with_sampling_depth.png
    :align:   center
