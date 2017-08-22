@@ -80,7 +80,7 @@ To rarefy the data, select "Rarefy" from the dropdown menu. The parameters will 
 .. figure::  images/rarify_parameter_without_number.png
    :align:   center
 
-Several parameter have only one option and were thus automatically selected for you. In the "p-sampling-depth" field we will specify the number of features to rarefy our samples to. Enter 11030 in this box, and click "Add Command". 
+Several parameter have only one option and were thus automatically selected for you. In the "p-sampling-depth" field we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command". 
 
 .. figure::  images/rarify_parameter_with_sampling_depth.png
    :align:   center
