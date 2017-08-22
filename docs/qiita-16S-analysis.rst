@@ -87,7 +87,7 @@ To rarefy the data, select "Rarefy" from the dropdown menu. The parameters will 
 .. figure::  images/rarify_parameter_without_number.png
    :align:   center
 
-Several parameters will have only one option and were thus automatically selected for you. In the "p-sampling-depth" field we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command". 
+Several parameters will have only one option which will be automatically selected for you. In the "p-sampling-depth" field we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command". 
 
 .. figure::  images/rarify_parameter_with_sampling_depth.png
    :align:   center
@@ -97,12 +97,12 @@ Click the run button to start the process of rarefaction. The view will return t
 .. figure::  images/rarify_workflow.png
    :align:   center
 
-This results page will have sections indication which samples were dropped due to insufficient numbers of reads, as well as sections for each data type. Once the data is rarefied, we can begin analyzing the data.
+Select the newly generated "dflt_name - BIOM" artifact. Typically, we could click generate summary again to view a histogram of the rarefied samples but in this case the samples will not have been changed, but it is still the best practice to always rarefy your data. Once the data is rarefied, we can begin analyzing the data.
 
 Taxa Bar Plots
 ~~~~~~~~~~~~~~
 
-When creating a closed reference biom table, each sequence is matched to the Green Genes database with 97% accuracy, and assigned a taxonomy (See this section for a refresher on '16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample. When using "Deblurred" data, there is no taxa assignment since features are kept as individual error-corrected sequences, so you can skip to the next section “Alpha Diversity Analysis."
+When creating a closed reference BIOM table, each sequence is matched to the Green Genes database with 97% accuracy, and assigned a taxonomy (See this section for a refresher on '16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample. When using "Deblurred" data, there is no taxa assignment since features are kept as individual error-corrected sequences, so if you are referencing this tutorial with your own deblurred data you can skip to the next section “Alpha Diversity Analysis".
 
 To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click "Process". The same processing view we saw previously now appears, so click on "taxa_barplot" from the dropdown menu to arrive at the following view:
 
@@ -133,11 +133,11 @@ The "Sort Sample By" pull-downs allow you to sort your data either by sample met
 Alpha Diversity Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Next, one can also analyze alpha diversity. Alpha diversity is the diversity within a sample. This is used to analyze data within rather than across samples.
+Now, let's analyze the alpha diversity of your samples. Alpha diversity metrics describe the diversity of features within a sample or a group of samples. This is used to analyze the diversity within rather than between samples or a group of samples.
 
-One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the amount and types of OTUs (or operational taxonomic units) that are found in a sample.
+One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the amount of unique OTUs found in a sample or group of samples.
 
-To create an observed OTU alpha diversity analysis, select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
+To perform an observed OTU alpha diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/observed_OTU_parameter.png
    :align:   center
@@ -151,7 +151,7 @@ Click the run button to start the process of the alpha diversity analysis. The v
 
 Another type of alpha diversity analysis is the Shannon diversity index. This analyzes the amount of taxa per the total amount of taxa. It takes into account both diversity as well as abundance.  
 
-To create an Shannon diversity index, select select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
+To perform an Shannon diversity index, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/shannon_diversity_parameter.png
    :align:   center
@@ -165,7 +165,7 @@ Click the run button to start the process of the alpha diversity analysis. The v
 
 The final alpha diversity analysis is Faith’s phylogenetic diversity index. This index also measured abundance and diversity but displays it in tree form rather than in a plot.
 
-To create a Faith's phylogenetic diversity index, select select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
+To perform a Faith's phylogenetic diversity index, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and  select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/faith_pd_parameter.png
    :align:   center
@@ -199,7 +199,7 @@ Finally, one can measure beta diversity. Beta diversity measures the diversity b
 
 One way to analyze this is through Bray-Curtis dissimilarity. This quantifies how dissimilar samples are to one another. 
 
-To create a Bray-Curtis beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a Bray-Curtis beta diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/bray_curtis_beta_diversity.png
    :align:   center
@@ -220,7 +220,7 @@ Click the run button to start the process of the beta diversity analysis. The vi
 
 Another tool for measuring beta diversity is unweighted beta diversity analysis. Unweighted beta diversity analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample. 
 
-To create a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform an unweighted beta diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/unweighted_beta_diversity.png
    :align:   center
@@ -241,14 +241,14 @@ Click the run button to start the process of the beta diversity analysis. The vi
 
 A final way to analyze the beta diversity is through filtered unweighted beta diversity analysis. This allows you to filter out samples. 
 
-To filter the data, select select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram: 
+To filter the data, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/filtered_unweighted_filtering.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "p-where" field enter "Volunteer 3", and click "Add Command". 
 
-To create a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/filtered_unweighted_beta.png
    :align:   center
@@ -326,7 +326,7 @@ Let’s take a few minutes now to explore the various features of Emperor. Open 
 
 Another way to study the beta diversity is by measuring the beta diversity group significance. Beta diversity group significance measures whether groups of samples are significantly different from one another using a permutation-based statistical test.
 
-To create a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
+To perform a beta group significance analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/beta_group_significance_beta.png
    :align:   center
@@ -356,7 +356,7 @@ The PERMANOVA (Permutational multivariate analysis of variance) results will als
 Altering Workflow Analysis Names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To alter the name of a result, click the circle that corresponds to the result then use the edit button on the processing network page. 
+To alter the name of a result, click the artifact then use the edit button on the processing network page. 
 
 .. figure::  images/rename_data_on_workflow.png
    :align:   center
