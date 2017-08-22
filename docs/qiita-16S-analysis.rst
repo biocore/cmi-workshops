@@ -93,11 +93,11 @@ Click the run button to start the process of rarefaction. The view will return t
 This results page will have sections indication which samples were dropped due to insufficient numbers of reads, as well as sections for each data type. Once the data is rarefied, we can begin analyzing the data.
 
 Taxa Bar Plots
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 When creating a closed reference biom table, each sequence is matched to the Green Genes database with 97% accuracy, and assigned a taxonomy (See this section for a refresher on '16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample. When using "Deblurred" data, there is no taxa assignment since features are kept as individual error-corrected sequences, so you can skip to the next section “Alpha Diversity Analysis."
 
-To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click Process. The same processing view we saw previously now appears, so click on "taxa_barplot" from the dropdown menu to arrive at the following view:
+To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click "Process". The same processing view we saw previously now appears, so click on "taxa_barplot" from the dropdown menu to arrive at the following view:
 
 .. figure::  images/taxa_barplot_parameter.png
    :align:   center
