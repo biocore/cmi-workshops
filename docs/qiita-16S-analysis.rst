@@ -126,7 +126,9 @@ The "Sort Sample By" pull-downs allow you to sort your data either by sample met
 Alpha Diversity Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Next, one can also analyze alpha diversity. Alpha diversity is the diversity within a sample. This is used to analyze data within rather than across samples. One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the amount and types of OTUs (or operational taxonomic units) that are found in a sample.
+Next, one can also analyze alpha diversity. Alpha diversity is the diversity within a sample. This is used to analyze data within rather than across samples.
+
+One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the amount and types of OTUs (or operational taxonomic units) that are found in a sample.
 
 To create an observed OTU alpha diversity analysis, select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
@@ -186,14 +188,16 @@ You will also be given the outcomes to Kruskal-Wallis tests:
 Beta Diversity Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Finally, one can measure beta diversity. Beta diversity measures the diversity between samples rather than within. This is used to compare samples to one another. One way to analyze this is through Bray-Curtis dissimilarity. This quantifies how dissimilar samples are to one another. 
+Finally, one can measure beta diversity. Beta diversity measures the diversity between samples rather than within. This is used to compare samples to one another. 
 
-To create a Bray-Curtis diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+One way to analyze this is through Bray-Curtis dissimilarity. This quantifies how dissimilar samples are to one another. 
+
+To create a Bray-Curtis beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/bray_curtis_beta_diversity.png
    :align:   center
 
-Several parameter have automatically selected for you. In the "p-metric" field we will specify the beta diversity analysis to run. Enter braycurtis in this box, and click "Add Command".
+Several parameters have been automatically selected for you. In the "p-metric" field we will specify the beta diversity analysis to run. Enter "braycurtis" in this box, and click "Add Command".
 
 To create a Bray-Curtis dissimilarity principal coordinate plot, select select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -207,49 +211,49 @@ All of the parameter have automatically selected for you just click "Add Command
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
 
-Another tool for measuring beta diversity is unweighted analysis. Unweighted beta analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample. 
+Another tool for measuring beta diversity is unweighted beta diversity analysis. Unweighted beta diversity analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample. 
 
 To create a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/unweighted_beta_diversity.png
    :align:   center
    
-Several parameter have automatically selected for you. In the "p-metric" field enter unweighted Unifrac and in the "i-tree" field enter/databases/gg/13_8/trees/97_otus.tree, and click "Add Command". 
+Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command". 
 
 To create an unweighted beta analysis principal coordinate plot, select select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/unweighted_pcoa.png
    :align:   center
 
-All of the parameter have automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
+All of the parameters have been automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/unweighted_workflow.png
    :align:   center
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
 
-A final way to analyze the beta diversity is through filtered unweighted analysis. This allows you to filter out samples. 
+A final way to analyze the beta diversity is through filtered unweighted beta diversity analysis. This allows you to filter out samples. 
 
 To filter the data, select select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/filtered_unweighted_filtering.png
    :align:   center
 
-Several parameter have automatically selected for you. In the "p-where" field enter "Volunteer 3", and click "Add Command". 
+Several parameters have been automatically selected for you. In the "p-where" field enter "Volunteer 3", and click "Add Command". 
 
 To create a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/filtered_unweighted_beta.png
    :align:   center
 
-Several parameter have automatically selected for you. In the "p-metric" field enter unweighted Unifrac and in the "i-tree" field enter/databases/gg/13_8/trees/97_otus.tree, and click "Add Command". 
+Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command". 
 
 To create an unweighted beta analysis principal coordinate plot, select select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/filtered_unweighted_pcoa.png
    :align:   center
 
-All of the parameter have automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
+All of the parameters have been automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/filtered_unweighted_workflow.png
    :align:   center
@@ -315,22 +319,24 @@ Let’s take a few minutes now to explore the various features of Emperor. Open 
 
 Another way to study the beta diversity is by measuring the beta diversity group significance. Beta diversity group significance measures whether groups of samples are significantly different from one another using a permutation-based statistical test.
 
-To create the unweighted beta analysis, set the command as the following: 
+To create a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
 .. figure::  images/beta_group_significance_beta.png
    :align:   center
 
-To create the beta group significance analysis, set the command as the following:
+Several parameter have automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
+
+To create the beta group significance analysis, select select "beta_group_significance" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/significance_matrix.png
    :align:   center
 
-Once the command is added the workflow will look like:
+All of the parameter have automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/beta_group_significance_workflow.png
    :align:   center
 
-The results will be displayed as beta diversity box plots: 
+Once the q2 visualization artifact is chosen in the network, the beta diversity box plots will appear: 
 
 .. figure::  images/beta_significance_boxplot.png
    :align:   center
@@ -358,9 +364,9 @@ Analysis of Deblur Process
 
 Creating an analysis of your deblurred data is virtually the same as the process for the Closed Reference data, but there are a few quirks.
 
-First, because the deblur process creates two separate BIOM tables, you’ll want to make a note of the specific object ID number for the artifact you want to use. In my case, that’s ID 26017, the deblurred table with "only-16S" reads.
+First, because the deblur process creates two separate BIOM tables, you’ll want to make a note of the specific object ID number for the artifact you want to use. In my case, that’s ID 33331, the deblurred table with "only-16S" reads.
 
-.. figure::  images/deblur.png
+.. figure::  images/Deblur_processing_screen.png
    :align:   center
 
 The specific ID for your table will be unique, so make a note of it, and you can use it to select the correct table for analysis.
