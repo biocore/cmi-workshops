@@ -40,7 +40,7 @@ Clicking on the icon will take you to a page where you can refine the samples yo
 You could optionally exclude particular samples from this set by clicking on
 "Show/Hide samples", which will show each individual sample name along with a
 "remove" option. (Removing them here will mask them from the analysis, but will
-not affect the underlying files an any way.)
+not affect the underlying files in any way.)
 
 This should be good for now. Click the "Create Analysis" button, enter a name and
 description, then click "Create Analysis".
