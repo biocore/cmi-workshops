@@ -55,15 +55,13 @@ If you have multiple 16S preparations (for example, if you sequenced using
 several different primer sets), these would each show up as a separate entry
 here.
 
-Now, you can associate the sequence data from your study with this preparation.
-
-In the prep info dialogue, there is a dropdown menu below the words *No files
-attached to this preparation*, labeled "Select type". 
+Now, you can associate the sequence data from your study with this preparation. 
 
 .. figure::  images/16S_prep.png
    :align:   center
 
-Click "Choose a type" to
+In the prep info dialogue, there is a dropdown menu below the words *No files
+attached to this preparation*, labeled "Select type". Click "Choose a type" to
 see a list of available file types. In our case, we've uploaded FASTQ-formatted
 file for all samples in our study, so we will choose "FASTQ - None`.
 
