@@ -5,7 +5,7 @@ in Qiita.
 Getting CMI Workshop example data
 ---------------------------------
 
-#TODO CHANGE LINK
+TODO CHANGE LINK
 First, we'll download some `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__. This archive contains 16S
 and metabolomics data for 30 skin samples.
 
