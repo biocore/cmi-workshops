@@ -33,7 +33,7 @@ Click on "Sign Up" on the upper-right-hand corner.
 .. figure::  images/sign_up.png
    :align:   center
 
-.. figure::  images/user_information.png.png
+.. figure::  images/user_information.png
    :align:   center
 
 The "New User" link brings you to a page on which you can create a new
