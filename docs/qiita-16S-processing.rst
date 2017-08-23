@@ -17,15 +17,18 @@ files in a single study, associating your samples with each of these data types.
 You can learn more about prep info files at the `Qiita documentation <https://qiita.ucsd.edu/static/doc/html/tutorials/prepare-information-files.html#prep-information-file>`__.
 
 Go back to the "Upload Files" interface. In the `example data <https://www.dropbox.com/sh/mfbqvkva8dw85fq/AABA2pFAIaLlcKLLUCmpZSUea?dl=0>`__, find and upload the FASTQ
-files in the `16S` folder and the file called `prep_information_16S.txt`.
+files and the file called "prep_information_16S.txt".
+
+.. figure::  images/upload_box.png
+   :align:   center
 
 Go to study description. Now you can click the "Add New Preparation" button. This will bring up the
 following dialogue:
 
-.. figure::  images/add-prep-info.png
+.. figure::  images/add_prep_ID.png
    :align:   center
 
-Select `prep_information_16S.txt` from the "Select file" dropdown, and `16S` as
+Select "prep_information_16S.txt" from the "Select file" dropdown, and "16S" as
 the data type. Optionally, you can also select one of a number of investigation
 types that can be used to associate your data with other like studies in the
 database. Click "Create New Preparation".
@@ -33,19 +36,19 @@ database. Click "Create New Preparation".
 You should now see a summary of your preparation info, similar to the summary
 we saw of the sample info:
 
-.. figure::  images/16S-prep-info.png
+.. figure::  images/post_prep_ID.png
    :align:   center
 
 In addition, you should see a "16S" button appear under "Data Types" on the
 menu to left:
 
-.. figure::  images/data-types-16S.png
+.. figure::  images/data_type_16S.png
    :align:   center
 
 You can click this to reveal the individual prep info files of that data type
 that have been associated with this study:
 
-.. figure::  images/data-types-16S-expanded.png
+.. figure::  images/data_type.png
    :align:   center
 
 If you have multiple 16S preparations (for example, if you sequenced using
@@ -55,12 +58,14 @@ here.
 Now, you can associate the sequence data from your study with this preparation.
 
 In the prep info dialogue, there is a dropdown menu below the words *No files
-attached to this preparation*, labeled "Select type". Click "Choose a type" to
-see a list of available file types. In our case, we've uploaded FASTQ-formatted
-file for all samples in our study, so we will choose `FASTQ - None`.
+attached to this preparation*, labeled "Select type". 
 
-.. figure::  images/select-type-per-sample-FASTQ.png
+.. figure::  images/16S_prep.png
    :align:   center
+
+Click "Choose a type" to
+see a list of available file types. In our case, we've uploaded FASTQ-formatted
+file for all samples in our study, so we will choose "FASTQ - None`.
 
 *Magically*, this will prompt Qiita to associate your uploaded files with the
 corresponding samples in your preparation info. (Our prep info file has a
@@ -74,10 +79,7 @@ below the import dropdown. You'll want to give the set of these
 FASTQ files a name (**Add a name for the file**), and then click
 "Add files" below.
 
-.. figure::  images/fastq-verify-top.png
-   :align:   center
-
-.. figure::  images/fastq-verify-bottom.png
+.. figure::  images/prep_info_sequences.png
    :align:   center
 
 That's it! Your data are ready for processing.
@@ -87,13 +89,20 @@ Exploring the raw data
 ----------------------
 
 Click on the 16S menu on the left. Now that you've associated sequence
-files with this prep, you'll have a `Files network` displayed:
+files with this prep, you'll have a "Files network" displayed:
 
-.. figure::  images/files-network-FASTQ.png
+.. figure::  images/files_network.png
    :align:   center
 
+If you see this message:
+
+.. figure::  images/wait_message.png
+   :align:   center
+   
+It means that your files need time to load. Refresh your screen after about 1 minute.
+
 Your collection of FASTQ files for this prep are all represented by a single
-object in this network, currently called `dflt_name`. Click on the object.
+object in this network, currently called "dflt_name". Click on the object.
 
 Now, you'll have a series of choices for interacting with this object. You can
 click "Edit" to rename the object, "Process" to perform analyses, or "Delete"
@@ -138,26 +147,26 @@ Now, we'll process the raw data into something more interesting.
 Processing 16S data
 -------------------
 
-Scroll back up and click on the `FASTQ` object, and select "Process".
+Scroll back up and click on the "FASTQ" object, and select "Process".
 This will bring you to another network visualization interface. Here, you can
 add processing steps to your objects.
 
-Click again on the `FASTQ` object. Below the files network, you will
+Click again on the "FASTQ" object. Below the files network, you will
 see an option to *Choose command*. Based on the type of object, this dropdown
 menu will give a you a list of available processing steps.
 
 .. figure::  images/processing-choose-command.png
    :align:   center
 
-For 16S `FASTQ` objects, the only available command is `Split
-libraries FASTQ`. The converts the raw FASTQ data into the file format used by
+For 16S "FASTQ" objects, the only available command is "Split
+libraries FASTQ". The converts the raw FASTQ data into the file format used by
 Qiita for further analysis (you can read more extensively about this file type
 #TODO THIS LINK DOES NOT EXIST ANYMORE
 `here <https://qiita.ucsd.edu/static/doc/html/tutorials/getting-started.html#preprocessing-data>`__).
 
-Select the `Split libraries FASTQ` step. Now, you will be able to select the
-specific combination of parameters to use for this step in the *Choose
-parameter set* dropdown menu.
+Select the "Split libraries FASTQ" step. Now, you will be able to select the
+specific combination of parameters to use for this step in the "Choose
+parameter set" dropdown menu.
 
 .. figure::  images/processing-choose-parameters.png
    :align:   center
@@ -197,10 +206,10 @@ without having to do any sort of re-clustering!
 The closed reference workflow
 -----------------------------
 
-To do closed reference OTU picking, click on the `demultiplexed` object and
-select the `Pick closed-reference OTUs` command. We will use the `default -
-serial` parameter set for our data, which are relatively small. For a larger
-data set, we might want to use the `default - parallel` implementation.
+To do closed reference OTU picking, click on the "demultiplexed" object and
+select the "Pick closed-reference OTUs" command. We will use the "default -
+serial" parameter set for our data, which are relatively small. For a larger
+data set, we might want to use the "default - parallel" implementation.
 
 By default, Qiita uses the GreenGenes 16S reference database. You can also
 choose to use Silva, or the Unite fungal ITS database.
@@ -220,23 +229,23 @@ The deblur workflow
 -------------------
 
 The deblur workflow is only marginally more complex. Although you can deblur
-the demultiplexed sequences directly, `deblur` works best when all the
+the demultiplexed sequences directly, "deblur" works best when all the
 sequences are the same length. By trimming to a particular length, we can also
 ensure our samples will be comparable to other samples already in the database.
 
-Click back on the `demultiplexed` object. this time, select the `Trimming`
+Click back on the "demultiplexed" object. this time, select the `Trimming`
 operation. Currently, there are three trimming length options. Let's choose
-`Trimming 100`, which trims to the first 100bp, for this run, and click "Add
+"Trimming 100", which trims to the first 100bp, for this run, and click "Add
 Command".
 
 .. figure::  images/processing-added-closed-ref-command.png
    :align:   center
 
-Now you can see that we have the same `demultiplexed` object being used for two
+Now you can see that we have the same "demultiplexed" object being used for two
 separate processing steps -- closed-reference OTU picking, and trimming.
 
 Now we can click the `Trimmed Demultiplexed` object and add a deblur step.
-Choose `deblur-workflow` from the `Choose command` dropdown, and `Defaults` for
+Choose "deblur-workflow" from the `Choose command` dropdown, and "Defaults" for
 the parameter set. Add this command.
 
 .. figure::  images/processing-added-deblur-command.png
