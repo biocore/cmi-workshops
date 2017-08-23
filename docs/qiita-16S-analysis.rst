@@ -243,10 +243,10 @@ A final way to analyze the beta diversity is through filtered unweighted beta di
 
 To filter the data, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram: 
 
-.. figure::  images/filtered_unweighted_filtering.png
+.. figure::  images/filtered_unweighted_filtering2.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-where" field enter "Volunteer 3", and click "Add Command". 
+Several parameters have been automatically selected for you. In the "p-where" field we are filtering out certain samples. In this case we wanted to filter our samples in which "'Subject= "Volunteer 3'", and click "Add Command". 
 
 To perform a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
