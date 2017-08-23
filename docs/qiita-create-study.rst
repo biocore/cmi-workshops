@@ -28,12 +28,12 @@ Signing up for a Qiita account
 
 Open your browser (it must be Chrome or Firefox) and go to `Qiita <https://qiita.ucsd.edu>`__ (https://qiita.ucsd.edu).
 
-Click on "New User".
+Click on "Sign Up" on the upper-right-hand corner.
 
-.. figure::  images/image14.png
+.. figure::  images/sign_up.png
    :align:   center
 
-.. figure::  images/image07.png
+.. figure::  images/user_information.png.png
    :align:   center
 
 The "New User" link brings you to a page on which you can create a new
@@ -47,14 +47,11 @@ Logging into your account and resetting a forgotten password
 Once you have created your account, you can log into the system by
 entering your email and password.
 
-.. figure::  images/image03.png
+.. figure::  images/top_screen.png
   :align:   center
 
 If you forget your password, you will need to reset it.  Click on
 “Forgot Password”.
-
-.. figure::  images/image13.png
-  :align:   center
 
 This will take you to a page on which to enter your email address; once
 you click the “Reset Password” button, the system will send you further
