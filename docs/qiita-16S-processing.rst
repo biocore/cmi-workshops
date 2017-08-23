@@ -282,10 +282,10 @@ these jobs. You'll see a "Workflow submitted" banner at the top of your window.
 As noted above, you can follow the process of your commands in the dialogue at
 the top right of the window.
 
-You can also click on the objects in the prep info file network, and see status
+You can also click on the "Jobs using this data", and see status
 updates from the commands running on that object at the bottom of the page:
 
-.. figure::  images/processing-mid-run-status.png
+.. figure::  images/jobs_data.png
    :align:   center
 
 Once objects have been generated, you can generate summaries for them just
