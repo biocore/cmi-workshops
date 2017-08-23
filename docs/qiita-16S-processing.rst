@@ -91,7 +91,7 @@ Exploring the raw data
 Click on the 16S menu on the left. Now that you've associated sequence
 files with this prep, you'll have a "Files network" displayed:
 
-.. figure::  images/files_network.png
+.. figure::  images/file_network.png
    :align:   center
 
 If you see this message:
@@ -171,7 +171,7 @@ Select the "Split libraries FASTQ" step. Now, you will be able to select the
 specific combination of parameters to use for this step in the "Choose
 parameter set" dropdown menu.
 
-.. figure::  images/split_libraries.png.png
+.. figure::  images/split_libraries.png
    :align:   center
 
 For our files, choose "golay_12, reverse complement
