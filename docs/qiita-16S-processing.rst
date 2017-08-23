@@ -16,8 +16,8 @@ gene sequencing and shotgun metagenomics -- you can have multiple prep info
 files in a single study, associating your samples with each of these data types.
 You can learn more about prep info files at the `Qiita documentation <https://qiita.ucsd.edu/static/doc/html/tutorials/prepare-information-files.html#prep-information-file>`__.
 
-Go back to the "Upload Files" interface. In the `example data <https://www.dropbox.com/sh/mfbqvkva8dw85fq/AABA2pFAIaLlcKLLUCmpZSUea?dl=0>`__, find and upload the FASTQ
-files and the file called "prep_information_16S.txt".
+Go back to the "Upload Files" interface. In the `example data <https://www.dropbox.com/sh/mfbqvkva8dw85fq/AABA2pFAIaLlcKLLUCmpZSUea?dl=0>`__, find and upload the "FASTQ
+files" and the file called "prep_information_16S.txt".
 
 .. figure::  images/upload_box.png
    :align:   center
