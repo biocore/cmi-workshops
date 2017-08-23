@@ -33,12 +33,14 @@ Click on "Sign Up" on the upper-right-hand corner.
 .. figure::  images/sign_up.png
    :align:   center
 
+The "New User" link brings you to a page on which you can create a new
+account. Optional fields are indicated explicitly, while all other
+fields are required. 
+
 .. figure::  images/user_information.png
    :align:   center
 
-The "New User" link brings you to a page on which you can create a new
-account. Optional fields are indicated explicitly, while all other
-fields are required. Once the form is submitted, an email will be sent
+Once the form is submitted, an email will be sent
 to you containing instructions on how to verify your email address.
 
 Logging into your account and resetting a forgotten password
