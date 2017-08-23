@@ -102,7 +102,7 @@ Select the newly generated "dflt_name - BIOM" artifact. Typically, we could clic
 Taxa Bar Plots
 ~~~~~~~~~~~~~~
 
-When creating a closed reference BIOM table, each sequence is matched to the Green Genes database with 97% accuracy, and assigned a taxonomy (See this section for a refresher on '16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample. When using "Deblurred" data, there is no taxa assignment since features are kept as individual error-corrected sequences, so if you are referencing this tutorial with your own deblurred data you can skip to the next section “Alpha Diversity Analysis".
+When creating a closed reference BIOM table, each sequence is matched to the Green Genes database with 97% accuracy, and assigned a taxonomy (See this section for a refresher on '16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample. When using "Deblurred" data, there is no taxa assignment since features are kept as individual error-corrected sequences, so if you are referencing this tutorial with your own deblurred data you can skip to the next section `Alpha Diversity Analysis`_.
 
 To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click "Process". The same processing view we saw previously now appears, so click on "taxa_barplot" from the dropdown menu to arrive at the following view:
 
@@ -130,8 +130,8 @@ The "Color Palette" pull-down allows you to change the coloring of your taxa bar
 
 The "Sort Sample By" pull-downs allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order. 
 
-Alpha Diversity Analysis
-~~~~~~~~~~~~~~~~~~~~~~~~
+.. _Alpha Diversity Analysis
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now, let's analyze the alpha diversity of your samples. Alpha diversity metrics describe the diversity of features within a sample or a group of samples. This is used to analyze the diversity within rather than between samples or a group of samples.
 
