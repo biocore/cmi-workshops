@@ -108,7 +108,7 @@ Now, you'll have a series of choices for interacting with this object. You can
 click "Edit" to rename the object, "Process" to perform analyses, or "Delete"
 to delete it. In addition, you'll see a list of the actual files associated with this object.
 
-.. figure::  images/files-network-FASTQ-expanded.png
+.. figure::  images/available_files.png
    :align:   center
 
 Scroll to the bottom, and you'll also see an option to generate a summary of
@@ -138,7 +138,7 @@ click back on the FASTQ object and scroll to the bottom of the page
 to see a short peek at the data in each of the FASTQ files in the object. These
 summaries can be useful for troubleshooting.
 
-.. figure::  images/FASTQ-summary.png
+.. figure::  images/summary.png
    :align:   center
 
 Now, we'll process the raw data into something more interesting.
@@ -148,9 +148,12 @@ Processing 16S data
 -------------------
 
 Scroll back up and click on the "FASTQ" object, and select "Process".
-This will bring you to another network visualization interface. Here, you can
+This will bring you to the workflow network visualization interface. Here, you can
 add processing steps to your objects.
 
+.. figure::  images/workflow_network.png
+   :align:   center
+   
 Click again on the "FASTQ" object. Below the files network, you will
 see an option to *Choose command*. Based on the type of object, this dropdown
 menu will give a you a list of available processing steps.
@@ -168,11 +171,11 @@ Select the "Split libraries FASTQ" step. Now, you will be able to select the
 specific combination of parameters to use for this step in the "Choose
 parameter set" dropdown menu.
 
-.. figure::  images/processing-choose-parameters.png
+.. figure::  images/split_libraries.png.png
    :align:   center
 
-For our files, choose `golay_12, reverse complement
-mapping file barcodes, reverse complement barcodes`.
+For our files, choose "golay_12, reverse complement
+mapping file barcodes, reverse complement barcodes".
 The specific parameter values used will be displayed below.
 **For most raw data coming out of the Knigh Lab you will use the same setting.**
 
@@ -182,7 +185,7 @@ You'll see the files network update. In addition to the original grey object,
 you should now see the processing command (represented in blue) and the object
 produced from that command (also represented in grey).
 
-.. figure::  images/processing-added-demux-command.png
+.. figure::  images/demultiplexed_workflow.png
    :align:   center
 
 You can click on the command to see the parameters used, or on an object to
@@ -211,12 +214,15 @@ select the "Pick closed-reference OTUs" command. We will use the "default -
 serial" parameter set for our data, which are relatively small. For a larger
 data set, we might want to use the "default - parallel" implementation.
 
+.. figure::  images/closed_reference_OTU.png
+   :align:   center
+
 By default, Qiita uses the GreenGenes 16S reference database. You can also
 choose to use Silva, or the Unite fungal ITS database.
 
 Click "Add Command", and you will see the network update:
 
-.. figure::  images/processing-added-closed-ref-command.png
+.. figure::  images/OTU_workflow.png
    :align:   center
 
 Here you can see the blue "Pick closed-reference OTUs" command added, and that
@@ -238,7 +244,7 @@ operation. Currently, there are three trimming length options. Let's choose
 "Trimming 100", which trims to the first 100bp, for this run, and click "Add
 Command".
 
-.. figure::  images/processing-added-closed-ref-command.png
+.. figure::  images/trimming_command.png
    :align:   center
 
 Now you can see that we have the same "demultiplexed" object being used for two
@@ -246,9 +252,14 @@ separate processing steps -- closed-reference OTU picking, and trimming.
 
 Now we can click the `Trimmed Demultiplexed` object and add a deblur step.
 Choose "deblur-workflow" from the `Choose command` dropdown, and "Defaults" for
-the parameter set. Add this command.
+the parameter set. 
 
-.. figure::  images/processing-added-deblur-command.png
+.. figure::  images/trimmed_deblur_command.png
+   :align:   center
+   
+Add this command to create this workflow:
+
+.. figure::  images/full_workflow.png
    :align:   center
 
 As you can see, `deblur` produces two BIOM-formatted OTU tables as output. The
@@ -262,7 +273,7 @@ Running the workflow
 
 Now, we can see the whole set of commands and their output files:
 
-.. figure::  images/processing-added-all-commands.png
+.. figure::  images/full_workflow.png
    :align:   center
 
 Click "Run" at the top of the screen, and Qiita will start executing all of
