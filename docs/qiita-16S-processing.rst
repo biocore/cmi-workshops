@@ -288,8 +288,10 @@ updates from the commands running on that object at the bottom of the page:
 .. figure::  images/jobs_data.png
    :align:   center
 
+The full workflow can take time to load depending on the amount of samples and QIITA workload. 
+
 Once objects have been generated, you can generate summaries for them just
-as you did for the original `FASTQ` object.
+as you did for the original `FASTQ` object. 
 
 The summary for the `demultiplexed` object gives you information about the
 length of sequences in the object:
