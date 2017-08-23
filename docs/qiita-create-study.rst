@@ -123,7 +123,7 @@ on the Qiita website.
 Once your study has been created, you will be informed by a green
 message; click on the study name to begin adding your data.
 
-.. figure::  images/new_study_link.png
+.. figure::  images/green_message.png
    :align:   center
 
 
@@ -142,7 +142,7 @@ The first point of entrance to a study is the study description
 page. Here you will be able to edit the study info, upload files, and
 manage all other aspects of your study.
 
-.. figure::  images/opening_sample_image.png
+.. figure::  images/new_study_link.png
    :align:   center
 
 The first step after study creation is uploading files. Click on the
