@@ -12,11 +12,11 @@ This will take you to a list of studies with samples available to you for
 analysis, divided between your studies and publically available ("Other")
 studies.
 
-.. figure::  images/analysis_studies_page.png
+.. figure::  images/analysis_studies_page2.png
    :align:   center
 
 Find the study you created for this tutorial under "Your Studies". Click the
-down arrow at the left of the row. This will expand the study to expose all
+plus sign at the left of the row. This will expand the study to expose all
 the objects from that study that are available to you for analysis.
 
 .. figure::  images/study_expanded.png
@@ -48,7 +48,7 @@ description, then click "Create Analysis".
 .. figure::  images/create_analysis_button.png
    :align:   center
 
-This brings you to the processing network page, where, once pulling down the “Processing Network” tab, you can analyze data that has been run. This may take 2 to 5 minutes to load. 
+This brings you to the processing network page. Here, pulling down the “Processing Network” tab. This may take 2 to 5 minutes to load. You can analyze data that has been run.  
 
 .. figure::  images/processing_network_photo.png
    :align:   center
@@ -63,9 +63,9 @@ Refresh the page until the summary is displayed below. This can take up to 1 min
 .. figure::  images/histogram.png
    :align:   center
 
-As you can see, this file contains 30 samples with between approximately 11,000 and 200,000 features, in our case, picked-OTUs (or observational taxanomic unit).
+As you can see, this file contains 30 samples with between approximately 11,000 and 200,000 features, in our case, picked-OTUs (or operational taxanomic unit).
 
-Now we can begin analyzing these samples. Let’s go ahead and select “Process” which will take us to the commands selection page. Once there, select “dflt_name - BIOM” so that the commands pull down tab can be accessed which will initially display five actions. 
+Now we can begin analyzing these samples. Let’s go ahead and select "dflt_name" then select “Process”. This will take us to the commands selection page. Once there, select “dflt_name - BIOM” so that the commands pull down tab can be accessed which will initially display five actions. 
 
 .. figure::  images/command_options.png
    :align:   center
