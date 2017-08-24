@@ -294,13 +294,13 @@ as you did for the original `FASTQ` object.
 The summary for the `demultiplexed` object gives you information about the
 length of sequences in the object:
 
-.. figure::  images/processing-demux-summary.png
+.. figure::  images/sequences.png
    :align:   center
 
 The summary for a BIOM-format OTU table gives you a histogram of the the number
 of sequences per sample:
 
-.. figure::  images/processing-biom-summary.png
+.. figure::  images/demultiplex_histogram.png
    :align:   center
 
 ----
