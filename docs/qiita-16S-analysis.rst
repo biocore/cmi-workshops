@@ -138,12 +138,12 @@ The "Color Palette" pull-down allows you to change the coloring of your taxa bar
 The "Sort Sample By" pull-downs allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order. 
 
 Alpha Diversity Analysis
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now, let's analyze the alpha diversity of your samples. Alpha diversity metrics describe the diversity of features within a sample or a group of samples. This is used to analyze the diversity within rather than between samples or a group of samples.
 
-Observed OTU Alpha Diversity Analysis
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Observed Operational Taxonomic Units
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the amount of unique OTUs found in a sample or group of samples.
 
@@ -152,12 +152,17 @@ To perform an observed OTU alpha diversity analysis, select the rarefied "dflt_n
 .. figure::  images/observed_OTU_parameter.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field we will specify the alpha diversity analysis to run. Enter "observed_otus" in this box, and click "Add Command". Once the command is added the workflow should appear as follows:
+Several parameters have been automatically selected for you. In the "p-metric" field we will specify the alpha diversity analysis to run. Enter "observed_otus" in this box, and click "Add Command". 
+
+Once the command is added the workflow should appear as follows:
 
 .. figure::  images/observed_OTU_workflow.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
+
+Shannon Diversity Index
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Another type of alpha diversity analysis is the Shannon diversity index. This analyzes the amount of taxa per the total amount of taxa. It takes into account both diversity as well as abundance.  
 
@@ -166,12 +171,17 @@ To perform an Shannon diversity index, select the rarefied "dflt_name - BIOM" ar
 .. figure::  images/shannon_diversity_parameter.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field enter "shannon", and click "Add Command". Once the command is added the workflow should appear as follows:
+Several parameters have been automatically selected for you. In the "p-metric" field enter "shannon", and click "Add Command".
+
+Once the command is added the workflow should appear as follows:
 
 .. figure::  images/shannon_diversity_workflow.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
+
+Faith's Phylogenetic Diversity Index
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The final alpha diversity analysis is Faith’s phylogenetic diversity index. This index also measured abundance and diversity but displays it in tree form rather than in a plot.
 
@@ -187,7 +197,10 @@ Several parameters have been automatically selected for you. In the "p-metric" f
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
 
-If you run Alpha Rarefaction, you will have an interactive diversity boxplot that shows how different measures of alpha diversity correlate with different metadata categories:
+Alpha Diversity Outputs
+^^^^^^^^^^^^^^^^^^^^^^^
+
+If you run alpha diversity, you will have an interactive diversity boxplot that shows how different measures of alpha diversity correlate with different metadata categories:
 
 .. figure::  images/alpha_diversity_boxplot.png
    :align:   center
