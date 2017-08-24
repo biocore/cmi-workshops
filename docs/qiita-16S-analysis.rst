@@ -48,12 +48,12 @@ description, then click "Create Analysis".
 .. figure::  images/create_analysis_button.png
    :align:   center
 
-This brings you to the processing network page. Here, pulling down the “Processing Network” tab. This may take 2 to 5 minutes to load. You can analyze data that has been run.  
+This brings you to the processing network page. Here, pulling down the “Processing Network” tab. This may take 2 to 5 minutes to load. You can analyze data that has been run.
 
 .. figure::  images/processing_network_photo.png
    :align:   center
 
-Before we process the data, let's have a look at the summary of the contents of the biome file. To create this summary, select the "“dflt_name - BIOM”" artifact and press the generate summary button. 
+Before we process the data, let's have a look at the summary of the contents of the biome file. To create this summary, select the "“dflt_name - BIOM”" artifact and press the generate summary button.
 
 .. figure::  images/generate_summary.png
    :align:   center
@@ -65,12 +65,12 @@ Refresh the page until the summary is displayed below. This can take up to 1 min
 
 As you can see, this file contains 30 samples with between approximately 11,000 and 200,000 features, in our case, picked-OTUs (or operational taxanomic unit).
 
-Now we can begin analyzing these samples. Let’s go ahead and select "dflt_name" then select “Process”. This will take us to the commands selection page. Once there, select “dflt_name - BIOM” so that the commands pull down tab can be accessed which will initially display five actions. 
+Now we can begin analyzing these samples. Let’s go ahead and select "dflt_name" then select “Process”. This will take us to the commands selection page. Once there, select “dflt_name - BIOM” so that the commands pull down tab can be accessed which will initially display five actions.
 
 .. figure::  images/command_options.png
    :align:   center
 
-We will now go through the use of each command which will enable you to generate summaries, plot your data, calculate statistics to help you get the most out of your data. 
+We will now go through the use of each command which will enable you to generate summaries, plot your data, calculate statistics to help you get the most out of your data.
 
 Rarefying Data
 ~~~~~~~~~~~~~~
@@ -87,7 +87,7 @@ To rarefy the data, select "Rarefy" from the dropdown menu. The parameters will 
 .. figure::  images/rarify_parameter_without_number.png
    :align:   center
 
-Several parameters will have only one option which will be automatically selected for you. In the "p-sampling-depth" field we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command". 
+Several parameters will have only one option which will be automatically selected for you. In the "p-sampling-depth" field we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command".
 
 .. figure::  images/rarify_parameter_with_sampling_depth.png
    :align:   center
@@ -96,8 +96,8 @@ Click the "Run" button above the workflow network to start the process of rarefa
 
 .. figure::  images/server.png
    :align:   center
-   
-Once the job is completed, you must refresh your browser window to see the result:  
+
+Once the job is completed, you must refresh your browser window to see the result:
 
 .. figure::  images/rarify_workflow.png
    :align:   center
@@ -107,7 +107,7 @@ Select the newly generated "dflt_name - BIOM" artifact. Click "Generate Summary"
 Taxa Bar Plots
 ~~~~~~~~~~~~~~
 
-When creating a 16S closed reference BIOM table in Qiita, each sequence is matched to the Green Genes database using a 97% sequence identity threshold, and assigned a taxonomy (See this section for a refresher on 16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>__). This enables us to display this data to view the percentage of each taxa within each sample. 
+When creating a 16S closed reference BIOM table in Qiita, each sequence is matched to the Green Genes database using a 97% sequence identity threshold, and assigned a taxonomy (See this section for a `refresher on 16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample.
 
 When using "Deblurred" data, there is no taxa assignment since features are kept as individual error-corrected sequences, so if you are referencing this tutorial with your own deblurred data you can skip to the next section "Alpha Diversity Analysis".
 
@@ -131,11 +131,11 @@ Once the q2 visualization artifact is chosen in the network, the taxa barplot wi
 .. figure::  images/taxa_barplot.png
    :align:   center
 
-The "Taxonomic Level" menu allows you to view the taxa within your samples at different specificities. There are 7 level options: 1- Kingdom, 2- Phylum, 3- Class, 4- Order, 5- Genus, 6- Species, 7- Subspecies. 
+The "Taxonomic Level" menu allows you to view the taxa within your samples at different specificities. There are 7 level options: 1- Kingdom, 2- Phylum, 3- Class, 4- Order, 5- Genus, 6- Species, 7- Subspecies.
 
 The "Color Palette" menu allows you to change the coloring of your taxa barplot. You can select through “Discrete” palettes in which each taxa is a different color or “Continuous” palettes in which each taxa is a different shade of one color.
 
-The "Sort Sample By" menus allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order. 
+The "Sort Sample By" menus allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order.
 
 Alpha Diversity Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -147,26 +147,26 @@ Observed Operational Taxonomic Units
 
 One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the amount of unique OTUs found in a sample or group of samples.
 
-To perform an observed OTU alpha diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
+To perform an observed OTU alpha diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/observed_OTU_parameter.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field we will specify the alpha diversity analysis to run. Enter "observed_otus" in this box, and click "Add Command". 
+Several parameters have been automatically selected for you. In the "p-metric" field we will specify the alpha diversity analysis to run. Enter "observed_otus" in this box, and click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
 .. figure::  images/observed_OTU_workflow.png
    :align:   center
 
-Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
+Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
 
 Shannon Diversity Index
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Another type of alpha diversity analysis is the Shannon diversity index. This analyzes the amount of taxa per the total amount of taxa. It takes into account both diversity as well as abundance.  
+Another type of alpha diversity analysis is the Shannon diversity index. This analyzes the amount of taxa per the total amount of taxa. It takes into account both diversity as well as abundance.
 
-To perform an Shannon diversity index, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
+To perform an Shannon diversity index, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/shannon_diversity_parameter.png
    :align:   center
@@ -178,14 +178,14 @@ Once the command is added the workflow should appear as follows:
 .. figure::  images/shannon_diversity_workflow.png
    :align:   center
 
-Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
+Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
 
 Faith's Phylogenetic Diversity Index
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The final alpha diversity analysis is Faith’s phylogenetic diversity index. This index also measured abundance and diversity but displays it in tree form rather than in a plot.
 
-To perform a Faith's phylogenetic diversity index, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and  select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
+To perform a Faith's phylogenetic diversity index, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and  select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/faith_pd_parameter.png
    :align:   center
@@ -197,7 +197,7 @@ Once the command is added the workflow should appear as follows:
 .. figure::  images/faith_pd_workflow.png
    :align:   center
 
-Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs. 
+Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
 
 Alpha Diversity Outputs
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -220,12 +220,12 @@ You will also be given the outcomes to Kruskal-Wallis tests:
 Beta Diversity Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Finally, one can measure beta diversity. Beta diversity measures the diversity between samples rather than within. This is used to compare samples to one another. 
+Finally, one can measure beta diversity. Beta diversity measures the diversity between samples rather than within. This is used to compare samples to one another.
 
 Bray-Curtis Dissimilarity
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-One way to analyze this is through Bray-Curtis dissimilarity. This quantifies how dissimilar samples are to one another. 
+One way to analyze this is through Bray-Curtis dissimilarity. This quantifies how dissimilar samples are to one another.
 
 To perform a Bray-Curtis beta diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -239,7 +239,7 @@ To create a Bray-Curtis dissimilarity principal coordinate plot, select "pcoa" f
 .. figure::  images/bray_curtis_pcoa.png
    :align:   center
 
-All of the parameter have automatically selected for you just click "Add Command". 
+All of the parameter have automatically selected for you just click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
@@ -251,14 +251,14 @@ Click the run button to start the process of the beta diversity analysis. The vi
 Unweighted UniFrac Analysis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Another tool for measuring beta diversity is unweighted UniFrac analysis. Unweighted beta diversity analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample. 
+Another tool for measuring beta diversity is unweighted UniFrac analysis. Unweighted beta diversity analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample.
 
 To perform unweighted UniFrac analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/unweighted_beta_diversity.png
    :align:   center
-   
-Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command". 
+
+Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
 To create an unweighted beta analysis principal coordinate plot, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -277,7 +277,7 @@ Principal Coordinate Analysis
 
 Clicking on the "pcoa" (Principal Coordinate Analysis) artifact will open an interactive visualization of the similarity among your samples. Generally speaking, the more similar the samples, the closer the are likely to be in the PCoA ordination. The Emperor visualization program offers a very useful way to explore how patterns of similarity in your data associate with different metadata categories.
 
-Once the Emperor visualization program loads, the PCoA result will look like: 
+Once the Emperor visualization program loads, the PCoA result will look like:
 
 .. figure::  images/full_pcoa.png
    :align:   center
@@ -288,14 +288,14 @@ Under "Color" you will notice two pull-down menus:
 
 .. figure::  images/color_tab.png
    :align:   center
- 
+
 Under "Select a Color Category" you can select how the samples will be grouped. Under "Classic QIIME Colors", you can select how each group will be colored.
 
 Under the "Visibility" tab you will notice 1 pull-down menu:
 
 .. figure::  images/visibility_tab.png
    :align:   center
- 
+
 Under "Select a Visibility Category" you can select which group will be displayed on the PCoA plot.
 
 Under the "Shape" tab you will notice 1 pull-down menu:
@@ -316,23 +316,23 @@ Under the "Axis" tab you will notice 5 pull-down menus:
 The first 3 pull-down menus located under "Visible" allow you to change the axis that are being displayed.
 The "Axis and Labels Color" menu allow you to change the color of your axis and label of the PCoA.
 The "Background Color" menu allows you to change the color of the background of the PCoA.
-The % Variantion Expanded graph displays how different the most dissimilar samples are by percentage for each axis that can be used. 
+The % Variantion Expanded graph displays how different the most dissimilar samples are by percentage for each axis that can be used.
 
 Under the "Scale" tab you will notice 2 pull-down menus:
 
 .. figure::  images/scale_tab.png
    :align:   center
 
-Under "Select a Scale Category" you can choose the grouping of your samples. Under "Global Scaling" you can change the point size for each group on the PCoA plot. 
+Under "Select a Scale Category" you can choose the grouping of your samples. Under "Global Scaling" you can change the point size for each group on the PCoA plot.
 
-Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the Emperor tutorial <https://biocore.github.io/emperor/tutorial_index.html#section1>__ and follow along with your test data.
+Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the `Emperor tutorial <https://biocore.github.io/emperor/tutorial_index.html#section1>`__ and follow along with your test data.
 
 Beta Diversity Group Significance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Another way to study the beta diversity is by measuring the beta diversity group significance. Beta diversity group significance measures whether groups of samples are significantly different from one another using a permutation-based statistical test.
 
-To perform a beta group significance analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram: 
+To perform a beta group significance analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/beta_group_significance_beta.png
    :align:   center
@@ -352,22 +352,22 @@ All of the parameter have automatically selected for you just click "Add Command
 Beta Group Significance Output Analysis
 """""""""""""""""""""""""""""""""""""""
 
-Once the q2 visualization artifact is chosen in the network, the beta diversity box plots will appear: 
+Once the q2 visualization artifact is chosen in the network, the beta diversity box plots will appear:
 
 .. figure::  images/beta_significance_boxplot.png
    :align:   center
 
-The PERMANOVA (Permutational multivariate analysis of variance) <http://onlinelibrary.wiley.com/doi/10.1111/j.1442-9993.2001.01070.pp.x/full>__  test results will also be displayed:
+The `PERMANOVA (Permutational multivariate analysis of variance) <http://onlinelibrary.wiley.com/doi/10.1111/j.1442-9993.2001.01070.pp.x/full>`__ test results will also be displayed:
 
 .. figure::  images/permanova_results.png
    :align:   center
-   
+
 Filtering Data
 ~~~~~~~~~~~~~~
 
-Using QIITA you can also filter your data. This allows you to filter out samples. 
+Using QIITA you can also filter your data. This allows you to filter out samples.
 
-To filter the data, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram: 
+To filter the data, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/filtered_unweighted_filtering2.png
    :align:   center
@@ -379,14 +379,14 @@ An example of how you can use filtering in your analysis is explained in the fol
 Filtered Unweighted UniFrac Analysis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By filtering, you can perform unweighted UniFrac analysis but this time without certain sample. 
+By filtering, you can perform unweighted UniFrac analysis but this time without certain sample.
 
 After filtering your data (shown in the previous "Filtering Data" section), you can perform a beta diversity analysis by selecting "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/filtered_unweighted_beta.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command". 
+Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
 To create an unweighted beta analysis principal coordinate plot, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -398,12 +398,12 @@ All of the parameters have been automatically selected for you just click "Add C
 .. figure::  images/filtered_unweighted_workflow.png
    :align:   center
 
-Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs. 
+Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
 
 Altering Workflow Analysis Names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To alter the name of a result, click the artifact then use the edit button on the processing network page. 
+To alter the name of a result, click the artifact then use the edit button on the processing network page.
 
 .. figure::  images/rename_data_on_workflow.png
    :align:   center
@@ -455,7 +455,7 @@ Second, there is a search field that allows you to filter studies in real time. 
 .. figure::  images/filter_results_for_meta_analysis.png
    :align:   center
 
-Let’s try comparing our data to the “Global Gut” dataset of human microbiomes from the US, Africa, and South America from the study '“Human gut microbiome viewed across age and geography” by Yatsunenko et al <http://www.nature.com/nature/journal/v486/n7402/abs/nature11053.html>`__. We can search for this dataset using the DOI from the paper: 10.1038/nature11053.
+Let’s try comparing our data to the “Global Gut” dataset of human microbiomes from the US, Africa, and South America from the study `“Human gut microbiome viewed across age and geography” by Yatsunenko et al <http://www.nature.com/nature/journal/v486/n7402/abs/nature11053.html>`__. We can search for this dataset using the DOI from the paper: 10.1038/nature11053.
 
 .. figure::  images/data_comparison.png
    :align:   center
