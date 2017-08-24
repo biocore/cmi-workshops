@@ -234,7 +234,7 @@ To perform a Bray-Curtis beta diversity analysis, select the rarefied "dflt_name
 
 Several parameters have been automatically selected for you. In the "p-metric" field we will specify the beta diversity analysis to run. Enter "braycurtis" in this box, and click "Add Command".
 
-To create a Bray-Curtis dissimilarity principal coordinate plot, select select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
+To create a Bray-Curtis dissimilarity principal coordinate plot, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/bray_curtis_pcoa.png
    :align:   center
@@ -260,7 +260,7 @@ To perform unweighted UniFrac analysis, select the rarefied "dflt_name - BIOM" a
    
 Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command". 
 
-To create an unweighted beta analysis principal coordinate plot, select select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
+To create an unweighted beta analysis principal coordinate plot, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/unweighted_pcoa.png
    :align:   center
@@ -268,37 +268,6 @@ To create an unweighted beta analysis principal coordinate plot, select select "
 All of the parameters have been automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/unweighted_workflow.png
-   :align:   center
-
-Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
-
-Filtering Data
-~~~~~~~~~~~~~~
-
-A final way to analyze the beta diversity is through filtered unweighted beta diversity analysis. This allows you to filter out samples. 
-
-To filter the data, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram: 
-
-.. figure::  images/filtered_unweighted_filtering2.png
-   :align:   center
-
-Several parameters have been automatically selected for you. In the "p-where" field we are filtering out certain samples. In this case we wanted to filter our samples in which "'subject= "Volunteer 3'", and click "Add Command". **Keep in mind that all fields are case sensitive**.
-
-To perform a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
-
-.. figure::  images/filtered_unweighted_beta.png
-   :align:   center
-
-Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command". 
-
-To create an unweighted beta analysis principal coordinate plot, select select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
-
-.. figure::  images/filtered_unweighted_pcoa.png
-   :align:   center
-
-All of the parameters have been automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
-
-.. figure::  images/filtered_unweighted_workflow.png
    :align:   center
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
@@ -370,7 +339,7 @@ To perform a beta group significance analysis, select the rarefied "dflt_name - 
 
 Several parameter have automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
-To create the beta group significance analysis, select select "beta_group_significance" from the drop-down menu. The parameters will appear below the workflow diagram:
+To create the beta group significance analysis, select "beta_group_significance" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/significance_matrix.png
    :align:   center
@@ -392,6 +361,44 @@ The PERMANOVA (Permutational multivariate analysis of variance) <http://onlineli
 
 .. figure::  images/permanova_results.png
    :align:   center
+   
+Filtering Data
+~~~~~~~~~~~~~~
+
+Using QIITA you can also filter your data. This allows you to filter out samples. 
+
+To filter the data, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram: 
+
+.. figure::  images/filtered_unweighted_filtering2.png
+   :align:   center
+
+Several parameters have been automatically selected for you. In the "p-where" field we are filtering out certain samples. In this case we wanted to filter our samples in which "'subject= "Volunteer 3'", and click "Add Command". **Keep in mind that all fields are case sensitive**.
+
+An example of how you can use filtering in your analysis is explained in the following "Filtered Unweighted UniFrac Analysis" section.
+
+Filtered Unweighted UniFrac Analysis
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By filtering, you can perform unweighted UniFrac analysis but this time without certain sample. 
+
+After filtering your data (shown in the previous "Filtering Data" section), you can perform a beta diversity analysis by selecting "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+
+.. figure::  images/filtered_unweighted_beta.png
+   :align:   center
+
+Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command". 
+
+To create an unweighted beta analysis principal coordinate plot, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
+
+.. figure::  images/filtered_unweighted_pcoa.png
+   :align:   center
+
+All of the parameters have been automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
+
+.. figure::  images/filtered_unweighted_workflow.png
+   :align:   center
+
+Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs. 
 
 Altering Workflow Analysis Names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
