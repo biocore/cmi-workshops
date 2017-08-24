@@ -92,7 +92,12 @@ Several parameters will have only one option which will be automatically selecte
 .. figure::  images/rarify_parameter_with_sampling_depth.png
    :align:   center
 
-Click the run button to start the process of rarefaction. The view will return to the original screen, while the rarefaction job runs. Refresh your browser every 10-20 seconds until the rarefied biom table appears: 
+Click the "Run" button above the workflow network to start the process of rarefaction. The view will return to the original screen, while the rarefaction job runs. Then, click on the "dflt_BIOM" artifact to see blue "Jobs using this data" button. Once you click on it, you can see the current status of your job. You can also view it clicking on the server button in the top-right corner of the screen:
+
+.. figure::  images/server.png
+   :align:   center
+   
+Once the job is completed, you must refresh your browser window to see the result:  
 
 .. figure::  images/rarify_workflow.png
    :align:   center
