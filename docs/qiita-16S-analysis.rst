@@ -102,12 +102,14 @@ Once the job is completed, you must refresh your browser window to see the resul
 .. figure::  images/rarify_workflow.png
    :align:   center
 
-Select the newly generated "dflt_name - BIOM" artifact. Typically, we could click generate summary again to view a histogram of the rarefied samples but in this case the samples will not have been changed, but it is still the best practice to always rarefy your data. Once the data is rarefied, we can begin analyzing the data.
+Select the newly generated "dflt_name - BIOM" artifact. Click "Generate Summary" again. This time instead of seeing a histogram of the rarefied samples, you instead see a brief summary confirming that your samples have all be rarefied to the same depth. Now that the data is rarefied, we can begin the analysis.
 
 Taxa Bar Plots
 ~~~~~~~~~~~~~~
 
-When creating a closed reference BIOM table, each sequence is matched to the Green Genes database with 97% accuracy, and assigned a taxonomy (See this section for a refresher on '16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>`__). This enables us to display this data to view the percentage of each taxa within each sample. When using "Deblurred" data, there is no taxa assignment since features are kept as individual error-corrected sequences, so if you are referencing this tutorial with your own deblurred data you can skip to the next section `Alpha Diversity Analysis`_.
+When creating a 16S closed reference BIOM table in Qiita, each sequence is matched to the Green Genes database using a 97% sequence identity threshold, and assigned a taxonomy (See this section for a refresher on 16S data <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-processing.html>__). This enables us to display this data to view the percentage of each taxa within each sample. 
+
+When using "Deblurred" data, there is no taxa assignment since features are kept as individual error-corrected sequences, so if you are referencing this tutorial with your own deblurred data you can skip to the next section "Alpha Diversity Analysis".
 
 To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click "Process". The same processing view we saw previously now appears, so click on "taxa_barplot" from the dropdown menu to arrive at the following view:
 
@@ -135,10 +137,13 @@ The "Color Palette" pull-down allows you to change the coloring of your taxa bar
 
 The "Sort Sample By" pull-downs allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order. 
 
-.. _Alpha Diversity Analysis
+Alpha Diversity Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now, let's analyze the alpha diversity of your samples. Alpha diversity metrics describe the diversity of features within a sample or a group of samples. This is used to analyze the diversity within rather than between samples or a group of samples.
+
+Observed OTU Alpha Diversity Analysis
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the amount of unique OTUs found in a sample or group of samples.
 
