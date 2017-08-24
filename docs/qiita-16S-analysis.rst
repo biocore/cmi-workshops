@@ -131,11 +131,11 @@ Once the q2 visualization artifact is chosen in the network, the taxa barplot wi
 .. figure::  images/taxa_barplot.png
    :align:   center
 
-The "Taxonomic Level" pull-down allows you to view the taxa within your samples at different specificities. There are 7 level options: 1- Kingdom, 2- Phylum, 3- Class, 4- Order, 5- Genus, 6- Species, 7- Subspecies. 
+The "Taxonomic Level" menu allows you to view the taxa within your samples at different specificities. There are 7 level options: 1- Kingdom, 2- Phylum, 3- Class, 4- Order, 5- Genus, 6- Species, 7- Subspecies. 
 
-The "Color Palette" pull-down allows you to change the coloring of your taxa barplot. You can select through “Discrete” palettes in which each taxa is a different color or “Continuous” palettes in which each taxa is a different shade of one color.
+The "Color Palette" menu allows you to change the coloring of your taxa barplot. You can select through “Discrete” palettes in which each taxa is a different color or “Continuous” palettes in which each taxa is a different shade of one color.
 
-The "Sort Sample By" pull-downs allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order. 
+The "Sort Sample By" menus allow you to sort your data either by sample metadata or taxonomic abundance and either by ascending or descending order. 
 
 Alpha Diversity Analysis
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -190,7 +190,9 @@ To perform a Faith's phylogenetic diversity index, select the rarefied "dflt_nam
 .. figure::  images/faith_pd_parameter.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field enter "faith_pd" and in the "i-tree" field select "/databases/gg/13_8/trees/97_otus_no_none.tree". Then click "Add Command" and once the command is added the workflow should appear as follows:
+Several parameters have been automatically selected for you. In the "p-metric" field enter "faith_pd" and in the "i-tree" field select "/databases/gg/13_8/trees/97_otus_no_none.tree" then click "Add Command".
+
+Once the command is added the workflow should appear as follows:
 
 .. figure::  images/faith_pd_workflow.png
    :align:   center
@@ -220,6 +222,9 @@ Beta Diversity Analysis
 
 Finally, one can measure beta diversity. Beta diversity measures the diversity between samples rather than within. This is used to compare samples to one another. 
 
+Bray-Curtis Dissimilarity
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
 One way to analyze this is through Bray-Curtis dissimilarity. This quantifies how dissimilar samples are to one another. 
 
 To perform a Bray-Curtis beta diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
@@ -234,16 +239,21 @@ To create a Bray-Curtis dissimilarity principal coordinate plot, select select "
 .. figure::  images/bray_curtis_pcoa.png
    :align:   center
 
-All of the parameter have automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
+All of the parameter have automatically selected for you just click "Add Command". 
+
+Once the command is added the workflow should appear as follows:
 
 .. figure::  images/bray_curtis_workflow.png
    :align:   center
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
 
-Another tool for measuring beta diversity is unweighted beta diversity analysis. Unweighted beta diversity analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample. 
+Unweighted UniFrac Analysis
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To perform an unweighted beta diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+Another tool for measuring beta diversity is unweighted UniFrac analysis. Unweighted beta diversity analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample. 
+
+To perform unweighted UniFrac analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/unweighted_beta_diversity.png
    :align:   center
@@ -262,6 +272,9 @@ All of the parameters have been automatically selected for you just click "Add C
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
 
+Filtering Data
+~~~~~~~~~~~~~~
+
 A final way to analyze the beta diversity is through filtered unweighted beta diversity analysis. This allows you to filter out samples. 
 
 To filter the data, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram: 
@@ -269,7 +282,7 @@ To filter the data, select the rarefied "dflt_name - BIOM" artifact in the proce
 .. figure::  images/filtered_unweighted_filtering2.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-where" field we are filtering out certain samples. In this case we wanted to filter our samples in which "'Subject= "Volunteer 3'", and click "Add Command". 
+Several parameters have been automatically selected for you. In the "p-where" field we are filtering out certain samples. In this case we wanted to filter our samples in which "'subject= "Volunteer 3'", and click "Add Command". **Keep in mind that all fields are case sensitive**.
 
 To perform a beta diversity analysis, select select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -290,7 +303,10 @@ All of the parameters have been automatically selected for you just click "Add C
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
 
-Clicking on the pcoa (Principal Coordinate Analysis) results will open an interactive visualization of the similarity among your samples. Generally speaking, the more similar the samples, the closer the are likely to be in the PCoA ordination. The Emperor visualization program offers a very useful way to explore how patterns of similarity in your data associate with different metadata categories.
+Principal Coordinate Analysis
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Clicking on the "pcoa" (Principal Coordinate Analysis) artifact will open an interactive visualization of the similarity among your samples. Generally speaking, the more similar the samples, the closer the are likely to be in the PCoA ordination. The Emperor visualization program offers a very useful way to explore how patterns of similarity in your data associate with different metadata categories.
 
 Once the Emperor visualization program loads, the PCoA result will look like: 
 
@@ -329,8 +345,8 @@ Under the "Axis" tab you will notice 5 pull-down menus:
    :align:   center
 
 The first 3 pull-down menus located under "Visible" allow you to change the axis that are being displayed.
-The "Axis and Labels Color" pull-down menu allow you to change the color of your axis and label of the PCoA.
-The "Background Color" pull-down menu allows you to change the color of the background of the PCoA.
+The "Axis and Labels Color" menu allow you to change the color of your axis and label of the PCoA.
+The "Background Color" menu allows you to change the color of the background of the PCoA.
 The % Variantion Expanded graph displays how different the most dissimilar samples are by percentage for each axis that can be used. 
 
 Under the "Scale" tab you will notice 2 pull-down menus:
@@ -340,12 +356,10 @@ Under the "Scale" tab you will notice 2 pull-down menus:
 
 Under "Select a Scale Category" you can choose the grouping of your samples. Under "Global Scaling" you can change the point size for each group on the PCoA plot. 
 
-Here, I’ve colored the points in our test data by cat ownership.
+Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the Emperor tutorial <https://biocore.github.io/emperor/tutorial_index.html#section1>__ and follow along with your test data.
 
-.. figure::  images/pcoa.png
-   :align:   center
-
-Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the 'Emperor tutorial <https://biocore.github.io/emperor/tutorial_index.html#section1>'__ and follow along with your test data.
+Beta Diversity Group Significance
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Another way to study the beta diversity is by measuring the beta diversity group significance. Beta diversity group significance measures whether groups of samples are significantly different from one another using a permutation-based statistical test.
 
@@ -366,12 +380,15 @@ All of the parameter have automatically selected for you just click "Add Command
 .. figure::  images/beta_group_significance_workflow.png
    :align:   center
 
+Beta Group Significance Output Analysis
+"""""""""""""""""""""""""""""""""""""""
+
 Once the q2 visualization artifact is chosen in the network, the beta diversity box plots will appear: 
 
 .. figure::  images/beta_significance_boxplot.png
    :align:   center
 
-The PERMANOVA (Permutational multivariate analysis of variance) results will also be displayed:
+The PERMANOVA (Permutational multivariate analysis of variance) <http://onlinelibrary.wiley.com/doi/10.1111/j.1442-9993.2001.01070.pp.x/full>__  test results will also be displayed:
 
 .. figure::  images/permanova_results.png
    :align:   center
