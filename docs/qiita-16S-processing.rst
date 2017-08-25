@@ -1,6 +1,3 @@
-16S Data Processing in Qiita
-============================
-
 Now, we'll upload some actual microbiome data to explore. To do this, we need
 to add the data themselves, along with some information telling Qiita
 about how those data were generated.
