@@ -5,7 +5,9 @@ in Qiita.
 Getting CMI Workshop example data
 ---------------------------------
 
-There are 2 separate data sets made available to you.
+There are 2 separate data sets made available to you - *processing dataset* containing raw sequencing files which we will process to generate information
+about the identity and relative amounts of microbes in our samples, and *analysis dataset* which contains more pre-processed samples which we will use
+for statistical analyses.
 
 Processing example data
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -13,7 +15,7 @@ You can `download example data <https://github.com/biocore/cmi-workshops/blob/ma
 These files contain both 16S rRNA microbiome data for 14 skin microbiome samples. It is a subset of data which we will later use for analysis.
 Real sequencing data can be tens of gigabytes in size!
 
-The files are::
+The files are:
 
     CMI_workshop_lane1_S1_L001_*_001.fastq.gz    # 16S sequences - forward (R1) and reverse (R2) reads and barcodes (I1)
     sample_information.txt                       # The sample information file
