@@ -5,15 +5,25 @@ in Qiita.
 Getting CMI Workshop example data
 ---------------------------------
 
-First, we'll download some `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__. These files contain both 16S and shotgun metagenomics
-data for 12 samples from the American Gut Project.
+There are 2 separate data sets made available to you.
 
-For this tutorial, the relevant files are::
+Processing example data
+~~~~~~~~~~~~~~~~~~~~~~~
+You can `download some example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__ directly from GitHub.
+These files contain both 16S rRNA microbiome data for 14 skin microbiome samples. It is a subset of data which we will later use for analysis.
+Real sequencing data can be tens of gigabytes in size!
 
-    qiita-files/16S/*.fastq.gz        # The actual 16S sequences, one per sample
-    qiita-files/sample_information.txt   # The sample information file
-    qiita-files/prep_template_16S.txt # The prep information file
+The files are::
 
+    CMI_workshop_lane1_S1_L001_*_001.fastq.gz    # The actual 16S sequences - forward reads (R1), reverse reads (R2) and barcodes (I1)
+    sample_information.txt                       # The sample information file
+    prep_information_16S.txt                     # The prep information file
+
+
+Analysis example data
+~~~~~~~~~~~~~~~~~~~~~
+Example data which you can use for analysis is available to you directly on Qiita. You don't need to download anything to your hard drive.
+Instructions how to access this data are provided in the analysis tutorial :here:`qiita-16S-analysis`.
 
 Next, we'll sign up for Qiita and create a study for these data.
 
