@@ -9,13 +9,13 @@ There are 2 separate data sets made available to you.
 
 Processing example data
 ~~~~~~~~~~~~~~~~~~~~~~~
-You can `download some example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__ directly from GitHub.
+You can `download example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__ directly from GitHub.
 These files contain both 16S rRNA microbiome data for 14 skin microbiome samples. It is a subset of data which we will later use for analysis.
 Real sequencing data can be tens of gigabytes in size!
 
 The files are::
 
-    CMI_workshop_lane1_S1_L001_*_001.fastq.gz    # The actual 16S sequences - forward reads (R1), reverse reads (R2) and barcodes (I1)
+    CMI_workshop_lane1_S1_L001_*_001.fastq.gz    # 16S sequences - forward (R1) and reverse (R2) reads and barcodes (I1)
     sample_information.txt                       # The sample information file
     prep_information_16S.txt                     # The prep information file
 
