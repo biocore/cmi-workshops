@@ -68,7 +68,7 @@ file for all samples in our study, so we will choose "FASTQ - None`.
 *Magically*, this will prompt Qiita to associate your uploaded files with the
 corresponding samples in your preparation info. (Our prep info file has a
 column named `run_prefix`, which associated the `sample_name` with the file
-name prefix for that particular sample.)
+name prefix for that particular sample).
 
 You should see this as filenames showing up in the green: *raw barcodes* (file with *I1* in its name),
 *raw forward seqs* (*R1* in name) and *raw reverse seqs* (*R2* in name) columns 
@@ -162,6 +162,7 @@ For 16S "FASTQ" objects, the only available command is "Split
 libraries FASTQ". The converts the raw FASTQ data into the file format used by
 Qiita for further analysis (you can read more extensively about this file type
 `here <https://qiita.ucsd.edu/static/doc/html/tutorials/getting-started.html#preprocessing-data>`__).
+
 
 Select the "Split libraries FASTQ" step. Now, you will be able to select the
 specific combination of parameters to use for this step in the "Choose
