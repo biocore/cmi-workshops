@@ -70,11 +70,10 @@ corresponding samples in your preparation info. (Our prep info file has a
 column named `run_prefix`, which associated the `sample_name` with the file
 name prefix for that particular sample.)
 
-#TODO UPDATE INFO HERE
 You should see this as filenames showing up in the green: *raw barcodes* (file with *I1* in its name),
 *raw forward seqs* (*R1* in name) and *raw reverse seqs* (*R2* in name) columns 
 below the import dropdown. You'll want to give the set of these
-FASTQ files a name (**Add a name for the file**), and then click
+FASTQ files a name (*Add a name for the file* field below *Select type: FASTQ - None*), and then click
 "Add files" below.
 
 .. figure::  images/prep_info_sequences.png
@@ -162,7 +161,6 @@ menu will give a you a list of available processing steps.
 For 16S "FASTQ" objects, the only available command is "Split
 libraries FASTQ". The converts the raw FASTQ data into the file format used by
 Qiita for further analysis (you can read more extensively about this file type
-#TODO THIS LINK DOES NOT EXIST ANYMORE
 `here <https://qiita.ucsd.edu/static/doc/html/tutorials/getting-started.html#preprocessing-data>`__).
 
 Select the "Split libraries FASTQ" step. Now, you will be able to select the
@@ -174,7 +172,7 @@ parameter set" dropdown menu.
 
 For our files, choose "golay_12, reverse complement
 mapping file barcodes, reverse complement barcodes".
-The specific parameter values used will be displayed below.
+The specific parameter values used will be displayed below.  
 **For most raw data coming out of the Knigh Lab you will use the same setting.**
 
 Click "Add Command".
@@ -286,7 +284,7 @@ updates from the commands running on that object at the bottom of the page:
 .. figure::  images/jobs_data.png
    :align:   center
 
-The full workflow can take time to load depending on the amount of samples and QIITA workload. 
+The full workflow can take time to load depending on the amount of samples and Qiita workload. 
 
 Once objects have been generated, you can generate summaries for them just
 as you did for the original `FASTQ` object. 
