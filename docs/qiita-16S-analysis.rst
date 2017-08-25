@@ -1,8 +1,3 @@
-16S Microbiome Analysis in Qiita
-================================
-
-
-
 Analysis of Closed Reference Process
 ------------------------------------
 
