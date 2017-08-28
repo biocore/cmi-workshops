@@ -141,18 +141,18 @@ Now, we'll process the raw data into something more interesting.
 Processing 16S data
 -------------------
 
-Scroll back up and click on the "FASTQ" object, and select "Process".
+Scroll back up and click on the "dflt_name- (FASTQ)" artifact, and select "Process".
 This will bring you to the workflow network visualization interface. Here, you can
 add processing steps to your objects.
 
-.. figure::  images/workflow_network.png
+.. figure::  images/workflow_network2.png
    :align:   center
    
 Click again on the "FASTQ" object. Below the files network, you will
 see an option to *Choose command*. Based on the type of object, this dropdown
 menu will give a you a list of available processing steps.
 
-.. figure::  images/processing-choose-command.png
+.. figure::  images/processing-choose-command2.png
    :align:   center
 
 For 16S "FASTQ" objects, the only available command is "Split
@@ -279,7 +279,7 @@ the top right of the window.
 You can also click on the "Jobs using this data", and see status
 updates from the commands running on that object at the bottom of the page:
 
-.. figure::  images/jobs_data.png
+.. figure::  images/jobs_data2.png
    :align:   center
 
 The full workflow can take time to load depending on the amount of samples and Qiita workload. 
