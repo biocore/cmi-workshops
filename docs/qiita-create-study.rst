@@ -76,11 +76,8 @@ If you need to reset your password or change any general information in
 your account, click on your email at the top right corner of the menu
 bar to access the page on which you can perform these tasks.
 
-.. figure::  images/image19.png
+.. figure::  images/forgot_password.png
   :align:   center
-.. figure::  images/image10.png
-  :align:   center
-
 
 Creating a test study
 ---------------------
