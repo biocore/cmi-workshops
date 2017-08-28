@@ -22,7 +22,7 @@ files"** and the **"prep_information_16S.txt"** file.
 Go to study description. Now you can click the "Add New Preparation" button. This will bring up the
 following dialogue:
 
-.. figure::  images/add_prep_ID.png
+.. figure::  images/add_prep_ID2.png
    :align:   center
 
 Select "prep_information_16S.txt" from the "Select file" dropdown, and "16S" as
@@ -33,7 +33,7 @@ database. Click "Create New Preparation".
 You should now see a summary of your preparation info, similar to the summary
 we saw of the sample info:
 
-.. figure::  images/post_prep_ID.png
+.. figure::  images/post_prep_ID2.png
    :align:   center
 
 In addition, you should see a "16S" button appear under "Data Types" on the
@@ -45,7 +45,7 @@ menu to left:
 You can click this to reveal the individual prep info files of that data type
 that have been associated with this study:
 
-.. figure::  images/data_type.png
+.. figure::  images/data_type2.png
    :align:   center
 
 If you have multiple 16S preparations (for example, if you sequenced using
@@ -54,7 +54,7 @@ here.
 
 Now, you can associate the sequence data from your study with this preparation. 
 
-.. figure::  images/16S_prep.png
+.. figure::  images/post_prep_ID2.png
    :align:   center
 
 In the prep info dialogue, there is a dropdown menu below the words *No files
@@ -73,7 +73,7 @@ below the import dropdown. You'll want to give the set of these
 FASTQ files a name (*Add a name for the file* field below *Select type: FASTQ - None*), and then click
 "Add files" below.
 
-.. figure::  images/prep_info_sequences.png
+.. figure::  images/prep_info_sequences2.png
    :align:   center
 
 That's it! Your data are ready for processing.
@@ -85,7 +85,7 @@ Exploring the raw data
 Click on the 16S menu on the left. Now that you've associated sequence
 files with this prep, you'll have a "Files network" displayed:
 
-.. figure::  images/file_network.png
+.. figure::  images/file_network2.png
    :align:   center
 
 If you see this message:
@@ -102,13 +102,13 @@ Now, you'll have a series of choices for interacting with this object. You can
 click "Edit" to rename the object, "Process" to perform analyses, or "Delete"
 to delete it. In addition, you'll see a list of the actual files associated with this object.
 
-.. figure::  images/available_files.png
+.. figure::  images/available_files2.png
    :align:   center
 
 Scroll to the bottom, and you'll also see an option to generate a summary of
 the object.
 
-.. figure::  images/generate-summary.png
+.. figure::  images/generate-summary2.png
    :align:   center
 
 If you click this button, it will be replaced with a notification that the
@@ -117,14 +117,14 @@ summary generation has been added to the processing queue.
 To check on the status of the processing job, you can click the rightmost icon
 at the top of the screen:
 
-.. figure::  images/processing-icon.png
+.. figure::  images/processing-icon2.png
    :align:   center
 
 This will open a dialogue that gives you information about currently running
 jobs, as well as jobs that failed with some sort of error. *Please note*, this dialogue keeps the entire
 history of errors that Qiita encountered for your jobs, so take notice of dates and times in the `Hartbeat` column.
 
-.. figure::  images/processing-summary.png
+.. figure::  images/processing-summary2.png
    :align:   center
 
 The summary generation shouldn't take too long. When it completes, you can
@@ -132,7 +132,7 @@ click back on the FASTQ object and scroll to the bottom of the page
 to see a short peek at the data in each of the FASTQ files in the object. These
 summaries can be useful for troubleshooting.
 
-.. figure::  images/summary.png
+.. figure::  images/summary2.png
    :align:   center
 
 Now, we'll process the raw data into something more interesting.
