@@ -13,10 +13,10 @@ gene sequencing and shotgun metagenomics -- you can have multiple prep info
 files in a single study, associating your samples with each of these data types.
 You can learn more about prep info files at the `Qiita documentation <https://qiita.ucsd.edu/static/doc/html/tutorials/prepare-information-files.html#prep-information-file>`__.
 
-Go back to the "Upload Files" interface. In the `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__, find and upload the 3 "FASTQ
-files" and the "prep_information_16S.txt" file.
+Go back to the "Upload Files" interface. In the `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__, find and upload the **3 "FASTQ
+files"** and the **"prep_information_16S.txt"** file.
 
-.. figure::  images/upload_box.png
+.. figure::  images/upload_box2.png
    :align:   center
 
 Go to study description. Now you can click the "Add New Preparation" button. This will bring up the
