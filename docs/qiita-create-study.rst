@@ -25,10 +25,7 @@ The files are:
 Analysis example data
 ~~~~~~~~~~~~~~~~~~~~~
 Example data which you can use for analysis is available to you directly on Qiita. You don't need to download anything to your hard drive.
-Instructions how to access this data are provided in the analysis tutorial :here:`qiita-16S-analysis`.
-
-Next, we'll sign up for Qiita and create a study for these data.
-
+Instructions how to access this data are provided in the analysis `tutorial <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-analysis.html>`__.
 
 Setting up Qiita
 ----------------
