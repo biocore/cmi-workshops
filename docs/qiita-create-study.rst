@@ -66,7 +66,7 @@ This will take you to a page on which to enter your email address; once
 you click the “Reset Password” button, the system will send you further
 instructions on how to reset your lost password.
 
-.. figure::  images/image05.png
+.. figure::  images/forgot_password.png
   :align:   center
 
 Updating your settings and changing your password
@@ -110,7 +110,7 @@ The "Study Title" has to be unique system-wide. Qiita will check this
 when you try to create the study, and may ask you to alter the study
 name if the one you provide is already in use.
 
-.. figure::  images/create_new_study.png
+.. figure::  images/create_new_study2.png
    :align:   center
 
 A principal investigator is required, and a list of known PIs is
@@ -132,7 +132,7 @@ on the Qiita website.
 Once your study has been created, you will be informed by a green
 message; click on the study name to begin adding your data.
 
-.. figure::  images/green_message.png
+.. figure::  images/green_message2.png
    :align:   center
 
 
@@ -151,7 +151,7 @@ The first point of entrance to a study is the study description
 page. Here you will be able to edit the study info, upload files, and
 manage all other aspects of your study.
 
-.. figure::  images/new_study_link.png
+.. figure::  images/new_study_link2.png
    :align:   center
 
 The first step after study creation is uploading files. Click on the
@@ -166,14 +166,14 @@ from another page.
 Drag the file named "sample_information.txt" into the upload box. It should
 upload quickly and appear with a checkbox next to it below.
 
-.. figure::  images/upload_box.png
+.. figure::  images/upload_box2.png
    :align:   center
 
 Once your file has uploaded, click on "Go to study description" and, once
 there, click on the "Sample Information" tab.  Select your sample information
 from the dropdown menu next to "Upload information" and click "Create".
 
-.. figure::  images/sample_information_upload.png
+.. figure::  images/sample_information_upload2.png
    :align:   center
 
 If something is wrong with the sample information file, Qiita will let you know
@@ -185,7 +185,7 @@ with a red banner at the top of the screen.
 If the file processes successfully, you should be able to click on the "Sample
 Information" tab and see a list of the imported metadata fields.
 
-.. figure::  images/sample_information_works.png
+.. figure::  images/sample_information_works2.png
    :align:   center
 
 
@@ -193,7 +193,7 @@ You can also click on "Sample Summary" to check out the different metadata
 values. Select a metadata column to visualize in the dropdown menu and click
 "Add column."
 
-.. figure::  images/sample_summary2.png
+.. figure::  images/sample_summary3.png
    :align:   center
 
 
