@@ -122,7 +122,6 @@ There is also an option to specify time series type ("Event-Based Data") if you
 have such data. In our case, the samples come from a time series
 study design, so you should select "multiple intervention, real".
 For more information on time series types, you can check out the
-#TODO THIS LINK NO LONGER EXISTS!
 `in-depth tutorial <https://qiita.ucsd.edu/static/doc/html/tutorials/getting-started.html#creating-a-study>`__
 on the Qiita website.
 
