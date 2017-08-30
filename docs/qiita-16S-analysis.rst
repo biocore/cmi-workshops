@@ -47,7 +47,7 @@ This brings you to the processing network page. Here, pulling down the “Proces
 .. figure::  images/processing_network_photo.png
    :align:   center
 
-Before we process the data, let's have a look at the summary of the contents of the biome file. To create this summary, select the "“dflt_name - BIOM”" artifact and press the generate summary button.
+Before we process the data, let's have a look at the summary of the contents of the biom file. To create this summary, select the "“dflt_name - BIOM”" artifact and press the generate summary button.
 
 .. figure::  images/generate_summary.png
    :align:   center
@@ -115,7 +115,7 @@ All of the parameters for this command are fixed so simply click "Add Comand" to
 .. figure::  images/taxa_barplot_run.png
    :align:   center
 
-Click the run button to start the process. The view will return to the original screen, while the taxa barplot generation job runs. Refresh your browser every 10-20 seconds until the q2 visualization object biom table appears:
+Click the run button to start the process. The view will return to the original screen, while the taxa barplot generation job runs. Refresh your browser every 10-20 seconds until the Qiime 2 (q2) visualization object biom table appears:
 
 .. figure::  images/taxa_barplot_workflow.png
    :align:   center
@@ -139,14 +139,14 @@ Now, let's analyze the alpha diversity of your samples. Alpha diversity metrics 
 Observed Operational Taxonomic Units
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the amount of unique OTUs found in a sample or group of samples.
+One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the number of unique OTUs found in a sample or group of samples.
 
 To perform an observed OTU alpha diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/observed_OTU_parameter.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field we will specify the alpha diversity analysis to run. Enter "observed_otus" in this box, and click "Add Command".
+Several parameters have been automatically selected for you since these options cannot be changed. In the "p-metric" field we will specify the alpha diversity analysis to run. Select "observed_otus" from the drop-down menu in this box, and click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
@@ -165,7 +165,7 @@ To perform an Shannon diversity index, select the rarefied "dflt_name - BIOM" ar
 .. figure::  images/shannon_diversity_parameter.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field enter "shannon", and click "Add Command".
+Several parameters have been automatically selected for you. In the "p-metric" field select "shannon" from the drop-down menu in this box, and click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
@@ -184,7 +184,7 @@ To perform a Faith's phylogenetic diversity index, select the rarefied "dflt_nam
 .. figure::  images/faith_pd_parameter.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field enter "faith_pd" and in the "i-tree" field select "/databases/gg/13_8/trees/97_otus_no_none.tree" then click "Add Command".
+Several parameters have been automatically selected for you. In the "p-metric" field select "faith_pd" from the drop-down menu in this box and in the "i-tree" field select "/databases/gg/13_8/trees/97_otus_no_none.tree" then click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
@@ -228,7 +228,7 @@ To perform a Bray-Curtis beta diversity analysis, select the rarefied "dflt_name
 
 Several parameters have been automatically selected for you. In the "p-metric" field we will specify the beta diversity analysis to run. Enter "braycurtis" in this box, and click "Add Command".
 
-To create a Bray-Curtis dissimilarity principal coordinate plot, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
+To create a principal coordinates plot of the Bray-Curtis dissimilarity distance matrix, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/bray_curtis_pcoa.png
    :align:   center
@@ -254,7 +254,7 @@ To perform unweighted UniFrac analysis, select the rarefied "dflt_name - BIOM" a
 
 Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
-To create an unweighted beta analysis principal coordinate plot, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
+To create a principal coordinates plot of the unweighted Unifrac distance matrix, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/unweighted_pcoa.png
    :align:   center
@@ -382,7 +382,7 @@ After filtering your data (shown in the previous "Filtering Data" section), you 
 
 Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
-To create an unweighted beta analysis principal coordinate plot, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
+To create a principal coordinates plot of the unweighted Unifrac distance matrix, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/filtered_unweighted_pcoa.png
    :align:   center
@@ -407,8 +407,8 @@ This will cause a window to pop-up where you can input the name you’d like to 
 .. figure::  images/rename_data_popup.png
    :align:   center
 
-Analysis of Deblur Process
---------------------------
+Analysis of Deblur Processed Data
+---------------------------------
 
 Creating an analysis of your deblurred data is virtually the same as the process for the Closed Reference data, but there are a few quirks.
 
