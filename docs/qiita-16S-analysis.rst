@@ -44,7 +44,7 @@ description, then click "Create Analysis".
 
 This brings you to the processing network page. Here, pulling down the “Processing Network” tab. This may take 2 to 5 minutes to load. You can analyze data that has been run.
 
-.. figure::  images/processing_network_photo.png
+.. figure::  images/processing_network_photo2.png
    :align:   center
 
 Before we process the data, let's have a look at the summary of the contents of the biom file. To create this summary, select the "“dflt_name - BIOM”" artifact and press the generate summary button.
