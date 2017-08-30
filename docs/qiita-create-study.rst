@@ -17,9 +17,9 @@ Real sequencing data can be tens of gigabytes in size!
 
 The files are:
 
-    CMI_workshop_lane1_S1_L001_*_001.fastq.gz    # 16S sequences - forward (R1) and reverse (R2) reads and barcodes (I1)
-    sample_information.txt                       # The sample information file
-    prep_information_16S.txt                     # The prep information file
+   * CMI_workshop_lane1_S1_L001_*_001.fastq.gz    # 16S sequences - forward (R1) and reverse (R2) reads and barcodes (I1)  
+   * sample_information.txt                       # The sample information file  
+   * prep_information_16S.txt                     # The prep information file
 
 
 Analysis example data
