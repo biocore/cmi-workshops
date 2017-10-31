@@ -45,7 +45,7 @@ menu to left:
 You can click this to reveal the individual prep info files of that data type
 that have been associated with this study:
 
-.. figure::  images/data_type3.png
+.. figure::  images/data_type4.png
    :align:   center
 
 If you have multiple 16S preparations (for example, if you sequenced using
