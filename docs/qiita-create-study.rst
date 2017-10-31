@@ -56,7 +56,7 @@ Logging into your account and resetting a forgotten password
 Once you have created your account, you can log into the system by
 entering your email and password.
 
-.. figure::  images/top_screen2.png
+.. figure::  images/top_screen.png
   :align:   center
 
 If you forget your password, you will need to reset it.  Click on
