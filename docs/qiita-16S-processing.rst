@@ -16,13 +16,13 @@ You can learn more about prep info files at the `Qiita documentation <https://qi
 Go back to the "Upload Files" interface. In the `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__, find and upload the **3 "FASTQ
 files"** and the **"prep_information_16S.txt"** file.
 
-.. figure::  images/upload_box2.png
+.. figure::  images/upload_box3.png
    :align:   center
 
 Go to study description. Now you can click the "Add New Preparation" button. This will bring up the
 following dialogue:
 
-.. figure::  images/add_prep_ID2.png
+.. figure::  images/add_prep_ID3.png
    :align:   center
 
 Select "prep_information_16S.txt" from the "Select file" dropdown, and "16S" as
@@ -33,7 +33,7 @@ database. Click "Create New Preparation".
 You should now see a summary of your preparation info, similar to the summary
 we saw of the sample info:
 
-.. figure::  images/post_prep_ID2.png
+.. figure::  images/post_prep_ID3.png
    :align:   center
 
 In addition, you should see a "16S" button appear under "Data Types" on the
@@ -45,7 +45,7 @@ menu to left:
 You can click this to reveal the individual prep info files of that data type
 that have been associated with this study:
 
-.. figure::  images/data_type2.png
+.. figure::  images/data_type3.png
    :align:   center
 
 If you have multiple 16S preparations (for example, if you sequenced using
@@ -54,7 +54,7 @@ here.
 
 Now, you can associate the sequence data from your study with this preparation. 
 
-.. figure::  images/post_prep_ID2.png
+.. figure::  images/post_prep_ID3.png
    :align:   center
 
 In the prep info dialogue, there is a dropdown menu below the words *No files
@@ -73,7 +73,7 @@ below the import dropdown. You'll want to give the set of these
 FASTQ files a name (*Add a name for the file* field below *Select type: FASTQ - None*), and then click
 "Add files" below.
 
-.. figure::  images/prep_info_sequences2.png
+.. figure::  images/prep_info_sequences3.png
    :align:   center
 
 That's it! Your data are ready for processing.
