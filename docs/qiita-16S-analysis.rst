@@ -10,15 +10,15 @@ analysis, divided between your studies and publicly available studies ("Public S
    :align:   center
 
 Find the "CMI workshop analysis" study in Public Studies. You can use the search window at the top right, or filter by tags ("CMIWorkshop" tag).
-Click the plus sign at the left of the row. This will expand the study to expose all
+Click the green plus sign at the left of the row. This will expand the study to expose all
 the objects from that study that are available to you for analysis.
 
-.. figure::  images/study_expanded.png
+.. figure::  images/study_expanded2.png
    :align:   center
 
 You can add each of these objects to the analysis by selecting the “Add” button. We will just add the Closed Reference OTU table object by clicking “Add” in that row.
 
-.. figure::  images/your_study.png
+.. figure::  images/your_study2.png
    :align:   center
 
 Now, the second-right-most icon at the top bar should turn green, indicating that there are samples selected for analysis.
@@ -28,7 +28,7 @@ Now, the second-right-most icon at the top bar should turn green, indicating tha
 
 Clicking on the icon will take you to a page where you can refine the samples you want to include in your analysis. Here, all 30 of our samples are currently included:
 
-.. figure::  images/selected_samples.png
+.. figure::  images/selected_samples2.png
    :align:   center
 
 You could optionally exclude particular samples from this set by clicking on
@@ -39,12 +39,12 @@ not affect the underlying files in any way.)
 This should be good for now. Click the "Create Analysis" button, enter a name and
 description, then click "Create Analysis".
 
-.. figure::  images/create_analysis_button.png
+.. figure::  images/create_analysis_button2.png
    :align:   center
 
 This brings you to the processing network page. Here, pulling down the “Processing Network” tab. This may take 2 to 5 minutes to load. You can analyze data that has been run.
 
-.. figure::  images/processing_network_photo2.png
+.. figure::  images/processing_network_photo3.png
    :align:   center
 
 Before we process the data, let's have a look at the summary of the contents of the biom file. To create this summary, select the "“dflt_name - BIOM”" artifact and press the generate summary button.
@@ -61,7 +61,7 @@ As you can see, this file contains 30 samples with between approximately 11,000 
 
 Now we can begin analyzing these samples. Let’s go ahead and select "dflt_name" then select “Process”. This will take us to the commands selection page. Once there, select “dflt_name - BIOM” so that the commands pull down tab can be accessed which will initially display five actions.
 
-.. figure::  images/command_options.png
+.. figure::  images/command_options2.png
    :align:   center
 
 We will now go through the use of each command which will enable you to generate summaries, plot your data, calculate statistics to help you get the most out of your data.
