@@ -76,9 +76,9 @@ To start, the data must be rarefied. This means that all the samples in the anal
 
 An appropriate cutoff would exclude clear outliers, but retain most of the samples. Here we have already removed blanks from our data and eliminated the outliers prior to analysis so we will just use the minimum number of features observed in our samples (11030) as the cutoff.
 
-To rarefy the data, select "Rarefy" from the dropdown menu. The parameters will appear below the workflow diagram:
+To rarefy the data, select "Rarefy features" from the dropdown menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/rarify_parameter_without_number.png
+.. figure::  images/rarify_parameter_without_number2.png
    :align:   center
 
 Several parameters will have only one option which will be automatically selected for you. In the "p-sampling-depth" field we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command".
