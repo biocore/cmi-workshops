@@ -141,16 +141,16 @@ Observed Operational Taxonomic Units
 
 One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the number of unique OTUs found in a sample or group of samples.
 
-To perform an observed OTU alpha diversity analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select the "Rarefied table (BIOM)" artifact and select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform an observed OTU alpha diversity analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/observed_OTU_parameter.png
+.. figure::  images/observed_OTU_parameter2.png
    :align:   center
 
-Several parameters have been automatically selected for you since these options cannot be changed. In the "p-metric" field we will specify the alpha diversity analysis to run. Select "observed_otus" from the drop-down menu in this box, and click "Add Command".
+Several parameters have been automatically selected for you since these options cannot be changed. In the "Diversty metric" field we will specify the alpha diversity analysis to run. Select "Number of distinct features" from the drop-down menu in this box, and click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/observed_OTU_workflow.png
+.. figure::  images/observed_OTU_workflow2.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
@@ -160,16 +160,16 @@ Shannon Diversity Index
 
 Another type of alpha diversity analysis is the Shannon diversity index. This analyzes the amount of taxa per the total amount of taxa. It takes into account both diversity as well as abundance.
 
-To perform an Shannon diversity index, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform an Shannon diversity index, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/shannon_diversity_parameter.png
+.. figure::  images/shannon_diversity_parameter2.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field select "shannon" from the drop-down menu in this box, and click "Add Command".
+Several parameters have been automatically selected for you. In the "Diversty metric" field select "Shannon's index" from the drop-down menu in this box, and click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/shannon_diversity_workflow.png
+.. figure::  images/shannon_diversity_workflow2.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
@@ -179,16 +179,16 @@ Faith's Phylogenetic Diversity Index
 
 The final alpha diversity analysis is Faith’s phylogenetic diversity index. This index also measured abundance and diversity but displays it in tree form rather than in a plot.
 
-To perform a Faith's phylogenetic diversity index, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and  select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a Faith's phylogenetic diversity index, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/faith_pd_parameter.png
+.. figure::  images/faith_pd_parameter2.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field select "faith_pd" from the drop-down menu in this box and in the "i-tree" field select "/databases/gg/13_8/trees/97_otus_no_none.tree" then click "Add Command".
+Several parameters have been automatically selected for you. In the "Diversity metric" field select "Faith's phylogenetic diversity" from the drop-down menu in this box and in the "Phylogenetic tree" field select "/databases/gg/13_8/trees/97_otus_no_none.tree" then click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/faith_pd_workflow.png
+.. figure::  images/faith_pd_workflow2.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
