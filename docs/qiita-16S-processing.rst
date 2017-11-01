@@ -96,7 +96,7 @@ If you see this message:
 It means that your files need time to load. Refresh your screen after about 1 minute.
 
 Your collection of FASTQ files for this prep are all represented by a single
-object in this network, currently called "dflt_name". Click on the object.
+object in this network, currently called "[user's_name]". Click on the object.
 
 Now, you'll have a series of choices for interacting with this object. You can
 click "Edit" to rename the object, "Process" to perform analyses, or "Delete"
@@ -141,19 +141,16 @@ Now, we'll process the raw data into something more interesting.
 Processing 16S data
 -------------------
 
-Scroll back up and click on the "dflt_name- (FASTQ)" artifact, and select "Process".
+Scroll back up and click on the [user's_name](FASTQ)" artifact, and select "Process".
 This will bring you to the workflow network visualization interface. Here, you can
 add processing steps to your objects.
 
-.. figure::  images/workflow_network2.png
+.. figure::  images/workflow_network3.png
    :align:   center
    
-Click again on the "FASTQ" object. Below the files network, you will
+Below the files network, you will
 see an option to *Choose command*. Based on the type of object, this dropdown
 menu will give a you a list of available processing steps.
-
-.. figure::  images/processing-choose-command2.png
-   :align:   center
 
 For 16S "FASTQ" objects, the only available command is "Split
 libraries FASTQ". The converts the raw FASTQ data into the file format used by
@@ -165,13 +162,13 @@ Select the "Split libraries FASTQ" step. Now, you will be able to select the
 specific combination of parameters to use for this step in the "Choose
 parameter set" dropdown menu.
 
-.. figure::  images/split_libraries.png
+.. figure::  images/split_libraries2.png
    :align:   center
 
-For our files, choose "golay_12, reverse complement
-mapping file barcodes, reverse complement barcodes".
+For our files, choose "Multiplexed FASTQ; Golay_12 base pair reverse complement
+mapping file barcodes with reverse complement barcodes".
 The specific parameter values used will be displayed below.  
-**For most raw data coming out of the Knigh Lab you will use the same setting.**
+**For most raw data coming out of the Knight Lab you will use the same setting.**
 
 Click "Add Command".
 
@@ -179,7 +176,7 @@ You'll see the files network update. In addition to the original grey object,
 you should now see the processing command (represented in blue) and the object
 produced from that command (also represented in grey).
 
-.. figure::  images/demultiplexed_workflow.png
+.. figure::  images/demultiplexed_workflow2.png
    :align:   center
 
 You can click on the command to see the parameters used, or on an object to
@@ -203,12 +200,12 @@ without having to do any sort of re-clustering!
 The closed reference workflow
 -----------------------------
 
-To do closed reference OTU picking, click on the "demultiplexed" object and
-select the "Pick closed-reference OTUs" command. We will use the "default -
-serial" parameter set for our data, which are relatively small. For a larger
-data set, we might want to use the "default - parallel" implementation.
+To do closed reference OTU picking, click on the "demultiplexed (Demultiplexed)" object and
+select the "Pick closed-reference OTUs" command. We will use the "Defaults"
+parameter set for our data, which are relatively small. For a larger
+data set, we might want to use the "Defaults - parallel" implementation.
 
-.. figure::  images/closed_reference_OTU.png
+.. figure::  images/closed_reference_OTU2.png
    :align:   center
 
 By default, Qiita uses the GreenGenes 16S reference database. You can also
@@ -216,7 +213,7 @@ choose to use Silva, or the Unite fungal ITS database.
 
 Click "Add Command", and you will see the network update:
 
-.. figure::  images/OTU_workflow.png
+.. figure::  images/OTU_workflow2.png
    :align:   center
 
 Here you can see the blue "Pick closed-reference OTUs" command added, and that
@@ -233,12 +230,12 @@ the demultiplexed sequences directly, "deblur" works best when all the
 sequences are the same length. By trimming to a particular length, we can also
 ensure our samples will be comparable to other samples already in the database.
 
-Click back on the "demultiplexed" object. this time, select the `Trimming`
+Click back on the "demultiplexed (Demultiplexed)" object. This time, select the `Trimming`
 operation. Currently, there are three trimming length options. Let's choose
 "Trimming 100", which trims to the first 100bp, for this run, and click "Add
 Command".
 
-.. figure::  images/trimming_command.png
+.. figure::  images/trimming_command2.png
    :align:   center
 
 Now you can see that we have the same "demultiplexed" object being used for two
@@ -248,12 +245,12 @@ Now we can click the `Trimmed Demultiplexed` object and add a deblur step.
 Choose "deblur-workflow" from the `Choose command` dropdown, and "Defaults" for
 the parameter set. 
 
-.. figure::  images/trimmed_deblur_command.png
+.. figure::  images/trimmed_deblur_command2.png
    :align:   center
    
 Add this command to create this workflow:
 
-.. figure::  images/full_workflow.png
+.. figure::  images/full_workflow2.png
    :align:   center
 
 As you can see, `deblur` produces two BIOM-formatted OTU tables as output. The
@@ -267,7 +264,7 @@ Running the workflow
 
 Now, we can see the whole set of commands and their output files:
 
-.. figure::  images/full_workflow.png
+.. figure::  images/full_workflow2.png
    :align:   center
 
 Click "Run" at the top of the screen, and Qiita will start executing all of
