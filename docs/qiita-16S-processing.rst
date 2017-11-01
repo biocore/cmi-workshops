@@ -85,7 +85,7 @@ Exploring the raw data
 Click on the 16S menu on the left. Now that you've associated sequence
 files with this prep, you'll have a "Files network" displayed:
 
-.. figure::  images/file_network2.png
+.. figure::  images/file_network3.png
    :align:   center
 
 If you see this message:
@@ -102,13 +102,13 @@ Now, you'll have a series of choices for interacting with this object. You can
 click "Edit" to rename the object, "Process" to perform analyses, or "Delete"
 to delete it. In addition, you'll see a list of the actual files associated with this object.
 
-.. figure::  images/available_files2.png
+.. figure::  images/available_files3.png
    :align:   center
 
 Scroll to the bottom, and you'll also see an option to generate a summary of
 the object.
 
-.. figure::  images/generate-summary2.png
+.. figure::  images/generate-summary3.png
    :align:   center
 
 If you click this button, it will be replaced with a notification that the
@@ -132,7 +132,7 @@ click back on the FASTQ object and scroll to the bottom of the page
 to see a short peek at the data in each of the FASTQ files in the object. These
 summaries can be useful for troubleshooting.
 
-.. figure::  images/summary2.png
+.. figure::  images/summary3.png
    :align:   center
 
 Now, we'll process the raw data into something more interesting.
