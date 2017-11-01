@@ -115,7 +115,7 @@ All of the parameters for this command are fixed so simply click "Add Comand" to
 .. figure::  images/taxa_barplot_run2.png
    :align:   center
 
-Click the run button to start the process. The view will return to the original screen, while the taxa barplot generation job runs. Refresh your browser every 10-20 seconds until the Qiime 2 (q2) visualization object biom table appears:
+Click the run button to start the process. The view will return to the original screen, while the taxa barplot generation job runs. Refresh your browser every 10-20 seconds until the "Taxa summaries visualization (q2_visualization)" object biom table appears:
 
 .. figure::  images/taxa_barplot_workflow2.png
    :align:   center
@@ -141,7 +141,7 @@ Observed Operational Taxonomic Units
 
 One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the number of unique OTUs found in a sample or group of samples.
 
-To perform an observed OTU alpha diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "alpha_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform an observed OTU alpha diversity analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select the "Rarefied table (BIOM)" artifact and select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/observed_OTU_parameter.png
    :align:   center
