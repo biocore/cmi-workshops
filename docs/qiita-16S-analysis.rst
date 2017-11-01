@@ -221,23 +221,23 @@ Bray-Curtis Dissimilarity
 
 One way to analyze this is through Bray-Curtis dissimilarity. This quantifies how dissimilar samples are to one another.
 
-To perform a Bray-Curtis beta diversity analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a Bray-Curtis beta diversity analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/bray_curtis_beta_diversity.png
+.. figure::  images/bray_curtis_beta_diversity2.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field we will specify the beta diversity analysis to run. Enter "braycurtis" in this box, and click "Add Command".
+Several parameters have been automatically selected for you. In the "Distance matrix" field we will specify the beta diversity analysis to run. Enter "Bray-Curtis dissimilarity" in this box, and click "Add Command".
 
-To create a principal coordinates plot of the Bray-Curtis dissimilarity distance matrix, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
+To create a principal coordinates plot of the Bray-Curtis dissimilarity distance matrix, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/bray_curtis_pcoa.png
+.. figure::  images/bray_curtis_pcoa2.png
    :align:   center
 
 All of the parameter have automatically selected for you just click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/bray_curtis_workflow.png
+.. figure::  images/bray_curtis_workflow2.png
    :align:   center
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
