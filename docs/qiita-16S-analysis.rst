@@ -105,19 +105,19 @@ When creating a 16S closed reference BIOM table in Qiita, each sequence is match
 
 When using "Deblurred" data, there is no taxa assignment since features are kept as individual error-corrected sequences, so if you are referencing this tutorial with your own deblurred data you can skip to the next section "Alpha Diversity Analysis".
 
-To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click "Process". The same processing view we saw previously now appears, so click on "taxa_barplot" from the dropdown menu to arrive at the following view:
+To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click "Process". The same processing view we saw previously now appears, so click on "Summarize taxa" from the dropdown menu to arrive at the following view:
 
-.. figure::  images/taxa_barplot_parameter.png
+.. figure::  images/taxa_barplot_parameter2.png
    :align:   center
 
 All of the parameters for this command are fixed so simply click "Add Comand" to continue. Once the command is added the workflow will appear:
 
-.. figure::  images/taxa_barplot_run.png
+.. figure::  images/taxa_barplot_run2.png
    :align:   center
 
 Click the run button to start the process. The view will return to the original screen, while the taxa barplot generation job runs. Refresh your browser every 10-20 seconds until the Qiime 2 (q2) visualization object biom table appears:
 
-.. figure::  images/taxa_barplot_workflow.png
+.. figure::  images/taxa_barplot_workflow2.png
    :align:   center
 
 Once the q2 visualization artifact is chosen in the network, the taxa barplot will appear below. The taxa plots offers visualization of the makeup of each sample. Each color will represent a different taxa and each column a different sample. It will have 4 pull-down menus: "Taxonomic Level," "Color Palette," and 2 "Sort Samples By" options.
