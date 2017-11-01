@@ -141,7 +141,7 @@ Now, we'll process the raw data into something more interesting.
 Processing 16S data
 -------------------
 
-Scroll back up and click on the [user's_name](FASTQ)" artifact, and select "Process".
+Scroll back up and click on the "[user's_name](FASTQ)" artifact, and select "Process".
 This will bring you to the workflow network visualization interface. Here, you can
 add processing steps to your objects.
 
@@ -231,18 +231,18 @@ sequences are the same length. By trimming to a particular length, we can also
 ensure our samples will be comparable to other samples already in the database.
 
 Click back on the "demultiplexed (Demultiplexed)" object. This time, select the `Trimming`
-operation. Currently, there are three trimming length options. Let's choose
+operation. Currently, there are seven trimming length options. Let's choose
 "Trimming 100", which trims to the first 100bp, for this run, and click "Add
 Command".
 
 .. figure::  images/trimming_command2.png
    :align:   center
 
-Now you can see that we have the same "demultiplexed" object being used for two
+Now you can see that we have the same "demultiplexed (Demultiplexed)" object being used for two
 separate processing steps -- closed-reference OTU picking, and trimming.
 
-Now we can click the `Trimmed Demultiplexed` object and add a deblur step.
-Choose "deblur-workflow" from the `Choose command` dropdown, and "Defaults" for
+Now we can click the "Trimmed Demultiplexed (Demultiplexed)" object and add a deblur step.
+Choose "Deblur" from the "Choose command" dropdown, and "Defaults" for
 the parameter set. 
 
 .. figure::  images/trimmed_deblur_command2.png
@@ -253,10 +253,10 @@ Add this command to create this workflow:
 .. figure::  images/full_workflow2.png
    :align:   center
 
-As you can see, `deblur` produces two BIOM-formatted OTU tables as output. The
-`deblur 16S only table` contains deblurred sequences that have been filtered to
-try and exclude things like organellar mitochondrial reads, while `deblur final
-table` has all the sequences.
+As you can see, "deblur" produces two BIOM-formatted OTU tables as output. The
+"deblur reference hit table (BIOM)" contains deblurred sequences that have been filtered to
+try and exclude things like organellar mitochondrial reads, while "deblur final
+table (BIOM)" has all the sequences.
 
 
 Running the workflow
@@ -282,9 +282,9 @@ updates from the commands running on that object at the bottom of the page:
 The full workflow can take time to load depending on the amount of samples and Qiita workload. 
 
 Once objects have been generated, you can generate summaries for them just
-as you did for the original `FASTQ` object. 
+as you did for the original "FASTQ" object. 
 
-The summary for the `demultiplexed` object gives you information about the
+The summary for the "demultiplexed (Demultiplexed" object gives you information about the
 length of sequences in the object:
 
 .. figure::  images/sequences.png
