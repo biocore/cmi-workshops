@@ -93,10 +93,10 @@ Click the "Run" button above the workflow network to start the process of rarefa
 
 Once the job is completed, you must refresh your browser window to see the result:
 
-.. figure::  images/rarify_workflow.png
+.. figure::  images/rarify_workflow2.png
    :align:   center
 
-Select the newly generated "dflt_name - BIOM" artifact. Click "Generate Summary" again. This time instead of seeing a histogram of the rarefied samples, you instead see a brief summary confirming that your samples have all be rarefied to the same depth. Now that the data is rarefied, we can begin the analysis.
+Select the newly generated "Rarefied table (BIOM)" artifact. Click "Generate Summary" again. This time instead of seeing a histogram of the rarefied samples, you instead see a brief summary confirming that your samples have all be rarefied to the same depth. Now that the data is rarefied, we can begin the analysis.
 
 Taxa Bar Plots
 ~~~~~~~~~~~~~~
