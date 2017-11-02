@@ -331,14 +331,14 @@ To perform a beta group significance analysis, select the rarefied "Rarefied tab
 .. figure::  images/beta_group_significance_beta2.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "Distance matric" field enter "Unweighted Unifrac" and in the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
+Several parameters have been automatically selected for you. In the "Distance matric" we will specify the beta diversity analysis to run. In the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
 To create the beta group significance analysis, select "Calculate beta group significance" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/significance_matrix3.png
    :align:   center
 
-Several parameters have been automatically selected for you. In "Comparison type" enter if you would like it to be run "Pairwise" or "Non-pairwise". In "Metadata category" select the category from the metadata file for determining significance between groups. In "Method" select the correlation test being applied. Then click "Add Command". Once the command is added the workflow should appear as follows:
+Several parameters have been automatically selected for you. In the "Comparison type" field we will specify if we would like it to be run the group significance "Pairwise" or "Non-pairwise". In the "Metadata category" field we will specify the category from the metadata file for determining significance between groups. In the "Method" field we will specify the correlation test that will be applied. Then click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/beta_group_significance_workflow2.png
    :align:   center
