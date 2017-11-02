@@ -326,7 +326,7 @@ Beta Diversity Group Significance
 
 Another way to study the beta diversity is by measuring the beta diversity group significance. Beta diversity group significance measures whether groups of samples are significantly different from one another using a permutation-based statistical test.
 
-To perform a beta group significance analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a beta group significance analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/beta_group_significance_beta2.png
    :align:   center
@@ -338,7 +338,7 @@ To create the beta group significance analysis, select "Calculate beta group sig
 .. figure::  images/significance_matrix3.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "Comparison type" field we will specify if we would like it to be run the group significance "Pairwise" or "Non-pairwise". In the "Metadata category" field we will specify the category from the metadata file for determining significance between groups. In the "Method" field we will specify the correlation test that will be applied. Then click "Add Command". Once the command is added the workflow should appear as follows:
+Several parameters have been automatically selected for you. In the "Comparison type" field we will specify if we would like the group significance to be run "Pairwise" or "Non-pairwise". In the "Metadata category" field we will specify the category from the metadata file to be used for determining significance between groups. In the "Method" field we will specify the correlation test that will be applied. Then click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/beta_group_significance_workflow2.png
    :align:   center
@@ -346,7 +346,7 @@ Several parameters have been automatically selected for you. In the "Comparison 
 Beta Group Significance Output Analysis
 """""""""""""""""""""""""""""""""""""""
 
-Once the q2 visualization artifact is chosen in the network, the beta diversity box plots will appear:
+Once the "Beta group significance visualization (q2_visualization)" artifact is chosen in the network, the beta diversity box plots will appear:
 
 .. figure::  images/beta_significance_boxplot.png
    :align:   center
