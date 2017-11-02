@@ -76,7 +76,7 @@ To start, the data must be rarefied. This means that all the samples in the anal
 
 An appropriate cutoff would exclude clear outliers, but retain most of the samples. Here we have already removed blanks from our data and eliminated the outliers prior to analysis so we will just use the minimum number of features observed in our samples (11030) as the cutoff.
 
-To rarefy the data, select "Rarefy features" from the dropdown menu. The parameters will appear below the workflow diagram:
+To rarefy the data, select "Rarefy features" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/rarify_parameter_without_number2.png
    :align:   center
@@ -86,7 +86,7 @@ Several parameters will have only one option which will be automatically selecte
 .. figure::  images/rarify_parameter_with_sampling_depth.png
    :align:   center
 
-Click the "Run" button above the workflow network to start the process of rarefaction. The view will return to the original screen, while the rarefaction job runs. Then, click on the "dflt_BIOM" artifact to see blue "Jobs using this data" button. Once you click on it, you can see the current status of your job. You can also view it clicking on the server button in the top-right corner of the screen:
+Click the "Run" button above the workflow network to start the process of rarefaction. The view will return to the original screen, while the rarefaction job runs. Then, click on the "dflt_name (BIOM)" artifact to see blue "Jobs using this data" button. Once you click on it, you can see the current status of your job. You can also view it clicking on the server button in the top-right corner of the screen:
 
 .. figure::  images/server.png
    :align:   center
@@ -105,7 +105,7 @@ When creating a 16S closed reference BIOM table in Qiita, each sequence is match
 
 When using "Deblurred" data, there is no taxa assignment since features are kept as individual error-corrected sequences, so if you are referencing this tutorial with your own deblurred data you can skip to the next section "Alpha Diversity Analysis".
 
-To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click "Process". The same processing view we saw previously now appears, so click on "Summarize taxa" from the dropdown menu to arrive at the following view:
+To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click "Process". The same processing view we saw previously now appears, so click on "Summarize taxa" from the drop-down menu to arrive at the following view:
 
 .. figure::  images/taxa_barplot_parameter2.png
    :align:   center
