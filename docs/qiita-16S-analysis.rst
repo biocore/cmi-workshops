@@ -226,7 +226,7 @@ To perform a Bray-Curtis beta diversity analysis, select the rarefied "Rarefied 
 .. figure::  images/bray_curtis_beta_diversity2.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "Distance matrix" field we will specify the beta diversity analysis to run. Enter "Bray-Curtis dissimilarity" in this box, and click "Add Command".
+Several parameters have been automatically selected for you. In the "Distance matric" field we will specify the beta diversity analysis to run. Enter "Bray-Curtis dissimilarity" in this box, and click "Add Command".
 
 To create a principal coordinates plot of the Bray-Curtis dissimilarity distance matrix, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -252,7 +252,7 @@ To perform unweighted UniFrac analysis, select the rarefied "Rarefied table (BIO
 .. figure::  images/unweighted_beta_diversity2.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "Distance matrix" field enter "Unweighted Unifrac" and in the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
+Several parameters have been automatically selected for you. In the "Distance matric" field enter "Unweighted Unifrac" and in the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
 To create a principal coordinates plot of the unweighted Unifrac distance matrix, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
