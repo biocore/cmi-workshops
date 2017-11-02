@@ -361,12 +361,12 @@ Filtering Data
 
 Using QIITA you can also filter your data. This allows you to filter out samples.
 
-To filter the data, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "filter_samples" from the drop-down menu. The parameters will appear below the workflow diagram:
+To filter the data, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Filter samples by metadata" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/filtered_unweighted_filtering2.png
+.. figure::  images/filtered_unweighted_filtering3.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-where" field we are filtering out certain samples. In this case we wanted to filter our samples in which :code:`subject = 'Volunteer 3'`, and click "Add Command". **Keep in mind that all fields are case sensitive**.
+Several parameters have been automatically selected for you. In the "SQLite WHERE-clause" field we are filtering out certain samples. In this case we wanted to filter our samples in which :code:`subject = 'Volunteer 3'`, and click "Add Command". **Keep in mind that all fields are case sensitive**.
 
 An example of how you can use filtering in your analysis is explained in the following "Filtered Unweighted UniFrac Analysis" section.
 
@@ -375,21 +375,21 @@ Filtered Unweighted UniFrac Analysis
 
 By filtering, you can perform unweighted UniFrac analysis but this time without certain sample.
 
-After filtering your data (shown in the previous "Filtering Data" section), you can perform a beta diversity analysis by selecting "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+After filtering your data (shown in the previous "Filtering Data" section), you can perform a beta diversity analysis by selecting "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/filtered_unweighted_beta.png
+.. figure::  images/filtered_unweighted_beta2.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
+Several parameters have been automatically selected for you. In the "Diversity metric" field enter "unweighted Unifrac" and in the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
-To create a principal coordinates plot of the unweighted Unifrac distance matrix, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
+To create a principal coordinates plot of the unweighted Unifrac distance matrix, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/filtered_unweighted_pcoa.png
+.. figure::  images/filtered_unweighted_pcoa2.png
    :align:   center
 
 All of the parameters have been automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
-.. figure::  images/filtered_unweighted_workflow.png
+.. figure::  images/filtered_unweighted_workflow2.png
    :align:   center
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
