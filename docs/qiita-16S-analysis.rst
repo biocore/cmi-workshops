@@ -269,7 +269,7 @@ Click the run button to start the process of the beta diversity analysis. The vi
 Principal Coordinate Analysis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Clicking on the "pcoa" (Principal Coordinate Analysis) artifact will open an interactive visualization of the similarity among your samples. Generally speaking, the more similar the samples, the closer the are likely to be in the PCoA ordination. The Emperor visualization program offers a very useful way to explore how patterns of similarity in your data associate with different metadata categories.
+Clicking on the "Ordination results (ordination_results)" (Principal Coordinate Analysis) artifact will open an interactive visualization of the similarity among your samples. Generally speaking, the more similar the samples, the closer the are likely to be in the PCoA ordination. The Emperor visualization program offers a very useful way to explore how patterns of similarity in your data associate with different metadata categories.
 
 Once the Emperor visualization program loads, the PCoA result will look like:
 
@@ -326,21 +326,21 @@ Beta Diversity Group Significance
 
 Another way to study the beta diversity is by measuring the beta diversity group significance. Beta diversity group significance measures whether groups of samples are significantly different from one another using a permutation-based statistical test.
 
-To perform a beta group significance analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a beta group significance analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/beta_group_significance_beta.png
+.. figure::  images/beta_group_significance_beta2.png
    :align:   center
 
-Several parameter have automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
+Several parameters have been automatically selected for you. In the "Distance matric" field enter "Unweighted Unifrac" and in the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
-To create the beta group significance analysis, select "beta_group_significance" from the drop-down menu. The parameters will appear below the workflow diagram:
+To create the beta group significance analysis, select "Calculate beta group significance" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/significance_matrix.png
+.. figure::  images/significance_matrix3.png
    :align:   center
 
-All of the parameter have automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
+Several parameters have been automatically selected for you. In "Comparison type" enter if you would like it to be run "Pairwise" or "Non-pairwise". In "Metadata category" select the category from the metadata file for determining significance between groups. In "Method" select the correlation test being applied. Then click "Add Command". Once the command is added the workflow should appear as follows:
 
-.. figure::  images/beta_group_significance_workflow.png
+.. figure::  images/beta_group_significance_workflow2.png
    :align:   center
 
 Beta Group Significance Output Analysis
