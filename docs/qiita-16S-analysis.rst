@@ -247,21 +247,21 @@ Unweighted UniFrac Analysis
 
 Another tool for measuring beta diversity is unweighted UniFrac analysis. Unweighted beta diversity analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample.
 
-To perform unweighted UniFrac analysis, select the rarefied "dflt_name - BIOM" artifact in the processing network and select "Process". Then select the "dflt_name - BIOM" artifact and select "beta_diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform unweighted UniFrac analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/unweighted_beta_diversity.png
+.. figure::  images/unweighted_beta_diversity2.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "p-metric" field enter "unweighted Unifrac" and in the "i-tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
+Several parameters have been automatically selected for you. In the "Distance matrix" field enter "Unweighted Unifrac" and in the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
-To create a principal coordinates plot of the unweighted Unifrac distance matrix, select "pcoa" from the drop-down menu. The parameters will appear below the workflow diagram:
+To create a principal coordinates plot of the unweighted Unifrac distance matrix, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/unweighted_pcoa.png
+.. figure::  images/unweighted_pcoa2.png
    :align:   center
 
 All of the parameters have been automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
-.. figure::  images/unweighted_workflow.png
+.. figure::  images/unweighted_workflow2.png
    :align:   center
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
