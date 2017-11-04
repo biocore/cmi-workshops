@@ -363,7 +363,7 @@ Using QIITA you can also filter your data. This allows you to filter out samples
 
 To filter the data, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Filter samples by metadata" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/filtered_unweighted_filtering3.png
+.. figure::  images/filtered_unweighted_filtering4.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "SQLite WHERE-clause" field we are filtering out certain samples. In this case we wanted to filter our samples in which :code:`subject = 'Volunteer 3'`, and click "Add Command". **Keep in mind that all fields are case sensitive**.
