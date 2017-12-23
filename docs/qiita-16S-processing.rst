@@ -169,7 +169,7 @@ parameter set" dropdown menu.
 .. figure::  images/split_libraries3.png
    :align:   center
 
-For our files, choose "Multiplexed FASTQ; Golay_12 base pair reverse complement
+For our files, choose "Multiplexed FASTQ; Golay 12 base pair reverse complement
 mapping file barcodes with reverse complement barcodes".
 The specific parameter values used will be displayed below.  
 **For most raw data coming out of the Knight Lab you will use the same setting.**
