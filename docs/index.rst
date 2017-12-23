@@ -7,6 +7,8 @@ They include all information covered during days 1 and 2 of the workshop.
 For more information on Qiita, including Qiita philosophy and documentation,
 please visit `Qiita website <https://qiita.ucsd.edu/static/doc/html/index.html>`__.
 
+A description of many of the terms used in this tutorial can be found in this `glossary <glossary.md>`_
+
 For general information about workshops, please `contact Tomasz Kosciolek directly
 <mailto:tkosciolek@ucsd.edu>`__.
 
