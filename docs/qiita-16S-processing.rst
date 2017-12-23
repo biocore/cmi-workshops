@@ -87,7 +87,7 @@ Exploring the raw data
 ----------------------
 
 Click on the 16S menu on the left. Now that you've associated sequence
-files with this prep, you'll have a "Files network" displayed:
+files with this prep, you'll have a "Processing network" displayed:
 
 .. figure::  images/file_network4.png
    :align:   center
