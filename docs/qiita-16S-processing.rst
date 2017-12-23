@@ -126,9 +126,9 @@ at the top of the screen:
 
 This will open a dialogue that gives you information about currently running
 jobs, as well as jobs that failed with some sort of error. *Please note*, this dialogue keeps the entire
-history of errors that Qiita encountered for your jobs, so take notice of dates and times in the `Hartbeat` column.
+history of errors that Qiita encountered for your jobs, so take notice of dates and times in the `Heartbeat` column.
 
-.. figure::  images/processing-summary2.png
+.. figure::  images/processing-summary3.png
    :align:   center
 
 The summary generation shouldn't take too long. When it completes, you can
