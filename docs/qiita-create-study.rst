@@ -185,7 +185,7 @@ Information" tab and see a list of the imported metadata fields.
    :align:   center
 
 
-You can also click on "Sample and preparation summary" to check out the different metadata
+You can also click on "Sample-Prep Summary" to check out the different metadata
 values. Select a metadata column to visualize in the "Add sample column information to table" dropdown menu and click
 "Add column."
 
