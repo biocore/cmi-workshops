@@ -30,10 +30,14 @@ the data type. Optionally, you can also select one of a number of investigation
 types that can be used to associate your data with other like studies in the
 database. Click "Create New Preparation".
 
-You should now see a summary of your preparation info, similar to the summary
-we saw of the sample info:
+You should now be brought to a "Processing" tab of your preparation info:
 
-.. figure::  images/post_prep_ID3.png
+.. figure::  images/prep_processing.png
+   :align:   center
+
+By clicking on the "Summary" tab on this page you can see the preparation info that you uploaded.
+
+.. figure::  images/prep_summary.png
    :align:   center
 
 In addition, you should see a "16S" button appear under "Data Types" on the
@@ -54,7 +58,7 @@ here.
 
 Now, you can associate the sequence data from your study with this preparation. 
 
-.. figure::  images/post_prep_ID3.png
+.. figure::  images/prep_processing.png
    :align:   center
 
 In the prep info dialogue, there is a dropdown menu below the words *No files
@@ -73,7 +77,7 @@ below the import dropdown. You'll want to give the set of these
 FASTQ files a name (*Add a name for the file* field below *Select type: FASTQ - None*), and then click
 "Add files" below.
 
-.. figure::  images/prep_info_sequences3.png
+.. figure::  images/prep_info_sequences4.png
    :align:   center
 
 That's it! Your data are ready for processing.
@@ -85,7 +89,7 @@ Exploring the raw data
 Click on the 16S menu on the left. Now that you've associated sequence
 files with this prep, you'll have a "Files network" displayed:
 
-.. figure::  images/file_network3.png
+.. figure::  images/file_network4.png
    :align:   center
 
 If you see this message:
@@ -102,7 +106,7 @@ Now, you'll have a series of choices for interacting with this object. You can
 click "Edit" to rename the object, "Process" to perform analyses, or "Delete"
 to delete it. In addition, you'll see a list of the actual files associated with this object.
 
-.. figure::  images/available_files3.png
+.. figure::  images/available_files4.png
    :align:   center
 
 Scroll to the bottom, and you'll also see an option to generate a summary of
@@ -145,7 +149,7 @@ Scroll back up and click on the "[user's_name](FASTQ)" artifact, and select "Pro
 This will bring you to the workflow network visualization interface. Here, you can
 add processing steps to your objects.
 
-.. figure::  images/workflow_network3.png
+.. figure::  images/workflow_network4.png
    :align:   center
    
 Below the files network, you will
@@ -162,7 +166,7 @@ Select the "Split libraries FASTQ" step. Now, you will be able to select the
 specific combination of parameters to use for this step in the "Choose
 parameter set" dropdown menu.
 
-.. figure::  images/split_libraries2.png
+.. figure::  images/split_libraries3.png
    :align:   center
 
 For our files, choose "Multiplexed FASTQ; Golay_12 base pair reverse complement
@@ -176,7 +180,7 @@ You'll see the files network update. In addition to the original grey object,
 you should now see the processing command (represented in blue) and the object
 produced from that command (also represented in grey).
 
-.. figure::  images/demultiplexed_workflow2.png
+.. figure::  images/demultiplexed_workflow3.png
    :align:   center
 
 You can click on the command to see the parameters used, or on an object to
@@ -205,7 +209,7 @@ select the "Pick closed-reference OTUs" command. We will use the "Defaults"
 parameter set for our data, which are relatively small. For a larger
 data set, we might want to use the "Defaults - parallel" implementation.
 
-.. figure::  images/closed_reference_OTU2.png
+.. figure::  images/closed_reference_OTU3.png
    :align:   center
 
 By default, Qiita uses the GreenGenes 16S reference database. You can also
@@ -213,7 +217,7 @@ choose to use Silva, or the Unite fungal ITS database.
 
 Click "Add Command", and you will see the network update:
 
-.. figure::  images/OTU_workflow2.png
+.. figure::  images/OTU_workflow3.png
    :align:   center
 
 Here you can see the blue "Pick closed-reference OTUs" command added, and that
@@ -235,7 +239,7 @@ operation. Currently, there are seven trimming length options. Let's choose
 "Trimming 100", which trims to the first 100bp, for this run, and click "Add
 Command".
 
-.. figure::  images/trimming_command2.png
+.. figure::  images/trimming_command3.png
    :align:   center
 
 Now you can see that we have the same "demultiplexed (Demultiplexed)" object being used for two
@@ -245,12 +249,12 @@ Now we can click the "Trimmed Demultiplexed (Demultiplexed)" object and add a de
 Choose "Deblur" from the "Choose command" dropdown, and "Defaults" for
 the parameter set. 
 
-.. figure::  images/trimmed_deblur_command2.png
+.. figure::  images/trimmed_deblur_command3.png
    :align:   center
    
 Add this command to create this workflow:
 
-.. figure::  images/full_workflow2.png
+.. figure::  images/full_workflow3.png
    :align:   center
 
 As you can see, "deblur" produces two BIOM-formatted OTU tables as output. The
@@ -264,7 +268,7 @@ Running the workflow
 
 Now, we can see the whole set of commands and their output files:
 
-.. figure::  images/full_workflow2.png
+.. figure::  images/full_workflow3.png
    :align:   center
 
 Click "Run" at the top of the screen, and Qiita will start executing all of
@@ -279,7 +283,10 @@ updates from the commands running on that object at the bottom of the page:
 .. figure::  images/jobs_data2.png
    :align:   center
 
-The full workflow can take time to load depending on the amount of samples and Qiita workload. 
+The full workflow can take time to load depending on the amount of samples and Qiita workload. You can keep track of what is running by looking at the colors of the command artifacts. If grey, the commands have not been run yet. If yellow, the commands are being run now. If green, the commands have successfully been run. If red, the commands have failed.
+
+.. figure::  images/full_workflow4.png
+   :align:   center
 
 Once objects have been generated, you can generate summaries for them just
 as you did for the original "FASTQ" object. 
