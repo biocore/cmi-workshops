@@ -176,9 +176,9 @@ The specific parameter values used will be displayed below.
 
 Click "Add Command".
 
-You'll see the files network update. In addition to the original grey object,
-you should now see the processing command (represented in blue) and the object
-produced from that command (also represented in grey).
+You'll see the files network update. In addition to the original white object,
+you should now see the processing command (represented in orange) and the object
+produced from that command (represented in grey).
 
 .. figure::  images/demultiplexed_workflow3.png
    :align:   center
