@@ -160,7 +160,7 @@ not refresh or navigate away from the page, or log out of the system
 from another page.
 
 Drag the file named "sample_information.txt" into the upload box. It should
-upload quickly and appear with a checkbox next to it below.
+upload quickly and appear below "Files" with a checkbox next to it below.
 
 .. figure::  images/upload_box4.png
    :align:   center
