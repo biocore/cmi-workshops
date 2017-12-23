@@ -236,7 +236,7 @@ ensure our samples will be comparable to other samples already in the database.
 
 Click back on the "demultiplexed (Demultiplexed)" object. This time, select the `Trimming`
 operation. Currently, there are seven trimming length options. Let's choose
-"Trimming 100", which trims to the first 100bp, for this run, and click "Add
+"100 basepairs", which trims to the first 100bp, for this run, and click "Add
 Command".
 
 .. figure::  images/trimming_command3.png
@@ -245,7 +245,7 @@ Command".
 Now you can see that we have the same "demultiplexed (Demultiplexed)" object being used for two
 separate processing steps -- closed-reference OTU picking, and trimming.
 
-Now we can click the "Trimmed Demultiplexed (Demultiplexed)" object and add a deblur step.
+Now we can click the "Trimmed Demultiplexed 100 (Demultiplexed)" object and add a deblur step.
 Choose "Deblur" from the "Choose command" dropdown, and "Defaults" for
 the parameter set. 
 
@@ -283,7 +283,7 @@ updates from the commands running on that object at the bottom of the page:
 .. figure::  images/jobs_data2.png
    :align:   center
 
-The full workflow can take time to load depending on the amount of samples and Qiita workload. You can keep track of what is running by looking at the colors of the command artifacts. If grey, the commands have not been run yet. If yellow, the commands are being run now. If green, the commands have successfully been run. If red, the commands have failed.
+The full workflow can take time to load depending on the amount of samples and Qiita workload. You can keep track of what is running by looking at the colors of the command artifacts. If yellow, the commands are being run now. If green, the commands have successfully been run. If red, the commands have failed.
 
 .. figure::  images/full_workflow4.png
    :align:   center
