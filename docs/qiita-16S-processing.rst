@@ -213,7 +213,7 @@ data set, we might want to use the "Defaults - parallel" implementation.
    :align:   center
 
 By default, Qiita uses the GreenGenes 16S reference database. You can also
-choose to use Silva, or the Unite fungal ITS database.
+choose to use the Silva 119 18S databsase, or the UNITE 7 fungal ITS database.
 
 Click "Add Command", and you will see the network update:
 
