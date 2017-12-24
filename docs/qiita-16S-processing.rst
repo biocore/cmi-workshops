@@ -19,7 +19,9 @@ files"** and the **"prep_information_16S.txt"** file.
 .. figure::  images/upload_box4.png
    :align:   center
 
-These files will appear under "Files" when they finish uploading. Then, go to the study description. Now you can click the "Add New Preparation" button. This will bring up the
+These files will appear under "Files" when they finish uploading. 
+
+Then, go to the study description. Now you can click the "Add New Preparation" button. This will bring up the
 following dialogue:
 
 .. figure::  images/add_prep_ID4.png
