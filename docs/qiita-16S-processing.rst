@@ -147,16 +147,8 @@ Now, we'll process the raw data into something more interesting.
 Processing 16S data
 -------------------
 
-Scroll back up and click on the "[user's_name](FASTQ)" artifact, and select "Process".
-This will bring you to the workflow network visualization interface. Here, you can
-add processing steps to your objects.
-
-.. figure::  images/workflow_network4.png
-   :align:   center
-   
-Below the files network, you will
-see an option to *Choose command*. Based on the type of object, this dropdown
-menu will give a you a list of available processing steps.
+Scroll back up and click on the "[user's_name](FASTQ)" artifact, and select "Process". Below the files network, you will
+now see an option to *Choose command*. Based on the type of object, this dropdown menu will give a you a list of available processing steps.
 
 For 16S "FASTQ" objects, the only available command is "Split
 libraries FASTQ". The converts the raw FASTQ data into the file format used by
