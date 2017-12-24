@@ -148,7 +148,7 @@ Processing 16S data
 -------------------
 
 Scroll back up and click on the "[user's_name](FASTQ)" artifact, and select "Process". Below the files network, you will
-now see an option to *Choose command*. Based on the type of object, this dropdown menu will give a you a list of available processing steps.
+now see a "Choose command" dropdown menu. Based on the type of object, this dropdown menu will give a you a list of available processing steps.
 
 For 16S "FASTQ" objects, the only available command is "Split
 libraries FASTQ". The converts the raw FASTQ data into the file format used by
