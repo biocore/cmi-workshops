@@ -268,6 +268,12 @@ Now, we can see the whole set of commands and their output files:
 Click "Run" at the top of the screen, and Qiita will start executing all of
 these jobs. You'll see a "Workflow submitted" banner at the top of your window.
 
+
+The full workflow can take time to load depending on the amount of samples and Qiita workload. You can keep track of what is running by looking at the colors of the command artifacts. If yellow, the commands are being run now. If green, the commands have successfully been run. If red, the commands have failed.
+
+.. figure::  images/full_workflow4.png
+   :align:   center
+
 As noted above, you can follow the process of your commands in the dialogue at
 the top right of the window.
 
@@ -275,11 +281,6 @@ You can also click on the "Jobs using this data", and see status
 updates from the commands running on that object at the bottom of the page:
 
 .. figure::  images/jobs_data2.png
-   :align:   center
-
-The full workflow can take time to load depending on the amount of samples and Qiita workload. You can keep track of what is running by looking at the colors of the command artifacts. If yellow, the commands are being run now. If green, the commands have successfully been run. If red, the commands have failed.
-
-.. figure::  images/full_workflow4.png
    :align:   center
 
 Once objects have been generated, you can generate summaries for them just
