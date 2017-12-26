@@ -292,7 +292,7 @@ length of sequences in the object:
 .. figure::  images/sequences.png
    :align:   center
 
-The summary for a BIOM-format OTU table gives you a table summary, details regarding the frequency per sample, and a histogram of the the frequency per sample:
+The summary for a BIOM-format OTU table gives you a table summary, details regarding the frequency per sample, and a histogram of the number of features per sample:
 
 .. figure::  images/demultiplex_histogram2.png
    :align:   center
