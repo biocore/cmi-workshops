@@ -44,17 +44,12 @@ description, then click "Create Analysis".
 
 This brings you to the processing network page. Here, pulling down the “Processing Network” tab. This may take 2 to 5 minutes to load. You can analyze data that has been run.
 
-.. figure::  images/processing_network_photo3.png
+.. figure::  images/processing_network_photo4.png
    :align:   center
 
-Before we process the data, let's have a look at the summary of the contents of the biom file. To create this summary, select the "dflt_name (BIOM)" artifact and press the generate summary button.
+Before we process the data, let's have a look at the summary of the contents of the biom file. Select the "dflt_name (BIOM)" artifact to see a summary of this file displaying a table summary, details regarding the frequency per sample, histogram of the number of features per sample:
 
-.. figure::  images/generate_summary.png
-   :align:   center
-
-Refresh the page until the summary is displayed below. This can take up to 1 minute. You will now see a summary of this file displaying a histogram of the number of features per sample:
-
-.. figure::  images/histogram.png
+.. figure::  images/histogram2.png
    :align:   center
 
 As you can see, this file contains 30 samples with between approximately 11,000 and 200,000 features, in our case, picked-OTUs (or operational taxanomic unit).
