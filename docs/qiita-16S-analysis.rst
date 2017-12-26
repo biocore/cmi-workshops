@@ -49,7 +49,7 @@ This brings you to the processing network page. Here, pulling down the “Proces
 
 Before we process the data, let's have a look at the summary of the contents of the biom file. Select the "dflt_name (BIOM)" artifact to see a summary of this file displaying a table summary, details regarding the frequency per sample, histogram of the number of features per sample:
 
-.. figure::  images/histogram2.png
+.. figure::  images/summaryinfo.png
    :align:   center
 
 As you can see, this file contains 30 samples with between approximately 11,000 and 200,000 features, in our case, picked-OTUs (or operational taxanomic unit).
@@ -66,22 +66,22 @@ Rarefying Data
 
 To start, the data must be rarefied. This means that all the samples in the analysis will be randomly subsampled to this number of features, in this case OTUs, reducing potential alpha and beta diversity biases. Samples with fewer than this number of features will be excluded, which can also be useful for excluding things like blanks. To choose a good cutoff for your data, view the histogram that was made when we generated the summary of the data.
 
-.. figure::  images/histogram.png
+.. figure::  images/histogram2.png
    :align:   center
 
 An appropriate cutoff would exclude clear outliers, but retain most of the samples. Here we have already removed blanks from our data and eliminated the outliers prior to analysis so we will just use the minimum number of features observed in our samples (11030) as the cutoff.
 
 To rarefy the data, select "Rarefy features" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/rarify_parameter_without_number2.png
+.. figure::  images/rarify_parameter_without_number3.png
    :align:   center
 
 Several parameters will have only one option which will be automatically selected for you. In the "Sampling depth" field we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command".
 
-.. figure::  images/rarify_parameter_with_sampling_depth.png
+.. figure::  images/rarify_parameter_with_sampling_depth2.png
    :align:   center
 
-Click the "Run" button above the workflow network to start the process of rarefaction. The view will return to the original screen, while the rarefaction job runs. Then, click on the "dflt_name (BIOM)" artifact to see blue "Jobs using this data" button. Once you click on it, you can see the current status of your job. You can also view it clicking on the server button in the top-right corner of the screen:
+Click the "Run" button above the workflow network to start the process of rarefaction. Then, click on the "dflt_name (BIOM)" artifact to see blue "Jobs using this data" button. Once you click on it, you can see the current status of your job. You can also view it clicking on the server button in the top-right corner of the screen:
 
 .. figure::  images/server.png
    :align:   center
