@@ -13,12 +13,12 @@ Find the "CMI workshop analysis" study in Public Studies. You can use the search
 Click the green plus sign at the left of the row. This will expand the study to expose all
 the objects from that study that are available to you for analysis.
 
-.. figure::  images/study_expanded2.png
+.. figure::  images/study_expanded3.png
    :align:   center
 
-You can add each of these objects to the analysis by selecting the “Add” button. We will just add the Closed Reference OTU table object by clicking “Add” in that row.
+To look more closely at the details of the artifact, select "Per Artifact (1)." Here you can add each of these objects to the analysis by selecting the “Add” button. We will just add the Closed Reference OTU table object by clicking “Add” in that row.
 
-.. figure::  images/your_study2.png
+.. figure::  images/your_study3.png
    :align:   center
 
 Now, the second-right-most icon at the top bar should turn green, indicating that there are samples selected for analysis.
