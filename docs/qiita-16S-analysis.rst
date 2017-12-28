@@ -91,7 +91,7 @@ Once the job is completed, you must refresh your browser window to see the resul
 .. figure::  images/rarify_workflow3.png
    :align:   center
 
-Select the newly generated "Rarefied table (BIOM)" artifact. This time instead of seeing a histogram of the rarefied samples, you instead see a brief summary confirming that your samples have all be rarefied to the same depth. Now that the data is rarefied, we can begin the analysis.
+Select the newly generated "Rarefied table 11030 (BIOM)" artifact. This time instead of seeing a histogram of the rarefied samples, you instead see a brief summary confirming that your samples have all be rarefied to the same depth. Now that the data is rarefied, we can begin the analysis.
 
 Taxa Bar Plots
 ~~~~~~~~~~~~~~
@@ -136,7 +136,7 @@ Observed Operational Taxonomic Units
 
 One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the number of unique OTUs found in a sample or group of samples.
 
-To perform an observed OTU alpha diversity analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform an observed OTU alpha diversity analysis, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/observed_OTU_parameter3.png
    :align:   center
@@ -155,16 +155,16 @@ Shannon Diversity Index
 
 Another type of alpha diversity analysis is the Shannon diversity index. This analyzes the amount of taxa per the total amount of taxa. It takes into account both diversity as well as abundance.
 
-To perform an Shannon diversity index, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform an Shannon diversity index, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/shannon_diversity_parameter2.png
+.. figure::  images/shannon_diversity_parameter3.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "Diversty metric" field select "Shannon's index" from the drop-down menu in this box, and click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/shannon_diversity_workflow2.png
+.. figure::  images/shannon_diversity_workflow3.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
@@ -174,7 +174,7 @@ Faith's Phylogenetic Diversity Index
 
 The final alpha diversity analysis is Faith’s phylogenetic diversity index. This index also measured abundance and diversity but displays it in tree form rather than in a plot.
 
-To perform a Faith's phylogenetic diversity index, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a Faith's phylogenetic diversity index, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/faith_pd_parameter2.png
    :align:   center
@@ -216,7 +216,7 @@ Bray-Curtis Dissimilarity
 
 One way to analyze this is through Bray-Curtis dissimilarity. This quantifies how dissimilar samples are to one another.
 
-To perform a Bray-Curtis beta diversity analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a Bray-Curtis beta diversity analysis, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/bray_curtis_beta_diversity2.png
    :align:   center
@@ -242,7 +242,7 @@ Unweighted UniFrac Analysis
 
 Another tool for measuring beta diversity is unweighted UniFrac analysis. Unweighted beta diversity analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample.
 
-To perform unweighted UniFrac analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform unweighted UniFrac analysis, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/unweighted_beta_diversity2.png
    :align:   center
@@ -321,7 +321,7 @@ Beta Diversity Group Significance
 
 Another way to study the beta diversity is by measuring the beta diversity group significance. Beta diversity group significance measures whether groups of samples are significantly different from one another using a permutation-based statistical test.
 
-To perform a beta group significance analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a beta group significance analysis, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/beta_group_significance_beta2.png
    :align:   center
@@ -356,7 +356,7 @@ Filtering Data
 
 Using QIITA you can also filter your data. This allows you to filter out samples.
 
-To filter the data, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Filter samples by metadata" from the drop-down menu. The parameters will appear below the workflow diagram:
+To filter the data, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Then select "Filter samples by metadata" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/filtered_unweighted_filtering3.png
    :align:   center
