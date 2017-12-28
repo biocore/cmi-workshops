@@ -218,21 +218,21 @@ One way to analyze this is through Bray-Curtis dissimilarity. This quantifies ho
 
 To perform a Bray-Curtis beta diversity analysis, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/bray_curtis_beta_diversity2.png
+.. figure::  images/bray_curtis_beta_diversity3.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "Distance matric" field we will specify the beta diversity analysis to run. Enter "Bray-Curtis dissimilarity" in this box, and click "Add Command".
 
 To create a principal coordinates plot of the Bray-Curtis dissimilarity distance matrix, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/bray_curtis_pcoa2.png
+.. figure::  images/bray_curtis_pcoa3.png
    :align:   center
 
 All of the parameter have automatically selected for you just click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/bray_curtis_workflow2.png
+.. figure::  images/bray_curtis_workflow3.png
    :align:   center
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
