@@ -176,14 +176,14 @@ The final alpha diversity analysis is Faith’s phylogenetic diversity index. Th
 
 To perform a Faith's phylogenetic diversity index, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/faith_pd_parameter2.png
+.. figure::  images/faith_pd_parameter3.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "Diversity metric" field select "Faith's phylogenetic diversity" from the drop-down menu in this box and in the "Phylogenetic tree" field select "/databases/gg/13_8/trees/97_otus_no_none.tree" then click "Add Command".
+Several parameters have been automatically selected for you. In the "Diversity metric" field select "Faith's Phylogenetic Diversity" from the drop-down menu in this box and in the "Phylogenetic tree" field select "/databases/gg/13_8/trees/97_otus_no_none.tree" then click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/faith_pd_workflow2.png
+.. figure::  images/faith_pd_workflow3.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
