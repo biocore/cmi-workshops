@@ -88,10 +88,10 @@ Click the "Run" button above the workflow network to start the process of rarefa
 
 Once the job is completed, you must refresh your browser window to see the result:
 
-.. figure::  images/rarify_workflow2.png
+.. figure::  images/rarify_workflow3.png
    :align:   center
 
-Select the newly generated "Rarefied table (BIOM)" artifact. Click "Generate Summary" again. This time instead of seeing a histogram of the rarefied samples, you instead see a brief summary confirming that your samples have all be rarefied to the same depth. Now that the data is rarefied, we can begin the analysis.
+Select the newly generated "Rarefied table (BIOM)" artifact. This time instead of seeing a histogram of the rarefied samples, you instead see a brief summary confirming that your samples have all be rarefied to the same depth. Now that the data is rarefied, we can begin the analysis.
 
 Taxa Bar Plots
 ~~~~~~~~~~~~~~
@@ -102,17 +102,17 @@ When using "Deblurred" data, there is no taxa assignment since features are kept
 
 To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click "Process". The same processing view we saw previously now appears, so click on "Summarize taxa" from the drop-down menu to arrive at the following view:
 
-.. figure::  images/taxa_barplot_parameter2.png
+.. figure::  images/taxa_barplot_parameter3.png
    :align:   center
 
 All of the parameters for this command are fixed so simply click "Add Comand" to continue. Once the command is added the workflow will appear:
 
-.. figure::  images/taxa_barplot_run2.png
+.. figure::  images/taxa_barplot_run3.png
    :align:   center
 
-Click the run button to start the process. The view will return to the original screen, while the taxa barplot generation job runs. Refresh your browser every 10-20 seconds until the "Taxa summaries visualization (q2_visualization)" object biom table appears:
+Click the run button to start the process. The view will return to the original screen, while the taxa barplot generation job runs. Your browser wil automatically refresh every 15 seconds until the "Taxa summaries visualization (q2_visualization)" object biom table appears:
 
-.. figure::  images/taxa_barplot_workflow2.png
+.. figure::  images/taxa_barplot_workflow3.png
    :align:   center
 
 Once the q2 visualization artifact is chosen in the network, the taxa barplot will appear below. The taxa plots offers visualization of the makeup of each sample. Each color will represent a different taxa and each column a different sample. It will have 4 pull-down menus: "Taxonomic Level," "Color Palette," and 2 "Sort Samples By" options.
