@@ -138,14 +138,14 @@ One type of analysis for alpha diversity is looking at observed OTUs. This type 
 
 To perform an observed OTU alpha diversity analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/observed_OTU_parameter2.png
+.. figure::  images/observed_OTU_parameter3.png
    :align:   center
 
 Several parameters have been automatically selected for you since these options cannot be changed. In the "Diversty metric" field we will specify the alpha diversity analysis to run. Select "Number of distinct features" from the drop-down menu in this box, and click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/observed_OTU_workflow2.png
+.. figure::  images/observed_OTU_workflow3.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
