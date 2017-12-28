@@ -323,7 +323,7 @@ Another way to study the beta diversity is by measuring the beta diversity group
 
 To perform a beta group significance analysis, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/beta_group_significance_beta2.png
+.. figure::  images/beta_group_significance_beta3.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "Distance matric" we will specify the beta diversity analysis to run. In the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
@@ -335,7 +335,7 @@ To create the beta group significance analysis, select "Calculate beta group sig
 
 Several parameters have been automatically selected for you. In the "Comparison type" field we will specify if we would like the group significance to be run "Pairwise" or "Non-pairwise". In the "Metadata category" field we will specify the category from the metadata file to be used for determining significance between groups. In the "Method" field we will specify the correlation test that will be applied. Then click "Add Command". Once the command is added the workflow should appear as follows:
 
-.. figure::  images/beta_group_significance_workflow2.png
+.. figure::  images/beta_group_significance_workflow3.png
    :align:   center
 
 Beta Group Significance Output Analysis
