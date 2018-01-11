@@ -147,7 +147,7 @@ The first point of entrance to a study is the study description
 page. Here you will be able to edit the study info, upload files, and
 manage all other aspects of your study.
 
-.. figure::  images/new_study_link3.png
+.. figure::  images/new_study_link4.png
    :align:   center
 
 The first step after study creation is uploading files. Click on the
@@ -160,16 +160,16 @@ not refresh or navigate away from the page, or log out of the system
 from another page.
 
 Drag the file named "sample_information.txt" into the upload box. It should
-upload quickly and appear with a checkbox next to it below.
+upload quickly and appear below "Files" with a checkbox next to it below.
 
-.. figure::  images/upload_box3.png
+.. figure::  images/upload_box4.png
    :align:   center
 
 Once your file has uploaded, click on "Go to study description" and, once
 there, click on the "Sample Information" tab.  Select your sample information
 from the dropdown menu next to "Upload information" and click "Create".
 
-.. figure::  images/sample_information_upload3.png
+.. figure::  images/sample_information_upload4.png
    :align:   center
 
 If something is wrong with the sample information file, Qiita will let you know
@@ -181,15 +181,15 @@ with a red banner at the top of the screen.
 If the file processes successfully, you should be able to click on the "Sample
 Information" tab and see a list of the imported metadata fields.
 
-.. figure::  images/sample_information_works3.png
+.. figure::  images/sample_information_works4.png
    :align:   center
 
 
-You can also click on "Sample and preparation summary" to check out the different metadata
-values. Select a metadata column to visualize in the "Add sample column information to table" dropdown menu and click
+To check out the different metadata
+values select the "Sample-Prep Summary" tab. On this page, select a metadata column to visualize in the "Add sample column information to table" dropdown menu and click
 "Add column."
 
-.. figure::  images/sample_summary4.png
+.. figure::  images/sample_summary5.png
    :align:   center
 
 

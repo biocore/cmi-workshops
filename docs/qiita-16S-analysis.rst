@@ -13,12 +13,12 @@ Find the "CMI workshop analysis" study in Public Studies. You can use the search
 Click the green plus sign at the left of the row. This will expand the study to expose all
 the objects from that study that are available to you for analysis.
 
-.. figure::  images/study_expanded2.png
+.. figure::  images/study_expanded3.png
    :align:   center
 
-You can add each of these objects to the analysis by selecting the “Add” button. We will just add the Closed Reference OTU table object by clicking “Add” in that row.
+To look more closely at the details of the artifact, select "Per Artifact (1)." Here you can add each of these objects to the analysis by selecting the “Add” button. We will just add the Closed Reference OTU table object by clicking “Add” in that row.
 
-.. figure::  images/your_study2.png
+.. figure::  images/your_study3.png
    :align:   center
 
 Now, the second-right-most icon at the top bar should turn green, indicating that there are samples selected for analysis.
@@ -44,17 +44,12 @@ description, then click "Create Analysis".
 
 This brings you to the processing network page. Here, pulling down the “Processing Network” tab. This may take 2 to 5 minutes to load. You can analyze data that has been run.
 
-.. figure::  images/processing_network_photo3.png
+.. figure::  images/processing_network_photo4.png
    :align:   center
 
-Before we process the data, let's have a look at the summary of the contents of the biom file. To create this summary, select the "dflt_name (BIOM)" artifact and press the generate summary button.
+Before we process the data, let's have a look at the summary of the contents of the biom file. Select the "dflt_name (BIOM)" artifact to see a summary of this file displaying a table summary, details regarding the frequency per sample, histogram of the number of features per sample:
 
-.. figure::  images/generate_summary.png
-   :align:   center
-
-Refresh the page until the summary is displayed below. This can take up to 1 minute. You will now see a summary of this file displaying a histogram of the number of features per sample:
-
-.. figure::  images/histogram.png
+.. figure::  images/summaryinfo.png
    :align:   center
 
 As you can see, this file contains 30 samples with between approximately 11,000 and 200,000 features, in our case, picked-OTUs (or operational taxanomic unit).
@@ -71,32 +66,32 @@ Rarefying Data
 
 To start, the data must be rarefied. This means that all the samples in the analysis will be randomly subsampled to this number of features, in this case OTUs, reducing potential alpha and beta diversity biases. Samples with fewer than this number of features will be excluded, which can also be useful for excluding things like blanks. To choose a good cutoff for your data, view the histogram that was made when we generated the summary of the data.
 
-.. figure::  images/histogram.png
+.. figure::  images/histogram2.png
    :align:   center
 
 An appropriate cutoff would exclude clear outliers, but retain most of the samples. Here we have already removed blanks from our data and eliminated the outliers prior to analysis so we will just use the minimum number of features observed in our samples (11030) as the cutoff.
 
 To rarefy the data, select "Rarefy features" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/rarify_parameter_without_number2.png
+.. figure::  images/rarify_parameter_without_number3.png
    :align:   center
 
 Several parameters will have only one option which will be automatically selected for you. In the "Sampling depth" field we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command".
 
-.. figure::  images/rarify_parameter_with_sampling_depth.png
+.. figure::  images/rarify_parameter_with_sampling_depth2.png
    :align:   center
 
-Click the "Run" button above the workflow network to start the process of rarefaction. The view will return to the original screen, while the rarefaction job runs. Then, click on the "dflt_name (BIOM)" artifact to see blue "Jobs using this data" button. Once you click on it, you can see the current status of your job. You can also view it clicking on the server button in the top-right corner of the screen:
+Click the "Run" button above the workflow network to start the process of rarefaction. Then, click on the "dflt_name (BIOM)" artifact to see blue "Jobs using this data" button. Once you click on it, you can see the current status of your job. You can also view it clicking on the server button in the top-right corner of the screen:
 
 .. figure::  images/server.png
    :align:   center
 
 Once the job is completed, you must refresh your browser window to see the result:
 
-.. figure::  images/rarify_workflow2.png
+.. figure::  images/rarify_workflow3.png
    :align:   center
 
-Select the newly generated "Rarefied table (BIOM)" artifact. Click "Generate Summary" again. This time instead of seeing a histogram of the rarefied samples, you instead see a brief summary confirming that your samples have all be rarefied to the same depth. Now that the data is rarefied, we can begin the analysis.
+Select the newly generated "Rarefied table 11030 (BIOM)" artifact. This time instead of seeing a histogram of the rarefied samples, you instead see a brief summary confirming that your samples have all be rarefied to the same depth. Now that the data is rarefied, we can begin the analysis.
 
 Taxa Bar Plots
 ~~~~~~~~~~~~~~
@@ -107,17 +102,17 @@ When using "Deblurred" data, there is no taxa assignment since features are kept
 
 To display the taxonomic profiles of our samples, we will select our rarefied data artifact, and click "Process". The same processing view we saw previously now appears, so click on "Summarize taxa" from the drop-down menu to arrive at the following view:
 
-.. figure::  images/taxa_barplot_parameter2.png
+.. figure::  images/taxa_barplot_parameter3.png
    :align:   center
 
 All of the parameters for this command are fixed so simply click "Add Comand" to continue. Once the command is added the workflow will appear:
 
-.. figure::  images/taxa_barplot_run2.png
+.. figure::  images/taxa_barplot_run3.png
    :align:   center
 
-Click the run button to start the process. The view will return to the original screen, while the taxa barplot generation job runs. Refresh your browser every 10-20 seconds until the "Taxa summaries visualization (q2_visualization)" object biom table appears:
+Click the run button to start the process. The view will return to the original screen, while the taxa barplot generation job runs. Your browser wil automatically refresh every 15 seconds until the "Taxa summaries visualization (q2_visualization)" object biom table appears:
 
-.. figure::  images/taxa_barplot_workflow2.png
+.. figure::  images/taxa_barplot_workflow3.png
    :align:   center
 
 Once the q2 visualization artifact is chosen in the network, the taxa barplot will appear below. The taxa plots offers visualization of the makeup of each sample. Each color will represent a different taxa and each column a different sample. It will have 4 pull-down menus: "Taxonomic Level," "Color Palette," and 2 "Sort Samples By" options.
@@ -141,16 +136,16 @@ Observed Operational Taxonomic Units
 
 One type of analysis for alpha diversity is looking at observed OTUs. This type of analysis will provide the number of unique OTUs found in a sample or group of samples.
 
-To perform an observed OTU alpha diversity analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform an observed OTU alpha diversity analysis, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/observed_OTU_parameter2.png
+.. figure::  images/observed_OTU_parameter3.png
    :align:   center
 
 Several parameters have been automatically selected for you since these options cannot be changed. In the "Diversty metric" field we will specify the alpha diversity analysis to run. Select "Number of distinct features" from the drop-down menu in this box, and click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/observed_OTU_workflow2.png
+.. figure::  images/observed_OTU_workflow3.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
@@ -160,16 +155,16 @@ Shannon Diversity Index
 
 Another type of alpha diversity analysis is the Shannon diversity index. This analyzes the amount of taxa per the total amount of taxa. It takes into account both diversity as well as abundance.
 
-To perform an Shannon diversity index, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform an Shannon diversity index, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/shannon_diversity_parameter2.png
+.. figure::  images/shannon_diversity_parameter3.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "Diversty metric" field select "Shannon's index" from the drop-down menu in this box, and click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/shannon_diversity_workflow2.png
+.. figure::  images/shannon_diversity_workflow3.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
@@ -179,16 +174,16 @@ Faith's Phylogenetic Diversity Index
 
 The final alpha diversity analysis is Faith’s phylogenetic diversity index. This index also measured abundance and diversity but displays it in tree form rather than in a plot.
 
-To perform a Faith's phylogenetic diversity index, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a Faith's phylogenetic diversity index, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Select "Calculate alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/faith_pd_parameter2.png
+.. figure::  images/faith_pd_parameter3.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "Diversity metric" field select "Faith's phylogenetic diversity" from the drop-down menu in this box and in the "Phylogenetic tree" field select "/databases/gg/13_8/trees/97_otus_no_none.tree" then click "Add Command".
+Several parameters have been automatically selected for you. In the "Diversity metric" field select "Faith's Phylogenetic Diversity" from the drop-down menu in this box and in the "Phylogenetic tree" field select "/databases/gg/13_8/trees/97_otus_no_none.tree" then click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/faith_pd_workflow2.png
+.. figure::  images/faith_pd_workflow3.png
    :align:   center
 
 Click the run button to start the process of the alpha diversity analysis. The view will return to the original screen, while the alpha diversity analysis job runs.
@@ -221,23 +216,23 @@ Bray-Curtis Dissimilarity
 
 One way to analyze this is through Bray-Curtis dissimilarity. This quantifies how dissimilar samples are to one another.
 
-To perform a Bray-Curtis beta diversity analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a Bray-Curtis beta diversity analysis, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/bray_curtis_beta_diversity2.png
+.. figure::  images/bray_curtis_beta_diversity3.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "Distance matric" field we will specify the beta diversity analysis to run. Enter "Bray-Curtis dissimilarity" in this box, and click "Add Command".
 
 To create a principal coordinates plot of the Bray-Curtis dissimilarity distance matrix, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/bray_curtis_pcoa2.png
+.. figure::  images/bray_curtis_pcoa3.png
    :align:   center
 
 All of the parameter have automatically selected for you just click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
-.. figure::  images/bray_curtis_workflow2.png
+.. figure::  images/bray_curtis_workflow3.png
    :align:   center
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
@@ -247,21 +242,21 @@ Unweighted UniFrac Analysis
 
 Another tool for measuring beta diversity is unweighted UniFrac analysis. Unweighted beta diversity analysis is when the types but not quantity of each taxa is taken into consideration when comparing samples to one another. This differs from weighted analysis which takes into consideration both the amount and variety of taxa in a sample.
 
-To perform unweighted UniFrac analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform unweighted UniFrac analysis, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Then select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/unweighted_beta_diversity2.png
+.. figure::  images/unweighted_beta_diversity3.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "Distance matric" field enter "Unweighted Unifrac" and in the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
 To create a principal coordinates plot of the unweighted Unifrac distance matrix, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/unweighted_pcoa2.png
+.. figure::  images/unweighted_pcoa3.png
    :align:   center
 
 All of the parameters have been automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
-.. figure::  images/unweighted_workflow2.png
+.. figure::  images/unweighted_workflow3.png
    :align:   center
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
@@ -326,9 +321,9 @@ Beta Diversity Group Significance
 
 Another way to study the beta diversity is by measuring the beta diversity group significance. Beta diversity group significance measures whether groups of samples are significantly different from one another using a permutation-based statistical test.
 
-To perform a beta group significance analysis, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform a beta group significance analysis, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Select "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/beta_group_significance_beta2.png
+.. figure::  images/beta_group_significance_beta3.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "Distance matric" we will specify the beta diversity analysis to run. In the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
@@ -340,7 +335,7 @@ To create the beta group significance analysis, select "Calculate beta group sig
 
 Several parameters have been automatically selected for you. In the "Comparison type" field we will specify if we would like the group significance to be run "Pairwise" or "Non-pairwise". In the "Metadata category" field we will specify the category from the metadata file to be used for determining significance between groups. In the "Method" field we will specify the correlation test that will be applied. Then click "Add Command". Once the command is added the workflow should appear as follows:
 
-.. figure::  images/beta_group_significance_workflow2.png
+.. figure::  images/beta_group_significance_workflow3.png
    :align:   center
 
 Beta Group Significance Output Analysis
@@ -361,7 +356,7 @@ Filtering Data
 
 Using QIITA you can also filter your data. This allows you to filter out samples.
 
-To filter the data, select the rarefied "Rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Filter samples by metadata" from the drop-down menu. The parameters will appear below the workflow diagram:
+To filter the data, select the rarefied "Rarefied table 11030 (BIOM)" artifact in the processing network and select "Process". Then select "Filter samples by metadata" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/filtered_unweighted_filtering4.png
    :align:   center
@@ -377,19 +372,19 @@ By filtering, you can perform unweighted UniFrac analysis but this time without 
 
 After filtering your data (shown in the previous "Filtering Data" section), you can perform a beta diversity analysis by selecting "Calculate beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/filtered_unweighted_beta2.png
+.. figure::  images/filtered_unweighted_beta3.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "Diversity metric" field enter "unweighted Unifrac" and in the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
 To create a principal coordinates plot of the unweighted Unifrac distance matrix, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/filtered_unweighted_pcoa2.png
+.. figure::  images/filtered_unweighted_pcoa3.png
    :align:   center
 
 All of the parameters have been automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
 
-.. figure::  images/filtered_unweighted_workflow2.png
+.. figure::  images/filtered_unweighted_workflow3.png
    :align:   center
 
 Click the run button to start the process of the beta diversity analysis. The view will return to the original screen, while the beta diversity analysis job runs.
