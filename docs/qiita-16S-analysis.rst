@@ -268,28 +268,43 @@ Clicking on the "Ordination results (ordination_results)" (Principal Coordinate 
 
 Once the Emperor visualization program loads, the PCoA result will look like:
 
-.. figure::  images/full_pcoa.png
+.. figure::  images/full_pcoa2.png
    :align:   center
 
-You will see tabs including "Color", "Visibility", "Shape", "Axes", and "Scale"
+You will see tabs including "Color", "Visibility", "Opacity", "Scale", "Shape", "Axes", and "Animations".
 
 Under "Color" you will notice two pull-down menus:
 
-.. figure::  images/color_tab.png
+.. figure::  images/color_tab2.png
    :align:   center
 
 Under "Select a Color Category" you can select how the samples will be grouped. Under "Classic QIIME Colors", you can select how each group will be colored.
 
 Under the "Visibility" tab you will notice 1 pull-down menu:
 
-.. figure::  images/visibility_tab.png
+.. figure::  images/visibility_tab2.png
    :align:   center
 
 Under "Select a Visibility Category" you can select which group will be displayed on the PCoA plot.
 
+Under the "Opacity" tab you will notice 1 pull-down menu:
+
+.. figure::  images/opacity_tab.png
+   :align:   center
+
+Under "Select an Opacity Category" you can select the categories in which the opacity will change on the PCoA plot. Once chosen, these groups will be displayed under "Global Scaling" and, when selected, you can change the opacity of each group separately. 
+Under "Global Scaling" you can change the opacity of all of the samples.
+
+Under the "Scale" tab you will notice 1 pull-down menu:
+
+.. figure::  images/scale_tab2.png
+   :align:   center
+
+Under "Select a Scale Category" you can choose the grouping of your samples. Under "Global Scaling" you can change the point size for each group on the PCoA plot.
+
 Under the "Shape" tab you will notice 1 pull-down menu:
 
-.. figure::  images/shape_tab.png
+.. figure::  images/shape_tab2.png
    :align:   center
 
 Under "Select a Shape Category" you can alter the shape of each group on the PCoA plot to the following:
@@ -299,20 +314,20 @@ Under "Select a Shape Category" you can alter the shape of each group on the PCo
 
 Under the "Axis" tab you will notice 5 pull-down menus:
 
-.. figure::  images/axis_tab.png
+.. figure::  images/axis_tab2.png
    :align:   center
 
 The first 3 pull-down menus located under "Visible" allow you to change the axis that are being displayed.
 The "Axis and Labels Color" menu allow you to change the color of your axis and label of the PCoA.
 The "Background Color" menu allows you to change the color of the background of the PCoA.
-The % Variantion Expanded graph displays how different the most dissimilar samples are by percentage for each axis that can be used.
+The % Variation Expanded graph displays how different the most dissimilar samples are by percentage for each axis that can be used.
 
-Under the "Scale" tab you will notice 2 pull-down menus:
+Under the "Animations" tab you will notice 2 pull-down menus:
 
-.. figure::  images/scale_tab.png
+.. figure::  images/animations_tab.png
    :align:   center
 
-Under "Select a Scale Category" you can choose the grouping of your samples. Under "Global Scaling" you can change the point size for each group on the PCoA plot.
+Under "Category to sort samples" you can choose the category that you will be sorting the samples by. Under "Category to group sample" you can choose the category that you will be grouping the samples by.
 
 Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the `Emperor tutorial <https://biocore.github.io/emperor/tutorial_index.html#section1>`__ and follow along with your test data.
 
@@ -361,7 +376,8 @@ To filter the data, select the rarefied "Rarefied table 11030 (BIOM)" artifact i
 .. figure::  images/filtered_unweighted_filtering4.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the "SQLite WHERE-clause" field we are filtering out certain samples. In this case we wanted to filter our samples in which :code:`subject = 'Volunteer 3'`, and click "Add Command". **Keep in mind that all fields are case sensitive**.
+Several parameters have been automatically selected for you. In the "SQLite WHERE-clause" field we are filtering out all samples except for certain samples. In this case we wanted to filter out all samples except those in which :code:`subject = 'Volunteer 3'`, and click "Add Command".
+If instead you want to filter out all of Volunteer 3's samples, insert :code:`subject != 'Volunteer 3'`, and click "Add Command". **Keep in mind that all fields are case sensitive**.
 
 An example of how you can use filtering in your analysis is explained in the following "Filtered Unweighted UniFrac Analysis" section.
 
