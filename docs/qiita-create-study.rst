@@ -150,7 +150,9 @@ manage all other aspects of your study.
 .. figure::  images/new_study_link4.png
    :align:   center
 
-Since we are using a practice set of data, under "Study Tags" write "Tutorial" and select "Save Tags". 
+Since we are using a practice set of data, under "Study Tags" write "Tutorial" and select "Save Tags".
+As part of our routine clean up efforts, this tag will allow us to find and remove studies and analyses
+generated using the template data and information.
 
 .. figure::  images/study_tag.png
    :align:   center
