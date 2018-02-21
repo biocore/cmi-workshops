@@ -17,8 +17,8 @@ Real sequencing data can be tens of gigabytes in size!
 
 The files are:
 
-   * CMI_workshop_lane1_S1_L001_*_001.fastq.gz    # 16S sequences - forward (R1) and reverse (R2) reads and barcodes (I1)  
-   * sample_information.txt                       # The sample information file  
+   * CMI_workshop_lane1_S1_L001_*_001.fastq.gz    # 16S sequences - forward (R1) and reverse (R2) reads and barcodes (I1)
+   * sample_information.txt                       # The sample information file
    * prep_information_16S.txt                     # The prep information file
 
 
@@ -42,7 +42,7 @@ Click on "Sign Up" on the upper-right-hand corner.
 
 The "New User" link brings you to a page on which you can create a new
 account. Optional fields are indicated explicitly, while all other
-fields are required. 
+fields are required.
 
 .. figure::  images/user_information.png
    :align:   center
@@ -148,6 +148,11 @@ page. Here you will be able to edit the study info, upload files, and
 manage all other aspects of your study.
 
 .. figure::  images/new_study_link4.png
+   :align:   center
+
+Since we are using a practice set of data, under "Study Tags" write "Tutorial" and select "Save Tags". 
+
+.. figure::  images/study_tag.png
    :align:   center
 
 The first step after study creation is uploading files. Click on the
