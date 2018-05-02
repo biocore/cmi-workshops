@@ -6,7 +6,7 @@ To create an analysis, select "Create new analysis" from the top menu.
 This will take you to a list of studies with samples available to you for
 analysis, divided between your studies and publicly available studies ("Public Studies").
 
-.. figure::  images/analysis_studies_page2.png
+.. figure::  images/analysis_studies_page3.png
    :align:   center
 
 Find the "CMI workshop analysis" study in Public Studies. You can use the search window at the top right, or filter by tags ("CMIWorkshop" tag).
