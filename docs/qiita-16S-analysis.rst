@@ -430,6 +430,10 @@ First, because the deblur process creates two separate BIOM tables, you’ll wan
 
 The specific ID for your table will be unique, so make a note of it, and you can use it to select the correct table for analysis.
 
+Qiita employs Deblur v1.0.4 on trimmed sequences (UC San Diego studies are typically processed with 90, 100, and 150 nt) with no minimum read threshold count, followed by insertion into the latest (Aug 2013) 99% OTU tree from GreenGenes using SEPP as part of the Qiime2 q2-fragment-insertion plugin.
+
+In addition, by deblurred sequences in Qiita use a reduced threshold for sequence abundance across all samples of 1 read rather than the 10 read threshold default in deblur. The single read threshold was chosen (rather than the default 10 read threshold) to support the best practice of setting a custom minimum read threshold that is suitable to your single-study analysis or meta-analysis. This can be done using the Filter Table command (see below).
+
 Creating a Meta-Analysis
 ------------------------
 
