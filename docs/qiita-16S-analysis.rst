@@ -366,7 +366,9 @@ The `PERMANOVA (Permutational multivariate analysis of variance) <http://onlinel
 .. figure::  images/permanova_results.png
    :align:   center
 
-#Filtering Data
+.. _referencefiltering:
+
+Filtering Data
 ~~~~~~~~~~~~~~
 
 Using QIITA you can also filter your data. This allows you to filter out samples.
@@ -432,7 +434,7 @@ The specific ID for your table will be unique, so make a note of it, and you can
 
 Qiita employs Deblur v1.0.4 on trimmed sequences (UC San Diego studies are typically processed with 90, 100, and 150 nt) with no minimum read threshold count, followed by insertion into the latest (Aug 2013) 99% OTU tree from GreenGenes using SEPP as part of the QIIME2 `q2-fragment-insertion plugin <https://github.com/biocore/q2-fragment-insertion>`_.
 
-In addition, by deblurred sequences in Qiita use a reduced threshold for sequence abundance across all samples of 1 read rather than the 10 read threshold default in deblur. The single read threshold was chosen (rather than the default 10 read threshold) to support the best practice of setting a custom minimum read threshold that is suitable to your single-study analysis or meta-analysis. This can be done using the [Filter Table command](#filtering-data).
+In addition, by deblurred sequences in Qiita use a reduced threshold for sequence abundance across all samples of 1 read rather than the 10 read threshold default in deblur. The single read threshold was chosen (rather than the default 10 read threshold) to support the best practice of setting a custom minimum read threshold that is suitable to your single-study analysis or meta-analysis. This can be done using the :ref:`[Filter Table command]<referencefiltering>`.
 
 Creating a Meta-Analysis
 ------------------------
