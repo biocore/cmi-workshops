@@ -377,7 +377,8 @@ To filter the data, select the rarefied "Rarefied table 11030 (BIOM)" artifact i
    :align:   center
 
 Several parameters have been automatically selected for you. In the "SQLite WHERE-clause" field we are filtering out all samples except for certain samples. In this case we wanted to filter out all samples except those in which :code:`subject = 'Volunteer 3'`, and click "Add Command".
-If instead you want to filter out all of Volunteer 3's samples, insert :code:`subject != 'Volunteer 3'`, and click "Add Command". **Keep in mind that all fields are case sensitive**.
+If instead you want to filter out all of Volunteer 3's samples, insert :code:`subject != 'Volunteer 3'`, and click "Add Command". If you want to filter for samples containing an apostrophe, write it out in the following format: :code:`subject = \"Volunteer 3's samples\"`.
+**Keep in mind that all fields are case sensitive**. 
 
 An example of how you can use filtering in your analysis is explained in the following "Filtered Unweighted UniFrac Analysis" section.
 
