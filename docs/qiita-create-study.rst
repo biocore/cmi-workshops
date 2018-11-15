@@ -6,13 +6,13 @@ Getting CMI Workshop example data
 ---------------------------------
 
 There are 2 separate data sets made available to you - *processing dataset* containing raw sequencing files which we will process to generate information
-about the identity and relative amounts of microbes in our samples, and *analysis dataset* which contains more pre-processed samples which we will use
+about the identity and relative amounts of microbes in our samples (n=14), and *analysis dataset* which contains more pre-processed samples (n=30) which we will use
 for statistical analyses.
 
 Processing example data
 ~~~~~~~~~~~~~~~~~~~~~~~
 You can `download example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__ directly from GitHub.
-These files contain both 16S rRNA microbiome data for 14 skin microbiome samples. It is a subset of data which we will later use for analysis.
+These files contain both 16S rRNA microbiome data for 14 skin microbiome samples. It is a subset of data which we will use later for analysis.
 Real sequencing data can be tens of gigabytes in size!
 
 The files are:
@@ -79,7 +79,7 @@ bar to access the page on which you can perform these tasks.
 .. figure::  images/forgot_password.png
   :align:   center
 
-Creating a test study
+Studies in Qiita
 ---------------------
 
 Studies are the source of data for Qiita. Studies can contain only one set
@@ -88,10 +88,9 @@ different preparation -- for example, 16S, shotgun metagenomics, and
 metabolomics, or even multiple preparations of the same type
 (e.g., a plate rerun, biological and technical replicates, etc).
 
-In this tutorial, our study contains 30 samples, each with two types of data:
-16S and metabolomic. To represent this project in Qiita, you will need
-to create a single study with a single sample information file that contains all
-30 samples. Then, you will link separate preparation files for each data type.
+In the *analysis tutorial*, our study contains 30 samples, each with two types of data:
+16S and metabolomic. To represent this project in Qiita, we created a single study with a single sample information file that contains all
+30 samples. Then, we linked separate preparation files for each data type.
 
 Creating an example study
 -------------------------
@@ -116,7 +115,7 @@ list, you can choose to add a new one.
 
 Select the environmental package appropriate to your study. Different
 packages will request different specific information about your samples.
-For more details, see the `publication <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3367316>`__.
+For more details, see the `publication <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3367316>`__. For this test study for the *processing tutorial*, choose **human-skin**.
 
 There is also an option to specify time series type ("Event-Based Data") if you
 have such data. In our case, the samples come from a time series
