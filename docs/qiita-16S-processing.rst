@@ -180,7 +180,7 @@ that will be produced from that command (represented in grey).
 You can click on the command to see the parameters used, or on an object to
 perform additional steps.
 
-Next we want to trim to a particular length, to ensure our samples will be comparable to other samples already in the database. Click back on the “demultiplexed (Demultiplexed)”. This time, select the Trimming operation. Currently, there are seven trimming length options. Let’s choose “150 basepairs”, which trims to the first 150bp, for this run, and click “Add Command”.
+Next we want to trim to a particular length, to ensure our samples will be comparable to other samples already in the database. Click back on the “demultiplexed (Demultiplexed)”. This time, select the Trimming operation. Currently, there are seven trimming length options. Let’s choose “100 basepairs”, which trims to the first 100bp, for this run, and click “Add Command”.
 
 .. figure::  images/trimming_command4.png
    :align:   center
@@ -206,10 +206,10 @@ without having to do any sort of re-clustering!
 
 
 
-The closed reference workflow
+The closed-reference workflow
 -----------------------------
 
-To do closed reference OTU picking, click on the "Trimmed Demultiplexed (Demultiplexed)" object and
+To do closed reference OTU picking, click on the "Trimmed Demultiplexed 100 (Demultiplexed)" object and
 select the "Pick closed-reference OTUs" command. We will use the "Defaults"
 parameter set for our data, which are relatively small. For a larger
 data set, we might want to use the "Defaults - parallel" implementation.
@@ -239,7 +239,7 @@ the demultiplexed sequences directly, "deblur" works best when all the
 sequences are the same length. By trimming to a particular length, we can also
 ensure our samples will be comparable to other samples already in the database.
 
-Click back on the "Trimmed Demultiplexed (Demultiplexed)" object. This time, select the `Deblur`
+Click back on the "Trimmed Demultiplexed 100 (Demultiplexed)" object. This time, select the `Deblur`
 operation. Choose "Deblur" from the "Choose command" dropdown, and "Defaults" for
 the parameter set. 
 
