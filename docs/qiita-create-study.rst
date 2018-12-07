@@ -18,7 +18,7 @@ Real sequencing data can be tens of gigabytes in size!
 The files are:
 
    * CMI_workshop_lane1_S1_L001_*_001.fastq.gz    # 16S sequences - forward (R1) and reverse (R2) reads and barcodes (I1)
-   * sample_information.txt                       # The sample information file
+   * sample_info.txt                              # The sample information file
    * prep_information_16S.txt                     # The prep information file
 
 
@@ -165,7 +165,7 @@ Uploads can be paused at any time and restarted again, as long as you do
 not refresh or navigate away from the page, or log out of the system
 from another page.
 
-Drag the file named "sample_information.txt" into the upload box. It should
+Drag the file named "sample_info.txt" into the upload box. It should
 upload quickly and appear below "Files" with a checkbox next to it below.
 
 .. figure::  images/upload_box4.png
