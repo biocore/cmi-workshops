@@ -13,7 +13,7 @@ gene sequencing and shotgun metagenomics -- you can have multiple prep info
 files in a single study, associating your samples with each of these data types.
 You can learn more about prep info files at the `Qiita documentation <https://qiita.ucsd.edu/static/doc/html/tutorials/prepare-information-files.html#prep-information-file>`__.
 
-Go back to the "Upload Files" interface. In the `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__, find and upload the **3 "FASTQ
+Go back to the "Upload Files" interface. In the `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__, find and upload the **3 ".fastq.gz
 files"** and the **"prep_information_16S.txt"** file.
 
 .. figure::  images/upload_box4.png
@@ -66,7 +66,9 @@ Now, you can associate the sequence data from your study with this preparation.
 In the prep info dialogue, there is a dropdown menu below the words *No files
 attached to this preparation*, labeled "Select type". Click "Choose a type" to
 see a list of available file types. In our case, we've uploaded FASTQ-formatted
-file for all samples in our study, so we will choose "FASTQ - None`.
+file for all samples in our study, so we will choose "FASTQ - None". In some cases
+outside of this tutorial, you may have per sample FASTQ files, so take care in
+considering which data type you are handling.
 
 *Magically*, this will prompt Qiita to associate your uploaded files with the
 corresponding samples in your preparation info. (Our prep info file has a
@@ -133,7 +135,7 @@ history of errors that Qiita encountered for your jobs, so take notice of dates 
 .. figure::  images/processing-summary3.png
    :align:   center
 
-The summary generation shouldn't take too long. When it completes, you can
+The summary generation shouldn't take too long. You may need to refresh your screen. When it completes, you can
 click back on the FASTQ object and scroll to the bottom of the page
 to see a short peek at the data in each of the FASTQ files in the object. These
 summaries can be useful for troubleshooting.
