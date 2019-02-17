@@ -9,8 +9,8 @@ please visit `Qiita website <https://qiita.ucsd.edu/static/doc/html/index.html>`
 
 A description of many of the terms used in this tutorial can be found in this `glossary <https://qiita.ucsd.edu/static/doc/html/glossary.html>`_
 
-For general information about workshops, please `contact Tomasz Kosciolek directly
-<mailto:tkosciolek@ucsd.edu>`__.
+For general information about workshops, please visit the `Center for Microbiome Innovtion website <http://cmi.ucsd.edu/news-events>`__ or
+`contact the CMI directly <mailto:CMIinfo@eng.ucsd.edu>`__.
 
 Qiita tutorials:
 ================
