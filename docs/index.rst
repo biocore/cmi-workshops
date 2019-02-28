@@ -22,28 +22,32 @@ Qiita tutorials:
    qiita-create-study
 
 .. toctree::
-   :caption: Microbiome data processing I (Amplicon)
+   :caption: Microbiome data processing I 
+   (Amplicon)
    :maxdepth: 2
 
    qiita-16S-processing
 
 .. toctree::
-   :caption: Microbiome analyses I (Amplicon)
+   :caption: Microbiome analyses I 
+   (Amplicon)
    :maxdepth: 2
 
    qiita-16S-analysis
       
 .. toctree::
-   :caption: Microbiome data processing II (Shotgun metagenomics)
+   :caption: Microbiome data processing II 
+   (Shotgun metagenomics)
    :maxdepth: 2
    
    qiita-shotgun-metagenomics-processing
    
 .. toctree::
-   :caption: Microbiome analysis II (Shotgun metagenomics)
+   :caption: Microbiome analysis II 
+   (Shotgun metagenomics)
    :maxdepth: 2
    
-   qiita-shotgun-metagenomics-processing
+   qiita-shotgun-metagenomics-analysis
 
 .. toctree::
    :caption: Metabolomic analyses
