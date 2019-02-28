@@ -37,13 +37,13 @@ Qiita tutorials:
    :caption: Microbiome data processing II (Shotgun metagenomics)
    :maxdepth: 2
    
-   qiita-shotgun-metagenomic-processing
+   qiita-shotgun-metagenomics-processing
    
 .. toctree::
    :caption: Microbiome analysis II (Shotgun metagenomics)
    :maxdepth: 2
    
-   qiita-shotgun-metagenomic-processing
+   qiita-shotgun-metagenomics-processing
 
 .. toctree::
    :caption: Metabolomic analyses
