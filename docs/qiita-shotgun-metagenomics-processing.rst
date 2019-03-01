@@ -1,4 +1,4 @@
-Shotgun metagenomics is an alternative approach to amplicon sequencing that provides information at the genomic level, rather than for single loci such as 16S, 18S, and the fungal ITS region. In addition to providing finer resolution with respect to taxonomic classification, metagenomics provides functional data that allows for more comprehensive analyses of microbial communities. We are currently working to make available additional metagenomic tools in Qiita. Below we describe how to use Shogun to produce taxonomic profiles for shotgun metagenomic data, as well as common downstream analyses of alpha- and beta-diversity.
+Shotgun metagenomics is an alternative approach to amplicon sequencing that provides information at the genomic level, rather than for single loci such as 16S, 18S, and the fungal ITS region. In addition to providing finer resolution with respect to taxonomic classification, metagenomics provides functional data that allows for more comprehensive analyses of microbial communities. We are currently working to make available additional metagenomic tools in Qiita. Below we describe how to use `Shogun <https://github.com/knights-lab/SHOGUN>`__ to produce taxonomic profiles for shotgun metagenomic data, and then move to common downstream analyses of alpha- and beta-diversity.
 
 Processing Shotgun Metagenomics Data
 ------------------------------------
@@ -33,7 +33,7 @@ Once your sequence files are added, you should see a processing network with an 
 .. figure::  images/shotgun-process-network.png
    :align:   center
    
-We will now process the sequence data using Shogun to create taxa-abundance tables at three hierarchical levels: phylum, family, and genus. Shogun is a metagenomic tool for assigning sequence reads to metagenomes, and taxonomic classification using a reference database. In Qiita, Shogun uses either **utree** or **bowtie2** to align to references.
+We will now process the sequence data using Shogun to create taxa-abundance tables at three hierarchical levels: phylum, family, and genus. Shogun is a shallow shotgun metagenomics analysis tool that we will use for taxonomic classification of sequences using a reference database. In Qiita, Shogun uses either **utree** or **bowtie2** to align to references.
 
 Running Shogun on human-filtered per-sample FASTQ data
 ------------------------------------------------------
