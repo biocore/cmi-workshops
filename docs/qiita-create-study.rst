@@ -139,7 +139,7 @@ samples: these are the measured variables that are motivating you to look for
 response variables in the microbiome. **IMPORTANT**: your metadata are your
 study; it is imperative that those data are consistent, correct, and
 sufficiently detailed. (To learn more, including how to format your own sample
-info file, check out the `in-depth documentation <https://qiita.ucsd.edu/static/doc/html/tutorials/prepare-information-files.html#sample-information-file>`__
+info file, check out the `in-depth documentation <https://qiita.ucsd.edu/static/doc/html/gettingstartedguide/index.html#sample-information-file>`__
 on the Qiita website.)
 
 The first point of entrance to a study is the study description
@@ -161,9 +161,13 @@ The first step after study creation is uploading files. Click on the
 files into the grey area or simply click on "select from your computer"
 to select the fastq, fastq.gz or txt files you want to upload.
 
-Uploads can be paused at any time and restarted again, as long as you do
-not refresh or navigate away from the page, or log out of the system
-from another page.
+
+Note: Per our Terms of Condition for use, you certify that the files you are uploading do not contain:
+1)protected health information within the meaning of 45 Code of Federal Regulations part 160 and part 164, subparts A and E; `see checklist <http://cmi.ucsd.edu/PHIChecklist>`__
+2) whole genome sequencing data for any human subject; `HMP human sequence removal protocol <https://www.hmpdacc.org/hmp/doc/HumanSequenceRemoval_SOP.pdf>`__
+3) any data that is copyrighted, protected by trade secret, or otherwise subject to third party proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from the rightful owner(s) to transfer the data and grant it to Qiita, on behalf of the Regents of the University of California, all of the license rights granted in our `Terms.<https://qiita.ucsd.edu/iframe/?iframe=qiita-terms>`__
+
+Uploads can be paused at any time and restarted again, as long as you do not refresh or navigate away from the page, or log out of the system from another page.
 
 Drag the file named "sample_info.txt" into the upload box. It should
 upload quickly and appear below "Files" with a checkbox next to it below.
