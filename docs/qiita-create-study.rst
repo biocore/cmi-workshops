@@ -5,27 +5,29 @@ in Qiita.
 Getting CMI Workshop example data
 ---------------------------------
 
-There are 2 separate data sets made available to you - *processing dataset* containing raw sequencing files which we will process to generate information
-about the identity and relative amounts of microbes in our samples (n=14), and *analysis dataset* which contains more pre-processed samples (n=30) which we will use
-for statistical analyses.
+There are two separate example datasets made available to you - a *processing dataset* containing raw sequencing files which we will process to generate information
+about the identity and relative amounts of microbes in our samples (n=14), and an *analysis dataset* which contains a unique set of pre-processed samples (n=30) which we will use
+for statistical and community analyses.
 
-Processing example data
+Processing dataset
 ~~~~~~~~~~~~~~~~~~~~~~~
-You can `download example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__ directly from GitHub.
-These files contain both 16S rRNA microbiome data for 14 skin microbiome samples. It is a subset of data which we will use later for analysis.
+You can download `the processing dataset <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__ directly from GitHub.
+These files contain 16S rRNA microbiome data for 14 human skin samples. It is a subset of data that we will use later for analysis.
 Real sequencing data can be tens of gigabytes in size!
 
 The files are:
 
-   * CMI_workshop_lane1_S1_L001_*_001.fastq.gz    # 16S sequences - forward (R1) and reverse (R2) reads and barcodes (I1)
+   * CMI_workshop_lane1_S1_L001_R1_001.fastq.gz   # 16S sequences - forward reads
+   * CMI_workshop_lane1_S1_L001_R2_001.fastq.gz   # 16S sequences - reverse reads
+   * CMI_workshop_lane1_S1_L001_I1_001.fastq.gz   # 16S sequences - barcodes
    * sample_info.txt                              # The sample information file
-   * prep_information_16S.txt                     # The prep information file
+   * prep_info_16S.txt                            # The preparation information file
 
 
-Analysis example data
+Analysis dataset
 ~~~~~~~~~~~~~~~~~~~~~
-Example data which you can use for analysis is available to you directly on Qiita. You don't need to download anything to your hard drive.
-Instructions how to access this data are provided in the analysis `tutorial <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-analysis.html>`__.
+Example data that you can use for analysis are available to you directly on Qiita. You don't need to download anything to your hard drive.
+Instructions how to access these data are provided in the `analysis tutorial <http://cmi-workshop.readthedocs.io/en/latest/qiita-16S-analysis.html>`__.
 
 Setting up Qiita
 ----------------
@@ -162,17 +164,18 @@ files into the grey area or simply click on "select from your computer"
 to select the fastq, fastq.gz or txt files you want to upload.
 
 
-Note: Per our Terms of Condition for use, you certify that the files you are uploading do not contain:
-1)protected health information within the meaning of 45 Code of Federal Regulations part 160 and part 164, subparts A and E; `see checklist <http://cmi.ucsd.edu/PHIChecklist>`__
-2) whole genome sequencing data for any human subject; `HMP human sequence removal protocol <https://www.hmpdacc.org/hmp/doc/HumanSequenceRemoval_SOP.pdf>`__
-3) any data that is copyrighted, protected by trade secret, or otherwise subject to third party proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from the rightful owner(s) to transfer the data and grant it to Qiita, on behalf of the Regents of the University of California, all of the license rights granted in our `Terms.<https://qiita.ucsd.edu/iframe/?iframe=qiita-terms>`__
+Note: Per our Terms of Condition for use, by uploading files to Qiita you are certifying that they do not contain:
+1) Protected health information within the meaning of 45 Code of Federal Regulations part 160 and part 164, subparts A and E; `see checklist <http://cmi.ucsd.edu/PHIChecklist>`__
+2) Whole genome sequencing data for any human subject; `HMP human sequence removal protocol <https://www.hmpdacc.org/hmp/doc/HumanSequenceRemoval_SOP.pdf>`__
+3) Any data that is copyrighted, protected by trade secret, or otherwise subject to third party proprietary rights, including privacy and publicity rights, unless you are the owner of such rights or have permission from the rightful owner(s) to transfer the data and grant it to Qiita, on behalf of the Regents of the University of California, all of the license rights granted in our `Terms. <https://qiita.ucsd.edu/iframe/?iframe=qiita-terms>`__
 
-Uploads can be paused at any time and restarted again, as long as you do not refresh or navigate away from the page, or log out of the system from another page.
 
-Drag the file named "sample_info.txt" into the upload box. It should
+Uploads can be paused at any time and restarted again, as long as you do not refresh, navigate away from the page, or log out of the system from another browser window.
+
+To proceed, drag the file named "sample_info.txt" into the upload box. It should
 upload quickly and appear below "Files" with a checkbox next to it below.
 
-.. figure::  images/upload_box4.png
+.. figure::  images/upload_box3.png
    :align:   center
 
 Once your file has uploaded, click on "Go to study description" and, once

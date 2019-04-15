@@ -14,7 +14,7 @@ files in a single study, associating your samples with each of these data types.
 You can learn more about prep info files at the `Qiita documentation <https://qiita.ucsd.edu/static/doc/html/tutorials/prepare-information-files.html#prep-information-file>`__.
 
 Go back to the "Upload Files" interface. In the `example data <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__, find and upload the **3 ".fastq.gz
-files"** and the **"prep_information_16S.txt"** file.
+files"** and the **"prep_info_16S.txt"** file.
 
 .. figure::  images/upload_box4.png
    :align:   center
@@ -27,7 +27,7 @@ following dialogue:
 .. figure::  images/add_prep_ID4.png
    :align:   center
 
-Select "prep_information_16S.txt" from the "Select file" dropdown, and "16S" as
+Select "prep_info_16S.txt" from the "Select file" dropdown, and "16S" as
 the data type. Optionally, you can also select one of a number of investigation
 types that can be used to associate your data with other like studies in the
 database. Click "Create New Preparation".
@@ -104,7 +104,7 @@ If you see this message:
 It means that your files need time to load. Refresh your screen after about 1 minute.
 
 Your collection of FASTQ files for this prep are all represented by a single
-object in this network, currently called "[user's_name]". Click on the object.
+object in this network, currently called "CMI tutorial - 14 skin samples". Click on the object.
 
 Now, you'll have a series of choices for interacting with this object. You can
 click "Edit" to rename the object, "Process" to perform analyses, or "Delete"
@@ -149,7 +149,7 @@ Now, we'll process the raw data into something more interesting.
 Processing 16S data
 -------------------
 
-Scroll back up and click on the "[user's_name](FASTQ)" artifact, and select "Process". Below the files network, you will
+Scroll back up and click on the "CMI tutorial - 14 skin samples(FASTQ)" artifact, and select "Process". Below the files network, you will
 now see a "Choose command" dropdown menu. Based on the type of object, this dropdown menu will give a you a list of available processing steps.
 
 For 16S "FASTQ" objects, the only available command is "Split
@@ -279,14 +279,6 @@ The full workflow can take time to load depending on the amount of samples and Q
 .. figure::  images/full_workflow6.png
    :align:   center
 
-As noted above, you can follow the process of your commands in the dialogue at
-the top right of the window.
-
-You can also click on the "Jobs using this data", and see status
-updates from the commands running on that object at the bottom of the page:
-
-.. figure::  images/jobs_data2.png
-   :align:   center
 
 Once objects have been generated, you can generate summaries for them just
 as you did for the original "FASTQ" object. 
