@@ -11,7 +11,7 @@ for statistical and community analyses.
 
 Processing dataset
 ~~~~~~~~~~~~~~~~~~~~~~~
-You can download `the processing dataset <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-files.zip?raw=true>`__ directly from GitHub.
+You can download `the processing dataset <https://github.com/biocore/cmi-workshops/blob/master/docs/example_data/qiita-tutorial-16S-processing-dataset.zip?raw=true>`__ directly from GitHub.
 These files contain 16S rRNA microbiome data for 14 human skin samples. It is a subset of data that we will use later for analysis.
 Real sequencing data can be tens of gigabytes in size!
 
