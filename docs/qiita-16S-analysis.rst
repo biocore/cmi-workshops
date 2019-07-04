@@ -56,10 +56,10 @@ As you can see, this file contains 30 samples with between approximately 11,000 
 
 Now we can begin analyzing these samples. Let’s go ahead and select "dflt_name (BIOM)" then select “Process”. This will take us to the commands selection page. Once there, the commands pull down tab can be accessed which will display twenty-five actions.
 
-.. figure::  images/command_options3.png
+.. figure::  images/command_options4.png
    :align:   center
 
-We will now go through the use of some of the most-used commands which will enable you to generate summaries, plot your data, and calculate statistics to help you get the most out of your data.
+The text in brackets is the actual underlying commands from QIIME2. We will now go through the use of some of the most-used commands which will enable you to generate summaries, plot your data, and calculate statistics to help you get the most out of your data.
 
 Rarefying Data
 ~~~~~~~~~~~~~~
@@ -73,7 +73,7 @@ An appropriate cutoff would exclude clear outliers, but retain most of the sampl
 
 To rarefy the data, select "Rarefy table" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/rarify_parameter_without_number4.png
+.. figure::  images/rarify_parameter.png
    :align:   center
 
 Several parameters will have only one option which will be automatically selected for you. In the field, "The total frequency that each sample should be rarefied to...(sampling depth)", we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command".
@@ -213,14 +213,14 @@ One commonly used beta diversity metric is Bray-Curtis dissimilarity. This metri
 
 To perform an anlaysis of beta diversity using the Bray-Curtis dissimilarity metric, select the "rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/bray_curtis_beta_diversity4.png
+.. figure::  images/bray_curtis_beta_diversity5.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the field, "The beta diversity metric... (metric), we will specify the beta diversity analysis to run. Select "Bray-Curtis dissimilarity" from the drop-down menu in this box, and click "Add Command".
 
 To create a principal coordinates plot of the Bray-Curtis dissimilarity distance matrix, select the "distance matrix (distance matrix)" artifact and select "Process". Select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/bray_curtis_pcoa4.png
+.. figure::  images/bray_curtis_pcoa5.png
    :align:   center
 
 All of the parameter have automatically selected for you just click "Add Command".
@@ -239,10 +239,10 @@ Another commonly used distance metric for measuring beta diversity is unweighted
 
 To perform unweighted UniFrac analysis, select the "rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Beta diversity (phylogenetic)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/unweighted_beta_diversity4.png
+.. figure::  images/unweighted_beta_diversity6.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the field, "The beta diversity metric... (metric)", select "Unweighted Unifrac" from the drop-down menu, and in the "Phylogenetic tree" field select "/databases/gg/13_8/trees/97_otus.tree" from the drop-down menu, and click "Add Command".
+All of the parameters have been automatically selected for you, just click "Add Command".
 
 To create a principal coordinates plot of the unweighted Unifrac distance matrix, select the "distance_matrix (distance_matrix)" artifact that will be generated using Unweighted UniFrac distance. Note that, unless you rename each distance matrix (see below: Altering Workflow Analysis Names), they will appear identical until you select them to view their provenance information. Once you have selected the distance matrix artifact, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -365,6 +365,8 @@ The results from pairwise PERMANOVA tests will also be displayed if included in 
 
 .. figure::  images/permanova_results2.png
    :align:   center
+   
+The command 'Beta diversity group significance' provides PERMANOVA that can be run on a single categorical metadata variable. If you instead would like to provide multiple terms in the form of an equation, you can use the command 'adonis PERMANOVA test for beta group significance'. This latter command implements the 'adonis' function from the R package, vegan.
 
 .. _referencefiltering:
 
@@ -375,7 +377,7 @@ Using QIITA you can also filter your data. This allows you to filter out samples
 
 To filter the data, select the "rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Filter samples from table" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/filtered_unweighted_filtering5.png
+.. figure::  images/filtered_unweighted_filtering6.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "SQLite WHERE-clause" field we are filtering out all samples except for certain samples. In this case we wanted to filter out all samples except those in which :code:`subject = 'Volunteer 3'`, and click "Add Command".
@@ -393,10 +395,10 @@ By filtering, you can perform unweighted UniFrac analysis but this time without 
 
 After filtering your data (shown in the previous "Filtering Data" section), you can perform a beta diversity analysis by selecting the "filtered_table (BIOM)" in the Processing network and clicking "Process". Select "Beta diversity (phylogenetic)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/filtered_unweighted_beta4.png
+.. figure::  images/unweighted_beta_diversity6.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the field, "The beta diversity metric... (metric)", select "unweighted Unifrac" and in the "Phylogenetic tree" field select "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
+All of the parameters have been automatically selected for you, just click "Add Command".
 
 To create a principal coordinates plot of the unweighted Unifrac distance matrix, select the "distance_matrix (distance_matrix)" artifact that you set up above, and select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -426,25 +428,25 @@ This will cause a window to pop-up where you can input the name you’d like to 
 Analysis of Deblur Processed Data
 ---------------------------------
 
-Creating an analysis of your deblurred data is virtually the same as the process for the Closed Reference data, but there are a few quirks.
+Creating an analysis of your deblurred data is virtually the same as the process for the Closed Reference data, but there are a few important differences to note.
 
-First, because the deblur process creates two separate BIOM tables, you’ll want to make a note of the specific object ID number for the artifact you want to use. In my case, that’s ID 33331, the deblurred table with "only-16S" reads.
+First, because the Deblur process creates two separate BIOM tables, you should make a note of the specific object ID number for the specific artifact you want to use. In my case, that’s ID 33331, the deblurred table with "only-16S" reads.
 
 .. figure::  images/Deblur_processing_screen.png
    :align:   center
 
-The specific ID for your table will be unique, so make a note of it, and you can use it to select the correct table for analysis.
+The specific ID for your table will be unique. You can use it to select the correct table for analysis.
 
-Qiita employs Deblur on trimmed sequences (UC San Diego studies are typically processed with 90, 100, and 150 nt) with no minimum read threshold count, followed by insertion into the latest (Aug 2013) 99% OTU tree from GreenGenes using SEPP as part of the QIIME2 `q2-fragment-insertion plugin <https://github.com/biocore/q2-fragment-insertion>`_.
+Qiita employs Deblur on trimmed sequences (UC San Diego studies are typically processed with 90, 100, and 150 nt) with no minimum read threshold count, followed by insertion of output sequences into the latest (Aug 2013) 99% OTU tree from GreenGenes using SATÉ-Enabled Phylogenetic Placement (SEPP) as part of the QIIME2 `q2-fragment-insertion plugin <https://github.com/biocore/q2-fragment-insertion>`_.
 
-In addition, by deblurred sequences in Qiita use a reduced threshold for sequence abundance across all samples of 1 read rather than the 10 read threshold default in deblur. The single read threshold was chosen (rather than the default 10 read threshold) to support the best practice of setting a custom minimum read threshold that is suitable to your single-study analysis or meta-analysis. This can be done using the :ref:`Filter Table command<referencefiltering>`.
+In addition, Deblur in Qiita uses a reduced threshold of 1 for sequence abundance across all samples, rather than the default value of 10 used in Deblur outside of Qiita. The single read threshold was chosen (rather than the default 10 read threshold) to support the best practice of setting a custom minimum read threshold that is suitable to your single-study analysis or meta-analysis. This can be done using the command, 'Filter features from table'.
 
 Creating a Meta-Analysis
 ------------------------
 
 One of the most powerful aspects of Qiita is the ability to compare your data with hundreds of thousands of samples from across the planet. Right now, there are over 230,000 samples publicly available for you to explore:
 
-.. figure::  images/world_map_data2.png
+.. figure::  images/world_map_data3.png
    :align:   center
 
 (You can get up-to-date statistics by clicking “Stats” under the “More Info” option on the top bar.)
@@ -476,7 +478,7 @@ Let’s try comparing our data (i.e., from 14 human skin samples) to the “Glob
 
 Add the closed reference OTU table from this study to your analysis. You should now be able to click the green analysis icon in the upper right and see both your own OTU table and the public study OTU table in your analysis staging area:
 
-You can now click “Create Analysis” just as before to begin specifying analysis steps. This time, let’s jump straight to calculating beta diversity. To try something new, rather than rarefy prior to calculating beta diversity as above, we can do it simultaneously and using an iterative rarefaction process as to get a better estimate of real differences among samples. Select "Beta diversity rarefaction" from the drop-down menu. We will only change a few of the parameters: Then select the "/database/gg/13_8/trees/97_otus_no_none.tree" for the "Phylogenetic tree". In the field, "The beta diversity metric... (metric)", select "Unweighted UniFrac". Finally, for "The total frequecy that each sample should be rarefied to... (sampling depth)", enter a rarefaction depth of 2118 - the observed minimum number of features in your *processing tutorial* data. Then click “Add command", and "Run".
+You can now click “Create Analysis” just as before to begin specifying analysis steps. This time, let’s jump straight to calculating beta diversity. To try something new, rather than rarefy prior to calculating beta diversity as above, we can do it simultaneously and using an iterative rarefaction process as to get a better estimate of real differences among samples. Select "Beta diversity rarefaction" from the drop-down menu. We will only change a few of the parameters: In the field, "The beta diversity metric... (metric)", select "Unweighted UniFrac". For "The total frequecy that each sample should be rarefied to... (sampling depth)", enter a rarefaction depth of 2118 - the observed minimum number of features in your *processing tutorial* data. Then click “Add command", and "Run".
 
 .. figure::  images/sample_comparisons.png
    :align:   center

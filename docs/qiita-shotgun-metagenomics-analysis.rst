@@ -33,7 +33,7 @@ Once the analysis has been created, you will see a processing network with a sin
    
 Select the artifact and click 'Process', then select 'Visualize taxonomy with an interactive bar plot', and click 'Add Command'.
 
-.. figure::  images/shotgun-analysis-barplot1.png
+.. figure::  images/shotgun-analysis-barplot1b.png
    :align:   center
    
 This will create new artifacts in the analysis processing network as shown below.
