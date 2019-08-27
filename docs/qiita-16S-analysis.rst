@@ -52,7 +52,7 @@ Before we process the data, let's have a look at the summary of the contents of 
 .. figure::  images/summaryinfo.png
    :align:   center
 
-As you can see, this file contains 30 samples with between approximately 11,000 and 200,000 features, in our case, picked-OTUs (or operational taxanomic unit).
+As you can see, this file contains 30 samples with roughly 36,000 features, in our case, picked-OTUs (or operational taxanomic unit).
 
 Now we can begin analyzing these samples. Let’s go ahead and select "dflt_name (BIOM)" then select “Process”. This will take us to the commands selection page. Once there, the commands pull down tab can be accessed which will display twenty-five actions.
 
