@@ -73,7 +73,7 @@ An appropriate cutoff would exclude clear outliers, but retain most of the sampl
 
 To rarefy the data, select "Rarefy table" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/rarify_parameter.png
+.. figure::  figs/rarefy_parameter.png
    :align:   center
 
 Several parameters will have only one option which will be automatically selected for you. In the field, "The total frequency that each sample should be rarefied to...(sampling depth)", we will specify the number of features to rarefy our samples to. Enter "11030" in this box, and click "Add Command".
@@ -213,14 +213,14 @@ One commonly used beta diversity metric is Bray-Curtis dissimilarity. This metri
 
 To perform an anlaysis of beta diversity using the Bray-Curtis dissimilarity metric, select the "rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Beta diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/bray_curtis_beta_diversity5.png
+.. figure::  figs/bray_curtis_beta_diversity5.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the field, "The beta diversity metric... (metric), we will specify the beta diversity analysis to run. Select "Bray-Curtis dissimilarity" from the drop-down menu in this box, and click "Add Command".
 
 To create a principal coordinates plot of the Bray-Curtis dissimilarity distance matrix, select the "distance matrix (distance matrix)" artifact and select "Process". Select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/bray_curtis_pcoa5.png
+.. figure::  figs/bray_curtis_pcoa5.png
    :align:   center
 
 All of the parameter have automatically selected for you just click "Add Command".
@@ -239,7 +239,7 @@ Another commonly used distance metric for measuring beta diversity is unweighted
 
 To perform unweighted UniFrac analysis, select the "rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Beta diversity (phylogenetic)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/unweighted_beta_diversity6.png
+.. figure::  figs/unweighted_beta_diversity6.png
    :align:   center
 
 All of the parameters have been automatically selected for you, just click "Add Command".
@@ -377,7 +377,7 @@ Using QIITA you can also filter your data. This allows you to filter out samples
 
 To filter the data, select the "rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Filter samples from table" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/filtered_unweighted_filtering6.png
+.. figure::  figs/filtered_unweighted_filtering6.png
    :align:   center
 
 Several parameters have been automatically selected for you. In the "SQLite WHERE-clause" field we are filtering out all samples except for certain samples. In this case we wanted to filter out all samples except those in which :code:`subject = 'Volunteer 3'`, and click "Add Command".
@@ -395,7 +395,7 @@ By filtering, you can perform unweighted UniFrac analysis but this time without 
 
 After filtering your data (shown in the previous "Filtering Data" section), you can perform a beta diversity analysis by selecting the "filtered_table (BIOM)" in the Processing network and clicking "Process". Select "Beta diversity (phylogenetic)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
-.. figure::  images/unweighted_beta_diversity6.png
+.. figure::  figs/unweighted_beta_diversity6.png
    :align:   center
 
 All of the parameters have been automatically selected for you, just click "Add Command".
@@ -446,7 +446,7 @@ Creating a Meta-Analysis
 
 One of the most powerful aspects of Qiita is the ability to compare your data with hundreds of thousands of samples from across the planet. Right now, there are over 230,000 samples publicly available for you to explore:
 
-.. figure::  images/world_map_data3.png
+.. figure::  figs/world_map_data3.png
    :align:   center
 
 (You can get up-to-date statistics by clicking “Stats” under the “More Info” option on the top bar.)
