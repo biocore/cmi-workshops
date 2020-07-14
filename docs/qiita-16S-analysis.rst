@@ -54,7 +54,7 @@ Before we process the data, let's have a look at the summary of the contents of 
 
 As you can see, this file contains 30 samples with roughly 36,000 features, in our case, picked-OTUs (or operational taxanomic unit).
 
-Now we can begin analyzing these samples. Let’s go ahead and select "dflt_name (BIOM)" then select “Process”. This will take us to the commands selection page. Once there, the commands pull down tab can be accessed which will display twenty-five actions.
+Now we can begin analyzing these samples. Let’s go ahead and select "dflt_name (BIOM)" then select “Process”. This will take us to the commands selection page. Once there, the commands pull down tab can be accessed which will display thirty-eight actions.
 
 .. figure::  images/command_options4.png
    :align:   center
@@ -64,7 +64,7 @@ The text in brackets is the actual underlying commands from QIIME2. We will now 
 Rarefying Data
 ~~~~~~~~~~~~~~
 
-For certain analyses such as those we are about to conduct, the data should be *rarefied*. This means that all the samples in the analysis will have their features, in this case OTUs, randomly subsampled to the same, desired number, reducing potential alpha and beta diversity biases. Samples with fewer than this number of features will be excluded, which can also be useful for excluding things like blanks. To choose a good cutoff for your data, view the histogram that was made when we generated the summary of the data.
+For certain analyses such as those we are about to conduct, the data should be *rarefied*. This means that all the samples in the analysis will have their features, in this case OTUs, randomly subsampled to the same desired number, reducing potential alpha and beta diversity biases. Samples with fewer than this number of features will be excluded, which can also be useful for excluding low abundance samples like blanks. To choose a good cutoff for your data, view the histogram that was made when we generated the summary of the data.
 
 .. figure::  images/histogram2.png
    :align:   center
@@ -81,12 +81,12 @@ Several parameters will have only one option which will be automatically selecte
 .. figure::  images/rarify_parameter_with_sampling_depth3.png
    :align:   center
 
-Click the "Run" button above the workflow network to start the process of rarefaction. Then, click on the "dflt_name (BIOM)" artifact to see blue "Jobs using this data" button. Once you click on it, you can see the current status of your job. You can also view it clicking on the server button in the top-right corner of the screen:
+Click the "Run" button above the workflow network to start the process of rarefaction. You can now view your jobs that are running by clicking on the server button in the top-right corner of the screen:
 
 .. figure::  images/server.png
    :align:   center
 
-The view will return to the original screen, while the rarefied feature-table generation job runs. Your browser wil automatically refresh every 15 seconds until the "rarefied table (BIOM)" artifact appears:
+The view will return to the original screen, while the rarefied feature-table generation job runs. Your browser will automatically refresh every 15 seconds until the "rarefied table (BIOM)" artifact appears:
 
 .. figure::  images/rarify_workflow4.png
    :align:   center
@@ -136,7 +136,7 @@ Observed Operational Taxonomic Units
 
 One type of analysis for alpha diversity, and the simplest, is looking at the number of observed, unique features, or OTUs in this example, also known as feature richness. This type of analysis will provide the number of unique OTUs found in a sample or group of samples.
 
-To perform an alpha diversity analysis of feature richness, select the rarefied "rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform an alpha diversity analysis of feature richness, select the rarefied "rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Alpha diversity [alpha]" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/observed_OTU_parameter4.png
    :align:   center
@@ -155,7 +155,7 @@ Shannon Diversity Index
 
 Another alpha diversity metric commonly used is the Shannon diversity index. In addition to feature richness, this metric considers the abundance of each taxon relative to the total abundance across all taxa in a sample. Therefore, this metric takes into account both feature richness and abundance.
 
-To perform an alpha diversity analysis using the Shannon diversity index, select the "rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Alpha diversity" from the drop-down menu. The parameters will appear below the workflow diagram as previously. Also as before, several parameters have been automatically selected for you. In the field, "The alpha diversity metric... (metric)", select "Shannon's index" from the drop-down menu in this box, and click "Add Command".
+To perform an alpha diversity analysis using the Shannon diversity index, select the "rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Alpha diversity [alpha]" from the drop-down menu. The parameters will appear below the workflow diagram as previously. Also as before, several parameters have been automatically selected for you. In the field, "The alpha diversity metric... (metric)", select "Shannon's index" from the drop-down menu in this box, and click "Add Command".
 
 Once the command is added the workflow should appear as follows:
 
@@ -169,7 +169,7 @@ Faith's Phylogenetic Diversity Index
 
 The final alpha diversity analysis in this tutorial uses Faith’s phylogenetic diversity index. This index also measured abundance and diversity but considers the phylogenetic distance spanning all features in a sample. The results can also be displayed as a phylogeny, rather than as a plot.
 
-To perform an alpha diversity analysis using Faith's phylogenetic diversity index, select the "rarefid table (BIOM)" artifact in the processing network and select "Process". Select "Alpha diversity (phylogenetic)" from the drop-down menu. The parameters will appear below the workflow diagram:
+To perform an alpha diversity analysis using Faith's phylogenetic diversity index, select the "rarefied table (BIOM)" artifact in the processing network and select "Process". Select "Alpha diversity (phylogenetic)" with the Qiime2 command of "alpha phylogenetic" not "alpha phylogenetic old" from the drop-down menu. The parameters will appear below the workflow diagram:
 
 .. figure::  images/faith_pd_parameter4.png
    :align:   center
@@ -242,7 +242,7 @@ To perform unweighted UniFrac analysis, select the "rarefied table (BIOM)" artif
 .. figure::  figs/unweighted_beta_diversity6.png
    :align:   center
 
-All of the parameters have been automatically selected for you, just click "Add Command".
+Most of the parameters have been automatically selected for you, but you will need to select the phylogenetic tree to use.  Click on the dropdown next to "Phylogenetic tree:" and select "/databases/gg/13_8/trees/97_otus_no_none.tree" and then click "Add Command".
 
 To create a principal coordinates plot of the unweighted Unifrac distance matrix, select the "distance_matrix (distance_matrix)" artifact that will be generated using Unweighted UniFrac distance. Note that, unless you rename each distance matrix (see below: Altering Workflow Analysis Names), they will appear identical until you select them to view their provenance information. Once you have selected the distance matrix artifact, select "Perform Principal Coordinate Analysis (PCoA)" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -273,21 +273,21 @@ Under "Color" you will notice two pull-down menus:
 .. figure::  images/color_tab2.png
    :align:   center
 
-Under "Select a Color Category" you can select how the samples will be grouped. Under "Classic QIIME Colors", you can select how each group will be colored.
+If you click on the pull-down that says "Select a Color Category" you can select a metadata category that will color the samples by the entries in that metadata category.. Under "Classic QIIME Colors", you can select how each group will be colored.
 
 Under the "Visibility" tab you will notice 1 pull-down menu:
 
 .. figure::  images/visibility_tab2.png
    :align:   center
 
-Under "Select a Visibility Category" you can select which group will be displayed on the PCoA plot.
+If you click on the pull-down for "Select a Visibility Category" you can select which group or groups will be displayed on the PCoA plot. Please note that if you remove the visibility of any samples this does not recalculate the distances between other samples.  Removing samples can result in a plot that is misleading.
 
 Under the "Opacity" tab you will notice 1 pull-down menu:
 
 .. figure::  images/opacity_tab.png
    :align:   center
 
-Under "Select an Opacity Category" you can select the categories in which the opacity will change on the PCoA plot. Once chosen, these groups will be displayed under "Global Scaling" and, when selected, you can change the opacity of each group separately. 
+If you click on the pull-down for "Select an Opacity Category" you can select the categories in which the opacity will change on the PCoA plot. Once chosen, these groups will be displayed under "Global Scaling" and, when selected, you can change the opacity of each group separately. 
 Under "Global Scaling" you can change the opacity of all of the samples.
 
 Under the "Scale" tab you will notice 1 pull-down menu:
@@ -295,19 +295,19 @@ Under the "Scale" tab you will notice 1 pull-down menu:
 .. figure::  images/scale_tab2.png
    :align:   center
 
-Under "Select a Scale Category" you can choose the grouping of your samples. Under "Global Scaling" you can change the point size for each group on the PCoA plot.
+If you click on the pull-down for "Select a Scale Category" you can choose the grouping of your samples. Under "Global Scaling" you can change the point size for each group separately on the PCoA plot, or change the global scaling to change the point size for all of the samples.
 
 Under the "Shape" tab you will notice 1 pull-down menu:
 
 .. figure::  images/shape_tab2.png
    :align:   center
 
-Under "Select a Shape Category" you can alter the shape of each group on the PCoA plot to the following:
+If you click on the pull-down for "Select a Shape Category" and select a metadata category, you can alter the shape of each group on the PCoA plot.
 
 .. figure::  images/shape_options.png
    :align:   center
 
-Under the "Axis" tab you will notice 5 pull-down menus:
+Under the "Axes" tab you will notice 5 pull-down menus:
 
 .. figure::  images/axis_tab2.png
    :align:   center
@@ -322,7 +322,7 @@ Under the "Animations" tab you will notice 2 pull-down menus:
 .. figure::  images/animations_tab.png
    :align:   center
 
-Under "Category to sort samples" you can choose the category that you will be sorting the samples by. Under "Category to group sample" you can choose the category that you will be grouping the samples by.
+If you click the pull-down for "Category to sort samples" you can choose the category that you will be sorting the samples by. By selecting the pull-down menu for "Category to group sample" you can choose the category that you will be grouping the samples by.
 
 Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the `Emperor tutorial <https://biocore.github.io/emperor/tutorial_index.html#section1>`__ and follow along with your test data.
 
@@ -336,7 +336,7 @@ If you have completed the tutorial up to this point, you can begin analysis of b
 .. figure::  images/beta_group_significance_beta4.png
    :align:   center
 
-Several parameters have been automatically selected for you. In the field, "The beta diversity metric... (metric)", we will specify the beta diversity distance metric to use in our analysis. Note that if you attempt to create a distance matrix that already exists in the Processing network, you will get an error stating such. For example, if you have already created a beta diversity distance matrix using the Bray-Curtis dissimilarity metric, you will have to select a unique metric here (e.g., "Aitchison distnace"). In the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
+Several parameters have been automatically selected for you. In the field, "The beta diversity metric... (metric)", we will specify the beta diversity distance metric to use in our analysis. Note that if you attempt to create a distance matrix that already exists in the Processing network, you will get an error stating such. For example, if you have already created a beta diversity distance matrix using the Bray-Curtis dissimilarity metric, you will have to select a unique metric here (e.g., "Aitchison distance"). In the "Phylogenetic tree" field enter "/databases/gg/13_8/trees/97_otus.tree", and click "Add Command".
 
 To create the beta group significance analysis, select the "distance_matrix (distance_matrix)" artifact of interest in the Processing network, and select "Beta diversity group significance" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -373,7 +373,7 @@ The command 'Beta diversity group significance' provides PERMANOVA that can be r
 Filtering Data
 ~~~~~~~~~~~~~~
 
-Using QIITA you can also filter your data. This allows you to filter out samples.
+Using Qiita you can also filter your data. This allows you to filter out samples.
 
 To filter the data, select the "rarefied table (BIOM)" artifact in the processing network and select "Process". Then select "Filter samples from table" from the drop-down menu. The parameters will appear below the workflow diagram:
 
@@ -404,8 +404,8 @@ To create a principal coordinates plot of the unweighted Unifrac distance matrix
 
 .. figure::  images/filtered_unweighted_pcoa4.png
    :align:   center
-
-All of the parameters have been automatically selected for you just click "Add Command". Once the command is added the workflow should appear as follows:
+   
+Most of the parameters have been automatically selected for you, but you will need to select the phylogenetic tree to use.  Click on the dropdown next to "Phylogenetic tree:" and select "/databases/gg/13_8/trees/97_otus_no_none.tree" and then click "Add Command". Once the command is added the workflow should appear as follows:
 
 .. figure::  images/filtered_unweighted_workflow4.png
    :align:   center
