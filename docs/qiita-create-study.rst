@@ -194,15 +194,17 @@ with a red banner at the top of the screen.
 If the file processes successfully, you should be able to click on the "Sample
 Information" tab and see a list of the imported metadata fields.
 
-.. figure::  images/sample_information_works4.png
+.. figure::  images/sample_information_works_5.PNG
    :align:   center
 
+
+Note: The warning is to let you know this study is missing columns that are required for EBI-ENA submission. For more information you can visit the `Send data to EBI-ENA <https://qiita.ucsd.edu/static/doc/html/checklist-for-ebi-ena-submission.html>`__ information page.
 
 To check out the different metadata
 values select the "Sample-Prep Summary" tab. On this page, select a metadata column to visualize in the "Add sample column information to table" dropdown menu and click
 "Add column."
 
-.. figure::  images/sample_summary5.png
+.. figure::  images/sample_summary6.PNG
    :align:   center
 
 

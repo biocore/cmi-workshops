@@ -1,7 +1,7 @@
 Analysis of Closed Reference Process
 ------------------------------------
 
-To create an analysis, select "Create new analysis" from the top menu.
+To create an analysis, hover over "Analysis" on the top menu and select "Create new analysis" from the drop down menu.
 
 This will take you to a list of studies with samples available to you for
 analysis, divided between your studies and publicly available studies ("Public Studies").
@@ -10,7 +10,7 @@ analysis, divided between your studies and publicly available studies ("Public S
    :align:   center
 
 Find the "CMI workshop analysis" study in Public Studies. You can use the search window at the top right, or filter by tags ("CMIWorkshop" tag).
-Click the green plus sign at the left of the row. This will expand the study to expose all
+Click the green plus sign at the left of the row under "Expand for analysis". This will expand the study to expose all
 the objects from that study that are available to you for analysis.
 
 .. figure::  images/study_expanded3.png
@@ -42,7 +42,7 @@ description, then click "Create Analysis".
 .. figure::  images/create_analysis_button2.png
    :align:   center
 
-This brings you to the processing network page. Here, pulling down the “Processing Network” tab. This may take 2 to 5 minutes to load. You can analyze data that has been run.
+This brings you to the processing network page. This may take 2 to 5 minutes to load. When it has loaded, you can analyze the data.
 
 .. figure::  images/processing_network_photo4.png
    :align:   center
@@ -323,8 +323,6 @@ Under the "Animations" tab you will notice 2 pull-down menus:
    :align:   center
 
 If you click the pull-down for "Category to sort samples" you can choose the category that you will be sorting the samples by. By selecting the pull-down menu for "Category to group sample" you can choose the category that you will be grouping the samples by.
-
-Let’s take a few minutes now to explore the various features of Emperor. Open a new browser window with the `Emperor tutorial <https://biocore.github.io/emperor/tutorial_index.html#section1>`__ and follow along with your test data.
 
 Beta Diversity Group Significance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
